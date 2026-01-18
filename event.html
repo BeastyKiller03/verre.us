@@ -8,7 +8,6 @@
 </head>
 
 <body data-page="event">
-  <!-- Flag corners (off for now via CSS display:none) -->
   <div class="flag-corner tl" aria-hidden="true"></div>
   <div class="flag-corner br" aria-hidden="true"></div>
 
@@ -22,15 +21,20 @@
       <div class="menu" aria-label="Primary navigation">
         <a href="events.html">Events</a>
         <a href="artists.html">Artists</a>
-        <a href="news.html">News</a>
       </div>
     </div>
   </div>
 
   <!-- Page -->
   <main class="wrap">
-    <!-- Event detail mounts here -->
-    <div id="detail"></div>
+
+    <!-- ✅ MATCHES INDEX GAP -->
+    <div class="grid">
+      <div class="card">
+        <!-- Event detail mounts here -->
+        <div id="detail"></div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
