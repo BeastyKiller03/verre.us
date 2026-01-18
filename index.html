@@ -8,7 +8,7 @@
 </head>
 
 <body data-page="home">
-  <!-- Flag corners: keep off for now (CSS display:none) -->
+  <!-- Flag corners -->
   <div class="flag-corner tl" aria-hidden="true"></div>
   <div class="flag-corner br" aria-hidden="true"></div>
 
@@ -28,9 +28,8 @@
   <div class="wrap">
     <div class="hero">
       <h1>Event Map + Archive.</h1>
-      <p>Events, Flyers, and Artist links.</p>
+      <p>Events, flyers, and artist links.</p>
       <div class="meta">
-        <span class="pill">Last updated: <strong id="lastUpdated"></strong></span>
         <a class="btn primary" href="events.html">Events</a>
         <a class="btn" href="artists.html">Artist Index</a>
       </div>
@@ -45,7 +44,9 @@
         <div class="bd">
           <div class="list" id="homeEvents"></div>
         </div>
-        <div class="ft">Coverage will be labeled when confirmed.</div>
+        <div class="ft">
+          Last updated: <strong id="lastUpdated"></strong>
+        </div>
       </div>
 
       <div class="card">
@@ -56,12 +57,14 @@
         <div class="bd">
           <div class="list" id="homeArtists"></div>
         </div>
-        <div class="ft">Want an artist added? DM @VERRE with a link + next show flyer/source.</div>
+        <div class="ft">
+          Want an artist added? DM @VERRE with a link + next show flyer/source.
+        </div>
       </div>
     </div>
 
     <div class="footer">
-      <div>© VERRE • Archive-first </div>
+      <div>© VERRE • Archive-first</div>
 
       <p class="sub" style="margin:8px 0 0; max-width:520px;">
         Submissions are for artists, events, flyers, and corrections only. No spam.
