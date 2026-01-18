@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VERRE — Artists</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="artists">
+  <div class="flag-corner tl" aria-hidden="true"></div>
+  <div class="flag-corner br" aria-hidden="true"></div>
+
+  <div class="topbar">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="VERRE home">
+        <img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
+      </a>
+      <div class="menu">
+        <a href="events.html">Events</a>
+        <a href="artists.html">Artists</a>
+        <a href="news.html">News</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero">
+      <h1>Artist Index</h1>
+      <p>Tracked artists + links + any events you’ve logged. Last updated: <strong id="lastUpdated"></strong></p>
+      <div class="meta tools">
+        <div class="search">
+          <input id="q" type="search" placeholder="Search: name, tag, sound…" />
+        </div>
+        <a class="btn" href="events.html">Browse events</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="hd">
+        <h2>Artists</h2>
+        <span class="pill">Click an artist for links + tracked events</span>
+      </div>
+      <div class="bd">
+        <div class="list" id="artistsList"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Want to add an artist? Send: name + link + next show flyer/source.</div>
+      <div><a class="smalllink" href="index.html">Home</a></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

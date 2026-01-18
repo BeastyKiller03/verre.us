@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VERRE — Artist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="artist">
+  <!-- Flag corners (off for now via CSS display:none) -->
+  <div class="flag-corner tl" aria-hidden="true"></div>
+  <div class="flag-corner br" aria-hidden="true"></div>
+
+  <!-- Top nav -->
+  <div class="topbar">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="VERRE home">
+        <img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
+      </a>
+
+      <div class="menu" aria-label="Primary navigation">
+        <a href="events.html">Events</a>
+        <a href="artists.html">Artists</a>
+        <a href="news.html">News</a>
+        <a href="press.html">Press</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page -->
+  <main class="wrap">
+    <!-- Artist detail mounts here -->
+    <div id="detail"></div>
+
+    <!-- Footer (no duplicate “back” link — the detail header already has it) -->
+    <footer class="footer">
+      <div>© VERRE • Archive-first</div>
+      <div>
+        <a class="smalllink" href="press.html">Submissions</a>
+        &nbsp;•&nbsp;
+        <a class="smalllink" href="artists.html">Artists</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

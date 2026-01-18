@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VERRE — Scene Map</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="home">
+  <!-- Flag corners: keep off for now (CSS display:none) -->
+  <div class="flag-corner tl" aria-hidden="true"></div>
+  <div class="flag-corner br" aria-hidden="true"></div>
+
+  <div class="topbar">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="VERRE home">
+        <img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
+      </a>
+
+      <div class="menu">
+        <a href="events.html">Events</a>
+        <a href="artists.html">Artists</a>
+        <a href="news.html">News</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero">
+      <h1>underground event map + archive.</h1>
+      <p>VERRE tracks events, flyers, and artist links. Accuracy over hype.</p>
+      <div class="meta">
+        <span class="pill">Last updated: <strong id="lastUpdated"></strong></span>
+        <a class="btn primary" href="events.html">Browse events</a>
+        <a class="btn" href="artists.html">Artist index</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="hd">
+          <h2>Upcoming (tracked)</h2>
+          <a class="btn" href="events.html">View all</a>
+        </div>
+        <div class="bd">
+          <div class="list" id="homeEvents"></div>
+        </div>
+        <div class="ft">Tracking only for now. Coverage will be labeled if/when confirmed.</div>
+      </div>
+
+      <div class="card">
+        <div class="hd">
+          <h2>Artist index</h2>
+          <a class="btn" href="artists.html">View all</a>
+        </div>
+        <div class="bd">
+          <div class="list" id="homeArtists"></div>
+        </div>
+        <div class="ft">Want an artist added? DM @VERRE with a link + next show flyer/source.</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© VERRE • Archive-first </div>
+
+      <p class="sub" style="margin:8px 0 0; max-width:520px;">
+        Submissions are for artists, events, flyers, and corrections only. No spam.
+      </p>
+
+      <div style="margin-top:12px;">
+        <a class="btn" href="press.html">Submissions</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,471 @@
+/* style.css — VERRE (USA theme) */
+
+/* =========================
+   THEME / BASE
+========================= */
+:root{
+  --bg:#ffffff;
+  --fg:#0a1633;            /* deep navy text */
+  --muted:#4b5878;         /* softer navy */
+  --line:rgba(10,22,51,0.14);
+
+  --accent:#c1121f;        /* red */
+  --accent2:#0a3161;       /* blue */
+
+  --chip:rgba(10,49,97,0.06);
+  --radius:14px;
+  --max:1100px;
+  --pad:18px;
+
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+
+  /* Event hero colors (Dice-ish) */
+  --hero-dark: rgba(10, 22, 51, 0.92);
+  --hero-dark2: rgba(10, 22, 51, 0.78);
+  --hero-yellow: #f2e94e;
+}
+
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family:var(--sans);
+}
+a{color:inherit; text-decoration:none}
+a:hover{opacity:.92}
+img{max-width:100%; display:block}
+
+.wrap{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:22px var(--pad) 60px;
+}
+
+/* =========================
+   TOPBAR / NAV
+========================= */
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:linear-gradient(to bottom, rgba(255,255,255,0.92), rgba(255,255,255,0.75));
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid var(--line);
+}
+
+.nav{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:12px var(--pad);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  letter-spacing:0.06em;
+  min-width:0;
+}
+.brand .logo{
+  height:50px;             /* desktop default */
+  width:auto;
+  display:block;
+}
+
+.menu{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.menu a{
+  padding:8px 10px;
+  border:1px solid transparent;
+  border-radius:999px;
+  color:var(--muted);
+  font-size:14px;
+  white-space:nowrap;
+}
+.menu a.active{
+  border-color:var(--line);
+  color:var(--fg);
+  background:rgba(10,49,97,0.04);
+}
+
+/* =========================
+   HERO (HOME)
+========================= */
+.hero{
+  margin-top:16px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:18px;
+  background:
+    radial-gradient(900px 260px at 20% 0%, rgba(193,18,31,0.08), transparent),
+    radial-gradient(700px 240px at 95% 10%, rgba(10,49,97,0.08), transparent);
+}
+.hero h1{
+  margin:0 0 8px;
+  font-size:32px;
+  letter-spacing:-0.02em
+}
+.hero p{margin:0; color:var(--muted); line-height:1.5}
+.hero .meta{
+  margin-top:14px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+/* =========================
+   UI PRIMITIVES
+========================= */
+.pill{
+  font-family:var(--mono);
+  font-size:12px;
+  color:var(--muted);
+  background:rgba(10,49,97,0.04);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:6px 10px;
+}
+
+.grid{
+  margin-top:16px;
+  display:grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap:14px;
+}
+@media (max-width: 920px){
+  .grid{grid-template-columns:1fr;}
+}
+
+.card{
+  border:1px solid var(--line);
+  background:rgba(10,49,97,0.02);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+
+.card .hd{
+  padding:12px 14px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  border-bottom:1px solid var(--line);
+}
+.card .hd h2{
+  margin:0;
+  font-size:14px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.card .bd{padding:12px 14px}
+.card .ft{
+  padding:10px 14px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:12px
+}
+
+hr.sep{border:none; border-top:1px solid var(--line); margin:16px 0}
+
+.tools{display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:space-between;}
+.search{display:flex; gap:10px; align-items:center; flex-wrap:wrap;}
+
+input[type="search"], select{
+  background:rgba(10,49,97,0.04);
+  border:1px solid var(--line);
+  color:var(--fg);
+  border-radius:999px;
+  padding:10px 12px;
+  font-size:14px;
+  outline:none;
+}
+input[type="search"]{min-width:240px}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  border:1px solid var(--line);
+  background:rgba(10,49,97,0.03);
+  color:var(--fg);
+  padding:10px 12px;
+  border-radius:999px;
+  font-size:14px;
+}
+.btn:hover{background:rgba(10,49,97,0.05)}
+.btn.primary{
+  border-color:rgba(193,18,31,0.45);
+  background:rgba(193,18,31,0.08);
+}
+
+.list{display:flex; flex-direction:column; gap:10px}
+
+.item{
+  border:1px solid var(--line);
+  background:rgba(10,49,97,0.015);
+  border-radius:12px;
+  padding:12px;
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+}
+.item .thumb{
+  width:80px;
+  aspect-ratio:1/1;
+  border-radius:10px;
+  background:linear-gradient(135deg, rgba(193,18,31,0.08), rgba(10,49,97,0.06));
+  border:1px solid var(--line);
+  flex:0 0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--muted);
+  font-family:var(--mono);
+  font-size:12px;
+}
+.item .info{flex:1; min-width:0}
+.item .title{font-weight:700; margin:0 0 6px; line-height:1.25}
+.item .sub{margin:0; color:var(--muted); font-size:13px; line-height:1.4}
+
+.row{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
+
+.chip{
+  font-family:var(--mono);
+  font-size:12px;
+  background:rgba(10,49,97,0.05);
+  border:1px solid var(--line);
+  color:var(--muted);
+  padding:6px 10px;
+  border-radius:999px;
+}
+
+/* Key/Value list */
+.kv{
+  display:grid;
+  grid-template-columns:160px 1fr;
+  gap:10px 16px;
+  margin:0;
+}
+.kv dt{
+  color:var(--muted);
+  font-family:var(--mono);
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+}
+.kv dd{margin:0; color:var(--fg)}
+@media (max-width: 720px){
+  .kv{grid-template-columns:1fr;}
+}
+
+/* Footer */
+.footer{
+  margin-top:22px;
+  color:var(--muted);
+  font-size:12px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  border-top:1px solid var(--line);
+  padding-top:14px;
+}
+.smalllink{
+  color:var(--muted);
+  text-decoration:underline;
+  text-decoration-color:rgba(10,22,51,0.35);
+}
+
+/* =========================
+   MOBILE TIGHTENING
+========================= */
+@media (max-width: 420px){
+  .hero h1{font-size:26px;}
+  input[type="search"]{min-width:180px;}
+  .item .thumb{width:64px;}
+  .brand .tag{display:none;}
+}
+
+/* Mobile nav keeps logo visible, prevents wrap */
+@media (max-width: 160px){
+  .nav{gap:10px;}
+  .brand{flex:1 1 auto; max-width:30%; gap:8px;}
+  .brand .logo{height:auto;}
+  .brand .tag{display:none;}
+  .menu{flex:0 0 auto; gap:6px; flex-wrap:nowrap;}
+  .menu a{padding:6px 8px; font-size:13px;}
+}
+
+/* =========================
+   FLAG CORNERS (OFF FOR NOW)
+========================= */
+/* Flag corners */
+.flag-corner{
+  position:fixed;
+  width:140px;
+  height:140px;
+  pointer-events:none;
+  opacity:0.9;
+  background-size:contain;
+  background-repeat:no-repeat;
+  display:block;
+}
+
+/* Desktop: overlap the topbar */
+.flag-corner{ z-index: 999; }              /* above topbar */
+.topbar{ z-index: 50; }
+
+.flag-corner.tl{
+  top:0;
+  left:0;
+  background-image:url("assets/brand/flag-corner-tl.png");
+}
+
+.flag-corner.br{
+  bottom:0;
+  right:0;
+  background-image:url("assets/brand/flag-corner-br.png");
+}
+
+/* Mobile: keep flag from covering the VERRE logo */
+@media (max-width: 520px){
+  .flag-corner{
+    width:90px;
+    height:90px;
+    opacity:0.85;
+    z-index: 1;            /* behind topbar + logo */
+  }
+
+  .topbar{
+    z-index: 50;           /* stays above */
+  }
+
+  /* Optional: nudge the top-left corner slightly OUT so it never touches logo */
+  .flag-corner.tl{
+    top:-6px;
+    left:-6px;
+  }
+}
+
+/* ==========================================================
+   EVENT PAGE — DICE-STYLE HERO LOOK (body[data-page="event"])
+   This styles your existing event detail output to match
+   the screenshot vibe (big title, yellow date line, dark hero).
+========================================================== */
+
+/* Make the main event card feel like a hero banner */
+body[data-page="event"] #detail .card{
+  background:
+    radial-gradient(1200px 520px at 10% 0%, rgba(193,18,31,0.35), transparent 60%),
+    radial-gradient(900px 520px at 95% 10%, rgba(10,49,97,0.35), transparent 60%),
+    linear-gradient(135deg, var(--hero-dark), var(--hero-dark2));
+  color:#fff;
+  border-color: rgba(255,255,255,0.18);
+}
+
+/* So the top header doesn't look like a table bar */
+body[data-page="event"] #detail .card .hd{
+  border-bottom-color: rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.03);
+}
+body[data-page="event"] #detail .card .hd h2{
+  color: rgba(255,255,255,0.75);
+}
+
+/* “tracking” chip in the header */
+body[data-page="event"] #detail .card .hd .chip{
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.22);
+  color:#fff;
+}
+
+/* BIG TITLE like the screenshot */
+body[data-page="event"] #detail h1{
+  font-size: clamp(40px, 5.2vw, 76px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.02em;
+  margin: 0 0 10px !important;
+  color:#fff;
+}
+
+/* The first subline under title = yellow date/time line */
+body[data-page="event"] #detail h1 + p.sub{
+  color: var(--hero-yellow) !important;
+  font-size: clamp(18px, 2.2vw, 34px) !important;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* Secondary subtext (if you have more p.sub lines) */
+body[data-page="event"] #detail p.sub{
+  color: rgba(255,255,255,0.85);
+}
+
+/* Buttons on event page should look like pill buttons on dark bg */
+body[data-page="event"] #detail .btn{
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.22);
+  color:#fff;
+}
+body[data-page="event"] #detail .btn:hover{
+  background: rgba(255,255,255,0.12);
+}
+body[data-page="event"] #detail .btn.primary{
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.35);
+}
+
+/* Make separators subtle on dark bg */
+body[data-page="event"] #detail hr.sep{
+  border-top-color: rgba(255,255,255,0.16);
+}
+
+/* KV labels + values on dark bg */
+body[data-page="event"] #detail .kv dt{
+  color: rgba(255,255,255,0.70);
+}
+body[data-page="event"] #detail .kv dd{
+  color: rgba(255,255,255,0.95);
+}
+
+/* Links in KV */
+body[data-page="event"] #detail .smalllink{
+  color: rgba(255,255,255,0.92);
+  text-decoration-color: rgba(255,255,255,0.35);
+}
+
+/* Lineup chips on dark bg */
+body[data-page="event"] #detail .chip{
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.22);
+  color:#fff;
+}
+body[data-page="event"] #detail a.chip:hover{
+  opacity: 0.95;
+}
+
+/* Footer inside the card on dark bg */
+body[data-page="event"] #detail .card .ft{
+  border-top-color: rgba(255,255,255,0.14);
+  color: rgba(255,255,255,0.70);
+  background: rgba(255,255,255,0.03);
+}
+
+/* Event page outer footer should stay normal (site footer) */
+body[data-page="event"] .wrap > .footer{
+  color: var(--muted);
+}
