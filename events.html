@@ -6,6 +6,7 @@
   <title>VERRE — Events</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body data-page="events">
   <div class="flag-corner tl" aria-hidden="true"></div>
   <div class="flag-corner br" aria-hidden="true"></div>
@@ -25,28 +26,34 @@
   <div class="wrap">
     <div class="hero">
       <h1>Events (tracked)</h1>
-      <p>Browse by area, search by artist/venue, and follow the SoCal timeline. Last updated: <strong id="lastUpdated"></strong></p>
+      <p>
+        Browse by area, search by artist or venue, and follow the SoCal timeline.
+        Last updated: <strong id="lastUpdated"></strong>
+      </p>
       <div class="meta tools">
         <div class="search">
-          <input id="q" type="search" placeholder="Search: artist, venue, event…" />
-          <select id="areaFilter"></select>
+          <input id="eventsSearch" type="search" placeholder="Search: artist, venue, event…" />
+          <select id="eventsArea"></select>
         </div>
         <a class="btn" href="press.html">Submit an event</a>
       </div>
     </div>
 
-    <div class="card">
-      <div class="hd">
-        <h2>Event list</h2>
-        <span class="pill">We only post events we can source.</span>
-      </div>
-      <div class="bd">
-        <div class="list" id="eventsList"></div>
+    <!-- ✅ MATCHES INDEX GAP -->
+    <div class="grid">
+      <div class="card">
+        <div class="hd">
+          <h2>Event list</h2>
+          <span class="pill">We only post events we can source.</span>
+        </div>
+        <div class="bd">
+          <div class="list" id="eventsList"></div>
+        </div>
       </div>
     </div>
 
     <div class="footer">
-      <div>Submit flyers: include date + area + lineup + source link.</div>
+      <div>Submit flyers with date + area + lineup + source link.</div>
       <div><a class="smalllink" href="index.html">Home</a></div>
     </div>
   </div>
