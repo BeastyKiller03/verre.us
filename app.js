@@ -32,6 +32,21 @@ function fmtDate(iso) {
   return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
 }
 
+/* Responsive: Instructions pill */
+function updatePillText(){
+  const pill = document.getElementById("instructionsPill");
+  if (pill) {
+    if (window.innerWidth <= 430) {
+      pill.textContent = 'Tap an artist for more info';
+    } else {
+      pill.textContent = 'Click an artist for links + tracked events';
+    }
+  }
+}
+
+updatePillText();
+window.addEventListener('resize', updatePillText)
+
 /* ✅ Active nav works on list + detail pages */
 function setActiveNav() {
   const page = (document.body.getAttribute("data-page") || "").toLowerCase();

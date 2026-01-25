@@ -41,7 +41,7 @@ img{max-width:100%; display:block}
 .wrap{
   max-width:var(--max);
   margin:0 auto;
-  padding:22px var(--pad) 60px;
+  padding:15px var(--pad) 60px;
 }
 
 /* =========================
@@ -147,13 +147,30 @@ img{max-width:100%; display:block}
 @media (max-width: 920px){
   .grid{grid-template-columns:1fr;}
 }
-
+/* card class (border) */
 .card{
   border:1px solid var(--line);
   background:rgba(10,49,97,0.02);
   border-radius:var(--radius);
   overflow:hidden;
+  margin-top: 16px;
 }
+/* 
+body[data-page="artists"] .card {
+  margin-top: 16px;
+}
+
+body[data-page="artists"] .item {
+  margin-bottom: 12px;
+}
+
+body[data-page="home"] .card {
+  margin-top: 16px;
+}
+
+body[data-page="home"] .item {
+  margin-bottom: 12px;
+} */
 
 .card .hd{
   padding:12px 14px;
@@ -211,7 +228,12 @@ input[type="search"]{min-width:240px}
   background:rgba(193,18,31,0.08);
 }
 
-.list{display:flex; flex-direction:column; gap:10px}
+.list{display:flex; flex-direction:column}
+
+/* Artist List */
+.artistList{
+  display: flex; flex-direction: column;
+}
 
 .item{
   border:1px solid var(--line);
@@ -219,9 +241,18 @@ input[type="search"]{min-width:240px}
   border-radius:12px;
   padding:12px;
   display:flex;
-  gap:12px;
-  align-items:flex-start;
+  gap: 25px;
+  /* align-items:flex-start; */
+  align-items: center;
+  margin-bottom: 12px;
 }
+
+@media (max-width: 430px) {
+  body[data-page="artists"] .item {
+    gap: 20px;
+  }
+}
+
 .item .thumb{
   width:80px;
   aspect-ratio:1/1;
@@ -236,6 +267,16 @@ input[type="search"]{min-width:240px}
   font-family:var(--mono);
   font-size:12px;
 }
+
+/* @media (max-width: 430px) {
+   .item .thumb {
+    width: 90px;
+    gap: 20px;
+  }
+  .item {
+    gap: 20px;
+  }
+} */
 .item .info{flex:1; min-width:0}
 .item .title{font-weight:700; margin:0 0 6px; line-height:1.25}
 .item .sub{margin:0; color:var(--muted); font-size:13px; line-height:1.4}
@@ -296,7 +337,8 @@ input[type="search"]{min-width:240px}
 @media (max-width: 420px){
   .hero h1{font-size:26px;}
   input[type="search"]{min-width:180px;}
-  .item .thumb{width:64px;}
+  .item .thumb{width: 90px;}
+  .item {gap: 20px;}
   .brand .tag{display:none;}
 }
 
@@ -308,6 +350,21 @@ input[type="search"]{min-width:240px}
   .brand .tag{display:none;}
   .menu{flex:0 0 auto; gap:6px; flex-wrap:nowrap;}
   .menu a{padding:6px 8px; font-size:13px;}
+}
+
+/* Mobile: Genre chips */
+@media (max-width: 430px){
+  .chip {
+    font-size: 11px;
+
+  }
+}
+
+/* Mobile (Artists page): Pill that shows directions */
+@media (max-width: 430px){
+  body[data-page="artists"] .pill{
+    font-size: 12px;
+  }
 }
 
 /* =========================
