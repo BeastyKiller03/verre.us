@@ -1,45 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VERRE — Events</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VERRE — Events</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body data-page="events">
-  <div class="flag-corner tl" aria-hidden="true"></div>
-  <div class="flag-corner br" aria-hidden="true"></div>
+  <body data-page="events">
+    <div class="flag-corner tl" aria-hidden="true"></div>
+    <div class="flag-corner br" aria-hidden="true"></div>
 
-  <div class="topbar">
-    <div class="nav">
-      <a class="brand" href="index.html" aria-label="VERRE home">
-        <img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
-      </a>
-      <div class="menu">
-        <a href="events.html">Events</a>
-        <a href="artists.html">Artists</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrap">
-    <div class="hero">
-      <h1>Events</h1>
-      <p>
-        Browse by area, search by artist or venue
-      </p>
-      <div class="meta tools">
-        <div class="search">
-          <input id="eventsSearch" type="search" placeholder="Search: artist, venue, event…" />
-          <select id="eventsArea"></select>
+    <div class="topbar">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="VERRE home">
+          <img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
+        </a>
+        <div class="menu">
+          <a href="events.html">Events</a>
+          <a href="artists.html">Artists</a>
+          <a href="news.html">News</a>
         </div>
-        <a class="btn" href="press.html">Submit an event</a>
       </div>
     </div>
 
-    <!-- ✅ MATCHES INDEX GAP -->
-    <div class="grid">
+    <div class="wrap">
+      <div class="hero">
+        <h1>Events</h1>
+        <p>Browse by area, search by artist or venue</p>
+        <div class="meta tools">
+          <div class="search">
+            <input
+              id="eventsSearch"
+              type="search"
+              placeholder="Search: artist, venue, event…"
+            />
+            <select id="eventsArea"></select>
+          </div>
+          <a class="btn" href="press.html">Submit an event</a>
+        </div>
+      </div>
+
+      <!-- ✅ MATCHES INDEX GAP -->
+      <!-- <div class="grid"> -->
       <div class="card">
         <div class="hd">
           <h2>Event list</h2>
@@ -49,14 +52,15 @@
           <div class="list" id="eventsList"></div>
         </div>
       </div>
-    </div>
-
-    <div class="footer">
-      <div>Submit flyers with date + area + lineup + source link.</div>
-      <div><a class="smalllink" href="index.html">Home</a></div>
+      <!-- </div> -->
     </div>
   </div>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
-</body>
+  
+  <div class="footer">
+    <div>Submit flyers with date + area + lineup + source link.</div>
+    <div><a class="smalllink" href="index.html">Home</a></div>
+  </div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
