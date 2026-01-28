@@ -183,9 +183,30 @@ function renderArtistRow(a) {
   const img = getArtistImageSrc(a);
 
   const thumb = img
-    ? `<img src="${safe(img)}" alt="${safe(a.name)}" loading="lazy" style="width:100%; height:100%; object-fit:cover; border-radius:12px;" />`
-    : `ARTIST`;
-
+  ? `<img src="${safe(img)}"
+         alt="${safe(a.name)}"
+         loading="lazy"
+         style="width:100%; height:100%; object-fit:cover; border-radius:12px;" />`
+  : `
+    <div
+      class="no-photo"
+      style="
+        width:100%;
+        height:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:11px;
+        letter-spacing:.08em;
+        text-transform:uppercase;
+        color:var(--muted);
+        background:rgba(0,0,0,.04);
+        border-radius:12px;
+      "
+    >
+      No photo (yet)
+    </div>
+  `;
   return `
     <div class="item">
       <div class="thumb" style="overflow:hidden;">
