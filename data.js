@@ -14,7 +14,9 @@ window.VERRE_DATA = {
     { id: "ocie", name: "OC / IE" },
     { id: "sd", name: "San Diego" },
     { id: "bay", name: "Bay Area" },
-    { id: "nyc", name: "New York City" }
+    { id: "nyc", name: "New York City" },
+    { id: "tx", name: "Texas" }
+    
   ],
 
   /* ---------- ARTISTS ---------- */
