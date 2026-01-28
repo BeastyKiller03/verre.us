@@ -574,7 +574,7 @@ window.VERRE_DATA = {
 },
     {
   id: "ru-kissin-any-joey-cash-2026-02-13",
-  title: "r u kissin any?",
+  title: "r u kissin any1?",
   date: "2026-02-13",
   time: "9:00 PM–2:00 AM",
   area: "dallas",
