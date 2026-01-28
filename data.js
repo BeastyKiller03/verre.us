@@ -501,6 +501,105 @@ window.VERRE_DATA = {
   background: "",
   image: "",
   relatedPosts: []
+},
+    {
+  id: "crrdr",
+  name: "CRRDR",
+  tags: ["club", "underground"],
+  links: { instagram: "https://www.instagram.com/c0rred0r/" },
+  blurb: "Underground club project appearing on NYC lineups.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "sissy",
+  name: "Sissy",
+  tags: ["club", "underground"],
+  links: { instagram: "https://www.instagram.com/uluvsissy/" },
+  blurb: "Underground club act tied to DIY nightlife lineups.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "joanna-kuchta",
+  name: "Joanna Kuchta",
+  tags: ["underground", "live"],
+  links: { instagram: "https://www.instagram.com/joannakuchta/" },
+  blurb: "Artist appearing across underground show circuits.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "muerte-lenta",
+  name: "Muerte Lenta",
+  tags: ["underground", "club"],
+  links: { instagram: "" },
+  blurb: "Underground act appearing on multi-genre nightlife bills.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "andres-garcil",
+  name: "Andrés Garcil",
+  tags: ["underground", "live"],
+  links: { instagram: "https://www.instagram.com/andresgarcil/" },
+  blurb: "Underground artist appearing across NYC-area lineups.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "junkfile",
+  name: "Junkfile",
+  tags: ["underground", "club"],
+  links: { instagram: "https://www.instagram.com/junkfile___/" },
+  blurb: "Underground club project tied to DIY nightlife bills.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "nico-nasti",
+  name: "nico nasti",
+  tags: ["club", "underground"],
+  links: { instagram: "https://www.instagram.com/nico.nastii/" },
+  blurb: "Underground DJ/artist appearing on NYC lineups.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "dj-thank-you",
+  name: "DJ Thank You",
+  tags: ["dj", "underground", "club"],
+  links: { instagram: "https://www.instagram.com/djthankyou/" },
+  blurb: "Underground DJ appearing on multi-artist bills.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "dreaminslow",
+  name: "DREAMINSLOW",
+  tags: ["underground", "club"],
+  links: { instagram: "https://www.instagram.com/dreaminslow/" },
+  blurb: "Underground project appearing across nightlife lineups.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
 }
   ],
 
@@ -593,6 +692,31 @@ window.VERRE_DATA = {
   ],
   verreAttending: false,
   notes: "18+ • Slumber Party presents • Dallas"
+},
+    {
+  id: "fuck-cupid-h0l0-nyc-2026-02-15",
+  title: "Fuck Cupid",
+  date: "2026-02-15",
+  time: "10:00 PM–5:00 AM",
+  area: "nyc",
+  venue: "h0l0",
+  address: "1090 Wyckoff Ave, Queens, NY 11385, United States",
+  ticketUrl: "",
+  sourceUrl: "",
+  flyerUrl: "assets/flyers/flyer-fuck-cupid-h0l0-nyc-2026-02-15.jpg",
+  lineup: [
+    "CRRDR",
+    "Sissy",
+    "Joanna Kuchta",
+    "Muerte Lenta",
+    "Andrés Garcil",
+    "Junkfile",
+    "nico nasti",
+    "DJ Thank You",
+    "DREAMINSLOW"
+  ],
+  verreAttending: false,
+  notes: "21+ • FEB 15 • @h0l0.nyc"
 }
   ]
 };
