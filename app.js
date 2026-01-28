@@ -207,6 +207,7 @@ function renderArtistRow(a) {
       No photo (yet)
     </div>
   `;
+  
   return `
     <div class="item">
       <div class="thumb" style="overflow:hidden;">
