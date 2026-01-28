@@ -413,32 +413,32 @@ window.VERRE_DATA = {
       lineup: ["Cannelle", "Suzy Sheer", "Contact Sports", "10cust", "Queenie"],
       verreAttending: false,
       notes: "18+ • Oakland • 9:00 PM–2:00 AM (from flyer)"
-    }
+    },
     {
-      id: "swampdem-miami-2026-02-07",
-      title: "Techg1rls Miami",
-      date: "2026-02-07",
-      time: "8:00 PM–3:00 AM",
-      area: "miami",
-      venue: "",
-      address: "Miami, Florida",
-      ticketUrl: "https://posh.vip/e/techg1rls-doecaine-sipper-technopagan?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnL-aDGgukllBK0H7RDpoJfRJKgBFK_Vx-wJas4QUctcH4lvaqLnUoAs8ZU30_aem_UhzP5tszgEO3wV9J42U80A",
-      sourceUrl: "https://posh.vip/e/techg1rls-doecaine-sipper-technopagan?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnL-aDGgukllBK0H7RDpoJfRJKgBFK_Vx-wJas4QUctcH4lvaqLnUoAs8ZU30_aem_UhzP5tszgEO3wV9J42U80A",
-      flyerUrl: "assets/flyers/flyer-swampdem-miami-2026-02-07.jpg",
-      lineup: [
-        "techg1rls",
-        "Doecaine",
-        "Sipper",
-        "Technopagan",
-        "35oteric",
-        "Hoodwitchhh",
-        "Mason Norrisss",
-        "Sugarc0de",
-        "Cellar",
-        "HTTP Rapture"
-      ],
-      verreAttending: false,
-      notes: "DJ • hosted by @swampdem • tickets in bio • debuts noted on flyer"
+  id: "swampdem-miami-2026-02-07",
+  title: "Techg1rls — Miami",
+  date: "2026-02-07",
+  time: "8:00 PM–3:00 AM",
+  area: "miami",
+  venue: "",
+  address: "Miami, Florida",
+  ticketUrl: "https://posh.vip/e/techg1rls-doecaine-sipper-technopagan?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+  sourceUrl: "https://posh.vip/e/techg1rls-doecaine-sipper-technopagan?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+  flyerUrl: "assets/flyers/flyer-swampdem-miami-2026-02-07.jpg",
+  lineup: [
+    "techg1rls",
+    "Doecaine",
+    "Sipper",
+    "Technopagan",
+    "35oteric",
+    "Hoodwitchhh",
+    "Mason Norrisss",
+    "Sugarc0de",
+    "Cellar",
+    "HTTP Rapture"
+  ],
+  verreAttending: false,
+  notes: "DJ • hosted by @swampdem • debuts noted on flyer"
 }
   ]
 };
