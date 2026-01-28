@@ -353,8 +353,8 @@ window.VERRE_DATA = {
       name: "Cannelle",
       tags: ["live", "electronic", "underground"],
       links: { instagram: "https://www.instagram.com/cannelle/" },
-      blurb: "Live electronic project appearing on Bay Area underground lineups.",
-      origin: "Bay Area, California",
+      blurb: "",
+      origin: "",
       background: "",
       image: "assets/artists/artist-cannelle.jpg",
       relatedPosts: []
@@ -364,8 +364,8 @@ window.VERRE_DATA = {
       name: "Contact Sports",
       tags: ["live", "electronic", "underground"],
       links: { instagram: "" },
-      blurb: "Live act appearing on Bay Area underground lineups.",
-      origin: "Bay Area, California",
+      blurb: "",
+      origin: "",
       background: "",
       image: "assets/artists/artist-contact-sports.jpg",
       relatedPosts: []
@@ -375,8 +375,8 @@ window.VERRE_DATA = {
       name: "Queenie",
       tags: ["dj", "club", "underground"],
       links: { instagram: "" },
-      blurb: "DJ name appearing on Bay Area underground lineups.",
-      origin: "Bay Area, California",
+      blurb: "",
+      origin: "",
       background: "",
       image: "assets/artists/artist-queenie.jpg",
       relatedPosts: []
