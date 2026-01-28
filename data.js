@@ -363,10 +363,10 @@ window.VERRE_DATA = {
       id: "contact-sports",
       name: "Contact Sports",
       tags: ["live", "electronic", "underground"],
-      links: { instagram: "" },
+      links: { instagram: "https://www.instagram.com/contactspoorts/" },
       blurb: "",
       origin: "",
-      background: "https://www.instagram.com/contactspoorts/",
+      background: "",
       image: "assets/artists/artist-contact-sports.jpg",
       relatedPosts: []
     },
