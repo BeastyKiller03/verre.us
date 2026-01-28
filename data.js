@@ -457,6 +457,50 @@ window.VERRE_DATA = {
   background: "",
   image: "",
   relatedPosts: []
+},
+    {
+  id: "joey-cash",
+  name: "Joey Cash",
+  tags: ["underground", "alt", "live"],
+  links: { instagram: "https://www.instagram.com/joeyyy.cashhh/" },
+  blurb: "Underground live act appearing across Slumber Party–adjacent lineups.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "circuttbabii",
+  name: "Circuttbabii",
+  tags: ["experimental", "underground"],
+  links: { instagram: "https://www.instagram.com/circuttbabiiarchive/" },
+  blurb: "Experimental underground project tied to DIY show circuits.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "excalibur",
+  name: "Excalibur",
+  tags: ["alt", "duo", "underground"],
+  links: { instagram: "https://www.instagram.com/excalibur.duo/" },
+  blurb: "Alt underground duo appearing on mixed-genre lineups.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "french-ethics",
+  name: "French Ethics",
+  tags: ["alt", "underground"],
+  links: { instagram: "https://www.instagram.com/frenchethics/" },
+  blurb: "Alt project operating within underground live show spaces.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
 }
   ],
 
@@ -514,8 +558,8 @@ window.VERRE_DATA = {
   area: "tx",
   venue: "",
   address: "9205 Skillman St, Dallas, TX",
-  ticketUrl: "",
-  sourceUrl: "",
+  ticketUrl: "https://posh.vip/e/slumber-party-january-30th-featuring-?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnBPzBrtvlmGJGJSQ5C-_gdc3LUg4f5IVstsTwp_sgMKqgMxLLIGgPrSctKR0_aem_Zayj3OwGTjLSSqhRVKPjVA",
+  sourceUrl: "https://posh.vip/e/slumber-party-january-30th-featuring-?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnBPzBrtvlmGJGJSQ5C-_gdc3LUg4f5IVstsTwp_sgMKqgMxLLIGgPrSctKR0_aem_Zayj3OwGTjLSSqhRVKPjVA",
   flyerUrl: "assets/flyers/flyer-eurohead-dallas-2026-01-30.jpg",
   lineup: [
     "EUROHEAD",
@@ -527,6 +571,28 @@ window.VERRE_DATA = {
   ],
   verreAttending: false,
   notes: "18+ • Dallas • indie / alt / underground show"
+},
+    {
+  id: "ru-kissin-any-joey-cash-2026-02-13",
+  title: "r u kissin any?",
+  date: "2026-02-13",
+  time: "9:00 PM–2:00 AM",
+  area: "dallas",
+  venue: "Puzzles Deep Ellum",
+  address: "Dallas, Texas",
+  ticketUrl: "https://www.eventim.us/wafform.aspx?_act=eventtickets&_pky=679091&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDfuqKE535gg5yoH2gDlamn0cJ_GCzXkz771bAGPEViGIapFCsELZWYBWmdw_aem_oaRcsw6GY1FMtj_LGbokKQ",
+  sourceUrl: "https://www.eventim.us/wafform.aspx?_act=eventtickets&_pky=679091&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDfuqKE535gg5yoH2gDlamn0cJ_GCzXkz771bAGPEViGIapFCsELZWYBWmdw_aem_oaRcsw6GY1FMtj_LGbokKQ",
+  flyerUrl: "assets/flyers/flyer-ru-kissin-any-joey-cash-2026-02-13.jpg",
+  lineup: [
+    "Joey Cash",
+    "Alaska",
+    "Loveghost",
+    "Circuttbabii",
+    "Excalibur",
+    "French Ethics"
+  ],
+  verreAttending: false,
+  notes: "18+ • Slumber Party presents • Dallas"
 }
   ]
 };
