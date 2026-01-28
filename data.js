@@ -7,16 +7,21 @@ window.VERRE_DATA = {
   lastUpdated: "2025-12-31",
 
   /* ---------- AREAS ---------- */
+  // Added "Bay Area" so Oakland events have a clean, non-confusing label.
+  // If you prefer "SF Bay Area" just rename the `name` string.
   areas: [
     { id: "la", name: "Los Angeles" },
     { id: "ocie", name: "OC / IE" },
     { id: "sd", name: "San Diego" },
+    { id: "bay", name: "Bay Area" },
     { id: "nyc", name: "New York City" }
   ],
 
   /* ---------- ARTISTS ---------- */
-  // NOTE: I normalized all artist IDs to lowercase + hyphenated for consistency.
-  // Image paths kept exactly as you wrote them (except the Damon R newline bug fixed).
+  // Kept your existing artists. Fixed a few consistency bugs:
+  // - normalized IDs that had caps (Petal-Supply, The-Dare, Perto, Effie, The-Deep, SEBii, Jane-Remover, Tommy-Fleece)
+  // - standardized the "SEBii" id to "sebii" (matches your earlier app.js assumptions)
+  // - left image filenames exactly as you wrote them (except removed the Damon newline bug)
   artists: [
     {
       id: "suzy-sheer",
@@ -340,49 +345,74 @@ window.VERRE_DATA = {
       background: "",
       image: "assets/artists/artist-techg1rls.jpg",
       relatedPosts: []
+    },
+
+    /* --- NEW (from flyer + your notes) --- */
+    {
+      id: "cannelle",
+      name: "Cannelle",
+      tags: ["live", "electronic", "underground"],
+      links: { instagram: "https://www.instagram.com/cannelle/" },
+      blurb: "Live electronic project appearing on Bay Area underground lineups.",
+      origin: "Bay Area, California",
+      background: "",
+      image: "assets/artists/artist-cannelle.jpg",
+      relatedPosts: []
+    },
+    {
+      id: "contact-sports",
+      name: "Contact Sports",
+      tags: ["live", "electronic", "underground"],
+      links: { instagram: "" },
+      blurb: "Live act appearing on Bay Area underground lineups.",
+      origin: "Bay Area, California",
+      background: "",
+      image: "assets/artists/artist-contact-sports.jpg",
+      relatedPosts: []
+    },
+    {
+      id: "queenie",
+      name: "Queenie",
+      tags: ["dj", "club", "underground"],
+      links: { instagram: "" },
+      blurb: "DJ name appearing on Bay Area underground lineups.",
+      origin: "Bay Area, California",
+      background: "",
+      image: "assets/artists/artist-queenie.jpg",
+      relatedPosts: []
+    },
+    {
+      id: "cobrasnake",
+      name: "The Cobrasnake",
+      tags: ["media", "photography", "blog-era"],
+      links: { instagram: "https://www.instagram.com/thecobrasnake/" },
+      blurb: "Blog-era nightlife lens—credited on the flyer/visuals.",
+      origin: "",
+      background: "",
+      image: "assets/artists/artist-thecobrasnake.jpg",
+      relatedPosts: []
     }
   ],
 
   /* ---------- NEWS ---------- */
-  // Start empty (or add posts later). This prevents undefined on the news page.
   news: [],
 
   /* ---------- EVENTS ---------- */
   events: [
     {
-      id: "nye-umru-petal-supply-2025",
-      title: "New Years Eve with umru & Petal Supply",
-      date: "2025-12-31",
-      time: "10:00 PM",
-      area: "nyc",
-      venue: "Brooklyn Brewery",
-      address: "79 North 11th Street, Brooklyn, New York 11249, United States",
-      ticketUrl:
-        "https://dice.fm/event/oeqblg-new-years-eve-with-umru-petal-supply-31st-dec-brooklyn-brewery-new-york-city-tickets",
-      sourceUrl:
-        "https://dice.fm/event/oeqblg-new-years-eve-with-umru-petal-supply-31st-dec-brooklyn-brewery-new-york-city-tickets",
-      flyerUrl: "",
-      lineup: ["umru", "Petal Supply"],
+      id: "party-like-2016-2026-01-30",
+      title: "Party Like It's 2016",
+      date: "2026-01-30",
+      time: "9:00 PM",
+      area: "bay",
+      venue: "Continental Club",
+      address: "Oakland, CA",
+      ticketUrl: "https://oaklandcontinentalclub.com/cc_events/party-like-2016-2026-01-30/?ref=ig_social_none_none",
+      sourceUrl: "https://oaklandcontinentalclub.com/cc_events/party-like-2016-2026-01-30/?ref=ig_social_none_none",
+      flyerUrl: "assets/flyers/flyer-party-like-2016-2026-01-30.jpg",
+      lineup: ["Cannelle", "Suzy Sheer", "Contact Sports", "10cust", "Queenie"],
       verreAttending: false,
-      notes: "DJ event. New Years Eve."
-    },
-
-    /* ✅ Placeholder so your “Upcoming” section shows something in 2026 */
-    {
-      id: "test-la-afterhours-2026-01",
-      title: "TEST — LA After Hours (placeholder)",
-      date: "2026-01-20",
-      time: "11:30 PM",
-      area: "la",
-      venue: "TBA",
-      address: "TBA",
-      ticketUrl: "",
-      sourceUrl: "",
-      flyerUrl: "",
-      lineup: ["Suzy Sheer"],
-      verreAttending: false,
-      notes: "DJ event. Placeholder to confirm site rendering."
+      notes: "18+ • Oakland • 9:00 PM–2:00 AM (from flyer)"
     }
   ]
 };
-
