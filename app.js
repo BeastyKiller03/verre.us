@@ -467,6 +467,26 @@ function mountEventDetail(){
       : `<span class="chip">${safe(name)}</span>`;
   }).join(" ");
 
+  // ✅ NEW: flyer block
+  const flyerBlock = e.flyerUrl
+    ? `
+      <hr class="sep">
+      <h3 style="margin:0 0 10px; font-size:14px; color:var(--muted); letter-spacing:.08em; text-transform:uppercase;">
+        Flyer
+      </h3>
+      <div style="border-radius:16px; overflow:hidden; background:rgba(0,0,0,.04);">
+        <a href="${safe(e.flyerUrl)}" target="_blank" rel="noopener">
+          <img
+            src="${safe(e.flyerUrl)}"
+            alt="${safe(e.title)} flyer"
+            loading="lazy"
+            style="display:block; width:100%; height:auto;"
+          />
+        </a>
+      </div>
+    `
+    : ``;
+
   root.innerHTML = `
     <div class="card">
       <div class="hd">
@@ -487,6 +507,7 @@ function mountEventDetail(){
             </p>
 
             ${e.venue ? `<p class="sub" style="margin:6px 0 0; opacity:.9;">${safe(e.venue)}</p>` : ``}
+            ${e.address ? `<p class="sub" style="margin:6px 0 0; opacity:.9;">${safe(e.address)}</p>` : ``}
           </div>
 
           <div style="flex:0 0 auto; min-width:220px;">
@@ -503,6 +524,8 @@ function mountEventDetail(){
             ${linkedLineup}
           </div>
         ` : ``}
+
+        ${flyerBlock}
       </div>
 
       <div class="ft">Last updated: ${safe(window.VERRE_DATA?.lastUpdated || "")}</div>
