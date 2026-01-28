@@ -143,15 +143,35 @@ function newsMatchesSearch(n, q) {
 function renderEventRow(e) {
   const area = eventAreaName(e);
   const lineup = (e.lineup || []).join(", ");
+
+  const thumb = e.flyerUrl
+    ? `<img
+         src="${safe(e.flyerUrl)}"
+         alt="${safe(e.title)} flyer"
+         loading="lazy"
+         style="width:100%; height:100%; object-fit:cover; border-radius:12px; display:block;"
+       />`
+    : `EVENT`;
+
   return `
     <div class="item">
-      <div class="thumb">EVENT</div>
+      <div class="thumb" style="overflow:hidden;">
+        ${thumb}
+      </div>
+
       <div class="info">
         <div class="title">
           <a href="event.html?id=${encodeURIComponent(e.id)}">${safe(e.title)}</a>
         </div>
-        <p class="sub">${safe(fmtDate(e.date))}${e.time ? ` • ${safe(e.time)}` : ""} • ${safe(area)}</p>
-        <p class="sub">${safe(e.venue || "")}${e.venue && e.address ? " • " : ""}${safe(e.address || "")}</p>
+
+        <p class="sub">
+          ${safe(fmtDate(e.date))}${e.time ? ` • ${safe(e.time)}` : ""} • ${safe(area)}
+        </p>
+
+        <p class="sub">
+          ${safe(e.venue || "")}${e.venue && e.address ? " • " : ""}${safe(e.address || "")}
+        </p>
+
         ${lineup ? `<div class="row"><span class="chip">${safe(lineup)}</span></div>` : ""}
       </div>
     </div>
