@@ -603,7 +603,63 @@ window.VERRE_DATA = {
   background: "",
   image: "",
   relatedPosts: []
+},
+    {
+  id: "pinponpanpon",
+  name: "pinponpanpon",
+  tags: ["dj", "underground", "bay-area"],
+  links: { instagram: "https://www.instagram.com/pinponpanpon9/" },
+  blurb: "Bay Area underground DJ project tied to club-forward and internet-adjacent scenes.",
+  origin: "San Francisco Bay Area",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "eviemoon",
+  name: "Eviemoon",
+  tags: ["dj", "underground"],
+  links: { instagram: "https://www.instagram.com/eviemoonn/" },
+  blurb: "",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "birdybirdybirdy",
+  name: "BirdyBirdyBirdy",
+  tags: ["dj", "underground", "experimental"],
+  links: { instagram: "https://www.instagram.com/birdybirdybirdybirdybirdymp3/" },
+  blurb: "",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "1999seiji",
+  name: "1999Seiji",
+  tags: ["dj", "underground"],
+  links: { instagram: "https://www.instagram.com/1999seiji/" },
+  blurb: "",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "denpa",
+  name: "Denpa",
+  tags: ["dj", "underground"],
+  links: { instagram: "https://www.instagram.com/denpagrafx/" },
+  blurb: "",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
 }
+    
   ],
 
   /* ---------- NEWS ---------- */
@@ -720,6 +776,27 @@ window.VERRE_DATA = {
   ],
   verreAttending: false,
   notes: "21+ • FEB 15 • @h0l0.nyc"
+},
+    {
+  id: "pinponpanpon-sf-2026-02-06",
+  title: "pinponpanpon • Eviemoon • BirdyBirdyBirdy",
+  date: "2026-02-06",
+  time: "8:00 PM–1:00 AM",
+  area: "bay",
+  venue: "",
+  address: "406 Clement St, San Francisco, CA 94118",
+  ticketUrl: "https://www.ticketweb.com/event/pinponpanpon-eviemoon-birdybirdybirdy1999seiji-denpa-neck-of-the-woods-tickets/14059014?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnTY1AN084UyZi7ZlHoYyKUQtRMWvsFaqiV8ch2PrINJDiBMRCj5e5dguHbLI_aem_-gkcvLSXout5-7IvBybJ1A",
+  sourceUrl: "",
+  flyerUrl: "assets/flyers/flyer-pinponpanpon-sf-2026-02-06.jpg",
+  lineup: [
+    "pinponpanpon",
+    "Eviemoon",
+    "BirdyBirdyBirdy",
+    "1999Seiji",
+    "Denpa"
+  ],
+  verreAttending: false,
+  notes: "21+ • San Francisco • DJ event"
 }
   ]
 };
