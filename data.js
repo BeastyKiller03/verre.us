@@ -4,7 +4,7 @@
 // Events require real sources or ticket links.
 
 window.VERRE_DATA = {
-  lastUpdated: "2025-12-31",
+  lastUpdated: "01-28-26",
 
   /* ---------- AREAS ---------- */
   // Added "Bay Area" so Oakland events have a clean, non-confusing label.
