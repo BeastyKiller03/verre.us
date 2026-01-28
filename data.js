@@ -53,7 +53,7 @@ window.VERRE_DATA = {
       tags: ["deconstructed", "bass", "club"],
       links: { instagram: "https://www.instagram.com/10cust/" },
       blurb: "Harsh, metallic club pressure built for warehouse rooms—fast and physical.",
-      origin: "Berlin, Germany",
+      origin: "",
       background:
         "Underground rave/warehouse lean; more word-of-mouth than mainstream, with high-intensity DJ sets.",
       image: "assets/artists/artist-10cust.jpg",
