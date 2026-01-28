@@ -391,7 +391,73 @@ window.VERRE_DATA = {
       background: "",
       image: "assets/artists/artist-thecobrasnake.jpg",
       relatedPosts: []
-    }
+    },
+    {
+  id: "eurohead",
+  name: "EUROHEAD",
+  tags: ["underground", "alt", "live"],
+  links: { instagram: "https://www.instagram.com/eurohead_____/" },
+  blurb: "Underground project operating within the modern alt / live-show circuit.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "alaska",
+  name: "ALASKA",
+  tags: ["alt", "electronic", "underground"],
+  links: { instagram: "https://www.instagram.com/cosmicgirlalaska/" },
+  blurb: "Alt-electronic artist appearing on underground lineups.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "loveghost",
+  name: "LOVEGHOST",
+  tags: ["alt", "emo", "rock"],
+  links: { instagram: "https://www.instagram.com/loveghostj/" },
+  blurb: "Alt-rock project with crossover into underground and youth scenes.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "kroaisha",
+  name: "KROAISHA",
+  tags: ["underground", "experimental"],
+  links: { instagram: "https://www.instagram.com/1kroaisha/" },
+  blurb: "Experimental underground artist appearing on DIY lineups.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "femb0tz",
+  name: "FEMB0TZ",
+  tags: ["electronic", "underground", "club"],
+  links: { instagram: "https://www.instagram.com/femb0tz/" },
+  blurb: "Electronic underground project tied to modern club-adjacent scenes.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "tears-of-eros",
+  name: "TEARS OF EROS",
+  tags: ["dark", "alt", "underground"],
+  links: { instagram: "https://www.instagram.com/tears.of.eros/" },
+  blurb: "Dark alt project operating in underground performance spaces.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+}
   ],
 
   /* ---------- NEWS ---------- */
@@ -439,6 +505,28 @@ window.VERRE_DATA = {
   ],
   verreAttending: false,
   notes: "DJ • hosted by @swampdem • debuts noted on flyer"
+},
+    {
+  id: "eurohead-dallas-2026-01-30",
+  title: "EUROHEAD",
+  date: "2026-01-30",
+  time: "9:00 PM–2:00 AM",
+  area: "tx",
+  venue: "",
+  address: "9205 Skillman St, Dallas, TX",
+  ticketUrl: "",
+  sourceUrl: "",
+  flyerUrl: "assets/flyers/flyer-eurohead-dallas-2026-01-30.jpg",
+  lineup: [
+    "EUROHEAD",
+    "ALASKA",
+    "LOVEGHOST",
+    "KROAISHA",
+    "FEMB0TZ",
+    "TEARS OF EROS"
+  ],
+  verreAttending: false,
+  notes: "18+ • Dallas • indie / alt / underground show"
 }
   ]
 };
