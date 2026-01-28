@@ -472,8 +472,14 @@ function mountEventDetail(){
 
   const actions = `
     <div class="row" style="margin-top:0">
+${
+  (e.ticketUrl && e.sourceUrl && e.ticketUrl === e.sourceUrl)
+    ? `<a class="btn primary" href="${safe(e.ticketUrl)}" target="_blank" rel="noopener">Event page</a>`
+    : `
       ${e.ticketUrl ? `<a class="btn primary" href="${safe(e.ticketUrl)}" target="_blank" rel="noopener">Tickets</a>` : ""}
       ${e.sourceUrl ? `<a class="btn" href="${safe(e.sourceUrl)}" target="_blank" rel="noopener">Source</a>` : ""}
+    `
+}
       <a class="btn" href="events.html">Back to events</a>
     </div>
   `;
