@@ -366,7 +366,7 @@ window.VERRE_DATA = {
       links: { instagram: "" },
       blurb: "",
       origin: "",
-      background: "",
+      background: "https://www.instagram.com/contactspoorts/",
       image: "assets/artists/artist-contact-sports.jpg",
       relatedPosts: []
     },
@@ -374,7 +374,7 @@ window.VERRE_DATA = {
       id: "queenie",
       name: "Queenie",
       tags: ["dj", "club", "underground"],
-      links: { instagram: "" },
+      links: { instagram: "https://www.instagram.com/cafeconpostre/" },
       blurb: "",
       origin: "",
       background: "",
