@@ -15,7 +15,8 @@ window.VERRE_DATA = {
     { id: "sd", name: "San Diego" },
     { id: "bay", name: "Bay Area" },
     { id: "nyc", name: "New York City" },
-    { id: "tx", name: "Texas" }
+    { id: "tx", name: "Texas" },
+    { id: "fl", name: "Florida" }
     
   ],
 
