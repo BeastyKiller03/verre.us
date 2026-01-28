@@ -433,13 +433,34 @@ function mountArtistDetail() {
       <div class="bd">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap;">
           <div style="display:flex; gap:14px; align-items:flex-start; min-width:260px; flex:1;">
-            ${
-              img
-                ? `<div style="width:96px; height:96px; border-radius:14px; overflow:hidden; background:rgba(0,0,0,.04); flex:0 0 auto;">
-                    <img src="${safe(img)}" alt="${safe(a.name)}" style="width:100%; height:100%; object-fit:cover;" />
-                   </div>`
-                : ``
-            }
+            <div style="width:96px; height:96px; border-radius:14px; overflow:hidden; background:rgba(0,0,0,.04); flex:0 0 auto; position:relative;">
+  ${
+    img
+      ? `<img
+          src="${safe(img)}"
+          alt="${safe(a.name)}"
+          style="width:100%; height:100%; object-fit:cover; display:block;"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />`
+      : ``
+  }
+
+  <div
+    style="
+      display:${img ? "none" : "flex"};
+      width:100%;
+      height:100%;
+      align-items:center;
+      justify-content:center;
+      font-size:10px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    "
+  >
+    No photo (yet)
+  </div>
+</div>
 
             <div style="min-width:220px; flex:1;">
               <h1 style="margin:0 0 6px; font-size:28px; line-height:1.1;">
