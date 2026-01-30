@@ -797,6 +797,21 @@ window.VERRE_DATA = {
   ],
   verreAttending: false,
   notes: "21+ • San Francisco • DJ event"
+},
+    {
+  id: "loveghost-indie-sleaze-vol-5-dallas-2026-01-31",
+  title: "Loveghost Indie Sleaze Night Vol. 5 — Birthday Edition",
+  date: "2026-01-31",
+  time: "10:00 PM–2:00 AM",
+  area: "tx",
+  venue: "LadyLove Dallas",
+  address: "310 W Seventh St, Dallas, Texas",
+  ticketUrl: "",  // free entry (no ticket link provided in the screenshot)
+  sourceUrl: "",  // add the IG post link if you have it
+  flyerUrl: "assets/flyers/flyer-loveghost-indie-sleaze-vol-5-dallas-2026-01-31.jpg",
+  lineup: ["Loveghost", "Stephysmodernlife", "Alaska"],
+  verreAttending: false,
+  notes: "DJ night • 21+ • Free entry • Birthday edition (Loveghost + Alaska) • indie sleaze / electroclash / Tumblr-era hits"
 }
   ]
 };
