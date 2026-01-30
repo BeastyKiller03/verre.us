@@ -812,6 +812,21 @@ window.VERRE_DATA = {
   lineup: ["Loveghost", "Stephysmodernlife", "Alaska"],
   verreAttending: false,
   notes: "DJ night • 21+ • Free entry • Birthday edition (Loveghost + Alaska) • indie sleaze / electroclash / Tumblr-era hits"
+},
+    {
+  id: "the-hellp-voluptuous-horror-2026-01-30",
+  title: "The Hellp — The Voluptuous Horror of Karen Black",
+  date: "2026-01-30",
+  time: "7:00 PM–10:00 PM",
+  area: "nyc",
+  venue: "Hancock Foundation (unconfirmed)",
+  address: "New York City (exact location TBA)",
+  ticketUrl: "https://www.instagram.com/longarrmjesus/?hl=en",
+  sourceUrl: "",
+  flyerUrl: "assets/flyers/flyer-the-hellp-voluptuous-horror-2026-01-30.jpg",
+  lineup: ["The Hellp"],
+  verreAttending: false,
+  notes: "BYOB • Boiler Room–affiliated • location rumored to be Hancock Foundation • unannounced venue"
 }
   ]
 };
