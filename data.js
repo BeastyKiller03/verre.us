@@ -414,7 +414,7 @@ window.VERRE_DATA = {
   blurb: "Alt-electronic artist appearing on underground lineups.",
   origin: "",
   background: "",
-  image: "artist-ALASKA.jpg",
+  image: "assets/artists/artist-ALASKA.jpg",
   relatedPosts: []
 },
 {
@@ -557,7 +557,7 @@ window.VERRE_DATA = {
   blurb: "Underground artist appearing across NYC-area lineups.",
   origin: "",
   background: "",
-  image: "artist-Andrés-Garcil.jpg",
+  image: "assets/artists/artist-Andrés-Garcil.jpg",
   relatedPosts: []
 },
 {
@@ -645,7 +645,7 @@ window.VERRE_DATA = {
   blurb: "",
   origin: "",
   background: "",
-  image: "artist-1999Seiji.jpg",
+  image: "assets/artists/artist-1999Seiji.jpg",
   relatedPosts: []
 },
 {
