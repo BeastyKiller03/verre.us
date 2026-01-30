@@ -557,7 +557,7 @@ window.VERRE_DATA = {
   blurb: "Underground artist appearing across NYC-area lineups.",
   origin: "",
   background: "",
-  image: "assets/artists/artist-Andrés-Garcil.jpg",
+  image: "assets/artists/artist-Andrés-Garcil.jpg",
   relatedPosts: []
 },
 {
