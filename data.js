@@ -4,7 +4,7 @@
 // Events require real sources or ticket links.
 
 window.VERRE_DATA = {
-  lastUpdated: "01-28-26",
+  lastUpdated: "01-29-2026",
 
   /* ---------- AREAS ---------- */
   // Added "Bay Area" so Oakland events have a clean, non-confusing label.
@@ -687,7 +687,7 @@ window.VERRE_DATA = {
   title: "Techg1rls — Miami",
   date: "2026-02-07",
   time: "8:00 PM–3:00 AM",
-  area: "miami",
+  area: "fl",
   venue: "",
   address: "Miami, Florida",
   ticketUrl: "https://posh.vip/e/techg1rls-doecaine-sipper-technopagan?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
@@ -735,7 +735,7 @@ window.VERRE_DATA = {
   title: "r u kissin any1?",
   date: "2026-02-13",
   time: "9:00 PM–2:00 AM",
-  area: "dallas",
+  area: "tx",
   venue: "Puzzles Deep Ellum",
   address: "Dallas, Texas",
   ticketUrl: "https://www.eventim.us/wafform.aspx?_act=eventtickets&_pky=679091&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDfuqKE535gg5yoH2gDlamn0cJ_GCzXkz771bAGPEViGIapFCsELZWYBWmdw_aem_oaRcsw6GY1FMtj_LGbokKQ",
