@@ -480,7 +480,7 @@ window.VERRE_DATA = {
   blurb: "Experimental underground project tied to DIY show circuits.",
   origin: "",
   background: "",
-  image: "",
+  image: "assets/artists/artist-ircuttbabii.jpg",
   relatedPosts: []
 },
 {
@@ -513,7 +513,7 @@ window.VERRE_DATA = {
   blurb: "Underground club project appearing on NYC lineups.",
   origin: "",
   background: "",
-  image: "",
+  image: "assets/artists/artist-CRRDR.jpg",
   relatedPosts: []
 },
 {
@@ -590,7 +590,7 @@ window.VERRE_DATA = {
   blurb: "Underground DJ appearing on multi-artist bills.",
   origin: "",
   background: "",
-  image: "",
+  image: "assets/artists/artist-DJ-Thank-You.jpg",
   relatedPosts: []
 },
 {
@@ -610,7 +610,7 @@ window.VERRE_DATA = {
   tags: ["dj", "underground", "bay-area"],
   links: { instagram: "https://www.instagram.com/pinponpanpon9/" },
   blurb: "Bay Area underground DJ project tied to club-forward and internet-adjacent scenes.",
-  origin: "San Francisco Bay Area",
+  origin: "",
   background: "",
   image: "",
   relatedPosts: []
