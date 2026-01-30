@@ -147,7 +147,7 @@ window.VERRE_DATA = {
       id: "dres",
       name: "DRES",
       tags: ["indie", "alt", "band"],
-      links: { instagram: "https://www.instagram.com/wearedres_/" },
+      links: { instagram: "https://www.instagram.com/dresxoxo/" },
       blurb: "Alt band with crossover appeal into electronic-adjacent scenes.",
       origin: "",
       background: "",
