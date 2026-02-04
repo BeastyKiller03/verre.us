@@ -658,6 +658,127 @@ window.VERRE_DATA = {
   background: "",
   image: "",
   relatedPosts: []
+},
+{
+  id: "fakethias",
+  name: "FAKETHIAS",
+  tags: ["underground", "live", "dj"],
+  links: { instagram: "https://www.instagram.com/fakethias/" },
+  blurb: "",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "touriszt",
+  name: "TOURISZT",
+  tags: ["underground", "live", "dj"],
+  links: { instagram: "https://www.instagram.com/touriszt/" },
+  blurb: "",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "corridosketamina",
+  name: "CORRIDOSKETAMINA",
+  tags: ["underground", "live", "dj"],
+  links: { instagram: "https://www.instagram.com/corridosketamina/" },
+  blurb: "",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "axxcer",
+  name: "AXXCER",
+  tags: ["underground", "live", "dj"],
+  links: { instagram: "https://www.instagram.com/axxcer/" },
+  blurb: "",
+  origin: "",
+ background: "",
+  image: "",
+  relatedPosts: []
+},
+    {
+  id: "eera",
+  name: "EERA",
+  tags: ["dj", "underground", "club"],
+  links: { instagram: "https://www.instagram.com/eera_1/" },
+  blurb: "Underground DJ appearing on Snow Strippers afterparty lineups.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "jaeychino",
+  name: "JAEYCHINO",
+  tags: ["dj", "underground"],
+  links: { instagram: "https://www.instagram.com/jaeychino/" },
+  blurb: "DJ appearing across Texas underground afterparty circuits.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "sjr",
+  name: "SJR",
+  tags: ["dj", "underground"],
+  links: { instagram: "https://www.instagram.com/sjr2800/" },
+  blurb: "Underground DJ tied to late-night club and afterparty lineups.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "certified-trapper",
+  name: "Certified Trapper",
+  tags: ["dj", "underground", "club"],
+  links: { instagram: "https://www.instagram.com/imcertifiedtrapper/" },
+  blurb: "High-energy underground DJ appearing on Snow Strippers afterparties.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "ss3bby",
+  name: "SS3BBY",
+  tags: ["dj", "underground", "club"],
+  links: { instagram: "https://www.instagram.com/ss3bby/" },
+  blurb: "Underground DJ appearing on Moonbby x Slumber Party lineups.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "pyro",
+  name: "PYRO",
+  tags: ["dj", "underground"],
+  links: { instagram: "https://www.instagram.com/itspyromusic/" },
+  blurb: "Underground DJ appearing across Texas afterparty circuits.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "bitchesplaymusic",
+  name: "BITCHESPLAYMUSIC",
+  tags: ["dj", "collective", "underground"],
+  links: { instagram: "https://www.instagram.com/bitchesplaymusic/" },
+  blurb: "Underground DJ project/collective appearing on Snow Strippers afterparties.",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
 }
     
   ],
@@ -827,6 +948,66 @@ window.VERRE_DATA = {
   lineup: ["The Hellp"],
   verreAttending: false,
   notes: "BYOB • Boiler Room–affiliated • location rumored to be Hancock Foundation • unannounced venue"
+},
+    {
+  id: "snow-strippers-afterparty-craveusa-houston-2026-02-06",
+  title: "Snow Strippers Official Afterparty (craveUSA)",
+  date: "2026-02-06",
+  time: "10:00 PM–3:00 AM (CST)",
+  area: "tx",
+  venue: "",
+  address: "6626 Supply Row, Houston, TX",
+  ticketUrl: "https://posh.vip/e/craveusa?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnKxKnlpUkOAW8RYBTz20G6KBTPfIiDVhHs_bJ3fd9Cum3HNvzqJt_a6AfqA4_aem_mFmGumoOKp0sNHUuHIHqqQ",
+  sourceUrl: "",
+  flyerUrl: "assets/flyers/flyer-snow-strippers-afterparty-craveusa-houston-2026-02-06.jpg",
+  lineup: ["Snow Strippers"],
+  verreAttending: false,
+  notes: "DJ • 18+ • presented by craveUSA • official afterparty"
+},
+    {
+  id: "snow-strippers-afterparty-dallas-2026-02-09",
+  title: "Snow Strippers — Official Afterparty (Dallas)",
+  date: "2026-02-09",
+  time: "11:00 PM–3:00 AM (CST)",
+  area: "tx",
+  venue: "Labash Event Center",
+  address: "9205 Skillman St Suite 116, Dallas, TX 75243",
+  ticketUrl: "https://posh.vip/e/official-snow-strippers-afterparty-dallas-tx",   // paste the ticket link if you have it
+  sourceUrl: "",   // paste the IG post / event page link if you have it
+  flyerUrl: "assets/flyers/flyer-snow-strippers-afterparty-dallas-2026-02-09.jpg",
+  lineup: [
+    "EERA",
+    "ANNA LUNA",
+    "SS3BBY",
+    "PYRO",
+    "ALASKA",
+    "LOVEGHOST"
+  ],
+  verreAttending: false,
+  notes: "18+ • Slumber Party x Moonbby • No refunds after purchase • Official afterparty"
+},
+    {
+  id: "snow-strippers-afterparty-austin-2026-02-07",
+  title: "Snow Strippers — Official Afterparty (Austin)",
+  date: "2026-02-07",
+  time: "11:30 PM–4:00 AM (CST)",
+  area: "tx",
+  venue: "Regal Rooms",
+  address: "1204 Regal Row, Austin, TX 78748",
+  ticketUrl: "https://posh.vip/e/official-snow-strippers-afterparty-austin-tx",   // add ticket link if available
+  sourceUrl: "",   // add IG / event page link if available
+  flyerUrl: "assets/flyers/flyer-snow-strippers-afterparty-austin-2026-02-07.jpg",
+  lineup: [
+    "EERA",
+    "JAEYCHINO",
+    "SJR",
+    "CERTIFIED TRAPPER",
+    "SS3BBY",
+    "PYRO",
+    "BITCHESPLAYMUSIC"
+  ],
+  verreAttending: false,
+  notes: "18+ • Moonbby x Slumber Party • Official Snow Strippers afterparty • No refunds after purchase"
 }
   ]
 };
