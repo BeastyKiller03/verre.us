@@ -708,7 +708,7 @@ window.VERRE_DATA = {
   name: "EERA",
   tags: ["dj", "underground", "club"],
   links: { instagram: "https://www.instagram.com/eera_1/" },
-  blurb: "Underground DJ appearing on Snow Strippers afterparty lineups.",
+  blurb: "",
   origin: "",
   background: "",
   image: "",
@@ -719,7 +719,7 @@ window.VERRE_DATA = {
   name: "JAEYCHINO",
   tags: ["dj", "underground"],
   links: { instagram: "https://www.instagram.com/jaeychino/" },
-  blurb: "DJ appearing across Texas underground afterparty circuits.",
+  blurb: "",
   origin: "",
   background: "",
   image: "",
@@ -730,7 +730,7 @@ window.VERRE_DATA = {
   name: "SJR",
   tags: ["dj", "underground"],
   links: { instagram: "https://www.instagram.com/sjr2800/" },
-  blurb: "Underground DJ tied to late-night club and afterparty lineups.",
+  blurb: "",
   origin: "",
   background: "",
   image: "",
@@ -741,7 +741,7 @@ window.VERRE_DATA = {
   name: "Certified Trapper",
   tags: ["dj", "underground", "club"],
   links: { instagram: "https://www.instagram.com/imcertifiedtrapper/" },
-  blurb: "High-energy underground DJ appearing on Snow Strippers afterparties.",
+  blurb: "",
   origin: "",
   background: "",
   image: "",
@@ -752,7 +752,7 @@ window.VERRE_DATA = {
   name: "SS3BBY",
   tags: ["dj", "underground", "club"],
   links: { instagram: "https://www.instagram.com/ss3bby/" },
-  blurb: "Underground DJ appearing on Moonbby x Slumber Party lineups.",
+  blurb: "",
   origin: "",
   background: "",
   image: "",
@@ -763,7 +763,7 @@ window.VERRE_DATA = {
   name: "PYRO",
   tags: ["dj", "underground"],
   links: { instagram: "https://www.instagram.com/itspyromusic/" },
-  blurb: "Underground DJ appearing across Texas afterparty circuits.",
+  blurb: "",
   origin: "",
   background: "",
   image: "",
@@ -772,9 +772,53 @@ window.VERRE_DATA = {
 {
   id: "bitchesplaymusic",
   name: "BITCHESPLAYMUSIC",
-  tags: ["dj", "collective", "underground"],
+  tags: [""],
   links: { instagram: "https://www.instagram.com/bitchesplaymusic/" },
-  blurb: "Underground DJ project/collective appearing on Snow Strippers afterparties.",
+  blurb: "",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+    {
+  id: "junejoy",
+  name: "junejoy",
+  tags: [""],
+  links: { instagram: "https://www.instagram.com/jun3j0y/" },
+  blurb: "",
+  origin: "Los Angeles, California",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "atwbc",
+  name: "atwbc",
+  tags: [""],
+  links: { instagram: "https://www.instagram.com/allthewaybitcrushed/" },
+  blurb: "",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "cen",
+  name: "cen",
+  tags: [""],
+  links: { instagram: "https://www.instagram.com/shadowsdanceagain/" },
+  blurb: "",
+  origin: "",
+  background: "",
+  image: "",
+  relatedPosts: []
+},
+{
+  id: "gellofever",
+  name: "gellofever",
+  tags: [""],
+  links: { instagram: "https://www.instagram.com/gellofever/" },
+  blurb: "",
   origin: "",
   background: "",
   image: "",
@@ -1008,6 +1052,27 @@ window.VERRE_DATA = {
   ],
   verreAttending: false,
   notes: "18+ • Moonbby x Slumber Party • Official Snow Strippers afterparty • No refunds after purchase"
+},
+    {
+  id: "snl-incubator-dtla-2026-02-07",
+  title: "SNLAincubator",
+  date: "2026-02-07",
+  time: "10:00 PM–2:00 AM",
+  area: "la",
+  venue: "",
+  address: "Downtown Los Angeles (DTLA)",
+  ticketUrl: "https://partiful.com/e/4BtYG5dvCIfJTwrKmuu4?source=share&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGny5ldyDIYxQE6ZyZfsVhIVQ1JiyAmI-47_Iu4P29do9AH5rXp-KSOIZ5XDi8_aem_ilByMsjXTrrjZCkoEV2jjQ",
+  sourceUrl: "https://www.instagram.com/p/DUMGtRaEpNU/",
+  flyerUrl: "", // add if/when you save the flyer asset
+  lineup: [
+    "junejoy",
+    "atwbc",
+    "cen",
+    "gellofever"
+  ],
+  verreAttending: false,
+  notes: "Free event • DTLA • presented by @cubistdove • location TBA"
 }
+    
   ]
 };
