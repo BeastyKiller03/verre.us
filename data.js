@@ -1092,6 +1092,27 @@ window.VERRE_DATA = {
   ],
   verreAttending: false,
   notes: "All ages • General admission • Guest DJ set by Kennyhoopla • indie dance party"
+},
+    {
+  id: "say-tech-and-smile-miami-2026-02-28",
+  title: "SAY TECH AND SMILE: Cannelle + Ali RQ",
+  date: "2026-02-28",
+  time: "11:00 PM",
+  area: "fl",
+  venue: "The Ground Miami",
+  address: "Miami, Florida",
+  ticketUrl: "https://dice.fm/event/8e6agr-say-tech-and-smile-cannelle-ali-rq-28th-feb-the-ground-miami-miami-tickets",
+  sourceUrl: "https://dice.fm/event/8e6agr-say-tech-and-smile-cannelle-ali-rq-28th-feb-the-ground-miami-miami-tickets",
+  flyerUrl: "assets/flyers/say-tech-and-smile-miami-2026-02-28.jpg",
+  lineup: [
+    "Cannelle",
+    "Ali RQ",
+    "Velvette Blue",
+    "INSTINCT",
+    "Nico Nastii"
+  ],
+  verreAttending: false,
+  notes: "Party • DOORS 11PM • 18+ • Miami"
 }
     
   ]
