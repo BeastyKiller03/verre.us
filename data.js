@@ -1063,7 +1063,7 @@ window.VERRE_DATA = {
   address: "Downtown Los Angeles (DTLA)",
   ticketUrl: "https://partiful.com/e/4BtYG5dvCIfJTwrKmuu4?source=share&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGny5ldyDIYxQE6ZyZfsVhIVQ1JiyAmI-47_Iu4P29do9AH5rXp-KSOIZ5XDi8_aem_ilByMsjXTrrjZCkoEV2jjQ",
   sourceUrl: "https://www.instagram.com/p/DUMGtRaEpNU/",
-  flyerUrl: "", // add if/when you save the flyer asset
+  flyerUrl: "assets/flyers/snl-incubator-dtla-2026-02-07.jpg", // add if/when you save the flyer asset
   lineup: [
     "junejoy",
     "atwbc",
