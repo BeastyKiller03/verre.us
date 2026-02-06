@@ -1090,6 +1090,26 @@ window.VERRE_DATA = {
       lineup: ["Cannelle", "Ali RQ", "Velvette Blue", "INSTINCT", "Nico Nastii"],
       verreAttending: false,
       notes: "Party • DOORS 11PM • 18+ • Miami"
-    }
+    },
+    {
+  id: "official-snow-strippers-after-party-sf-2026-02-21",
+  title: "Official Snow Strippers After Party (San Francisco)",
+  date: "2026-02-21",
+  time: "10:00 PM (PST)",
+  area: "bay",
+  venue: "",
+  address: "60 6th St, San Francisco, CA 94103, USA",
+  ticketUrl: "https://posh.vip/e/official-snow-strippers-after-party-21?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnh6fM5mY5bk_8KbNI-YcMUd6BKqExQBfetLmGN2qMtwmJsWsFioNl4GoXpzI_aem_Vj_bW-4UuRMc-RWVAW4zQA",
+  sourceUrl: "https://posh.vip/e/official-snow-strippers-after-party-21?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnh6fM5mY5bk_8KbNI-YcMUd6BKqExQBfetLmGN2qMtwmJsWsFioNl4GoXpzI_aem_Vj_bW-4UuRMc-RWVAW4zQA",
+  flyerUrl: "assets/flyers/flyer-official-snow-strippers-after-party-sf-2026-02-21.jpg",
+  lineup: [
+    "EERA",
+    "EVILGIANE",
+    "OK",
+    "Ali RQ"
+  ],
+  verreAttending: false,
+  notes: "21+ • must have physical ID • Official Snow Strippers after party"
+}
   ]
 };
