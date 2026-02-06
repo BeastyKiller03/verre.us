@@ -4,30 +4,24 @@
 // Events require real sources or ticket links.
 
 window.VERRE_DATA = {
-  lastUpdated: "01-29-2026",
+  lastUpdated: "2026-02-05",
 
   /* ---------- AREAS ---------- */
-  // Added "Bay Area" so Oakland events have a clean, non-confusing label.
-  // If you prefer "SF Bay Area" just rename the `name` string.
+  // STRICT RULE:
+  // Every event.area MUST match one of these ids exactly:
+  // la, ocie, sd, bay, ny, tx, fl, wi
   areas: [
     { id: "la", name: "Los Angeles" },
     { id: "ocie", name: "OC / IE" },
     { id: "sd", name: "San Diego" },
     { id: "bay", name: "Bay Area" },
-    { id: "ny", name: "New York" },
+    { id: "ny", name: "New York City" },
     { id: "tx", name: "Texas" },
     { id: "fl", name: "Florida" },
     { id: "wi", name: "Wisconsin" }
-    
-    
-    
   ],
 
   /* ---------- ARTISTS ---------- */
-  // Kept your existing artists. Fixed a few consistency bugs:
-  // - normalized IDs that had caps (Petal-Supply, The-Dare, Perto, Effie, The-Deep, SEBii, Jane-Remover, Tommy-Fleece)
-  // - standardized the "SEBii" id to "sebii" (matches your earlier app.js assumptions)
-  // - left image filenames exactly as you wrote them (except removed the Damon newline bug)
   artists: [
     {
       id: "suzy-sheer",
@@ -164,8 +158,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/umru/" },
       blurb: "Hyperpop architect with club-rooted DJ sets—rapid transitions and high-BPM pressure.",
       origin: "New York City",
-      background:
-        "Key bridge between hyperpop and underground club; producer brain with DJ-room aggression.",
+      background: "Key bridge between hyperpop and underground club; producer brain with DJ-room aggression.",
       image: "assets/artists/artist-umru.jpg",
       relatedPosts: []
     },
@@ -200,8 +193,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/itsthedare/" },
       blurb: "Indie sleaze reboot for the club—sharp, cheeky, and built for sweaty rooms.",
       origin: "New York City",
-      background:
-        "A key thread in the newer NYC nightlife wave where DJ nights feel like bands again.",
+      background: "A key thread in the newer NYC nightlife wave where DJ nights feel like bands again.",
       image: "assets/artists/artist-The-Dare.jpg",
       relatedPosts: []
     },
@@ -353,7 +345,7 @@ window.VERRE_DATA = {
       relatedPosts: []
     },
 
-    /* --- NEW (from flyer + your notes) --- */
+    /* --- Added artists (from your flyers/notes) --- */
     {
       id: "cannelle",
       name: "Cannelle",
@@ -398,436 +390,446 @@ window.VERRE_DATA = {
       image: "assets/artists/artist-thecobrasnake.jpg",
       relatedPosts: []
     },
+
     {
-  id: "eurohead",
-  name: "EUROHEAD",
-  tags: ["underground", "alt", "live"],
-  links: { instagram: "https://www.instagram.com/eurohead_____/" },
-  blurb: "Underground project operating within the modern alt / live-show circuit.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "alaska",
-  name: "ALASKA",
-  tags: ["alt", "electronic", "underground"],
-  links: { instagram: "https://www.instagram.com/cosmicgirlalaska/" },
-  blurb: "Alt-electronic artist appearing on underground lineups.",
-  origin: "",
-  background: "",
-  image: "assets/artists/artist-ALASKA.jpg",
-  relatedPosts: []
-},
-{
-  id: "loveghost",
-  name: "LOVEGHOST",
-  tags: ["alt", "emo", "rock"],
-  links: { instagram: "https://www.instagram.com/loveghostj/" },
-  blurb: "Alt-rock project with crossover into underground and youth scenes.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "kroaisha",
-  name: "KROAISHA",
-  tags: ["underground", "experimental"],
-  links: { instagram: "https://www.instagram.com/1kroaisha/" },
-  blurb: "Experimental underground artist appearing on DIY lineups.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "femb0tz",
-  name: "FEMB0TZ",
-  tags: ["electronic", "underground", "club"],
-  links: { instagram: "https://www.instagram.com/femb0tz/" },
-  blurb: "Electronic underground project tied to modern club-adjacent scenes.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "tears-of-eros",
-  name: "TEARS OF EROS",
-  tags: ["dark", "alt", "underground"],
-  links: { instagram: "https://www.instagram.com/tears.of.eros/" },
-  blurb: "Dark alt project operating in underground performance spaces.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
+      id: "eurohead",
+      name: "EUROHEAD",
+      tags: ["underground", "alt", "live"],
+      links: { instagram: "https://www.instagram.com/eurohead_____/" },
+      blurb: "Underground project operating within the modern alt / live-show circuit.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
     {
-  id: "joey-cash",
-  name: "Joey Cash",
-  tags: ["underground", "alt", "live"],
-  links: { instagram: "https://www.instagram.com/joeyyy.cashhh/" },
-  blurb: "Underground live act appearing across Slumber Party–adjacent lineups.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "circuttbabii",
-  name: "Circuttbabii",
-  tags: ["experimental", "underground"],
-  links: { instagram: "https://www.instagram.com/circuttbabiiarchive/" },
-  blurb: "Experimental underground project tied to DIY show circuits.",
-  origin: "",
-  background: "",
-  image: "assets/artists/artist-ircuttbabii.jpg",
-  relatedPosts: []
-},
-{
-  id: "excalibur",
-  name: "Excalibur",
-  tags: ["alt", "duo", "underground"],
-  links: { instagram: "https://www.instagram.com/excalibur.duo/" },
-  blurb: "Alt underground duo appearing on mixed-genre lineups.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "french-ethics",
-  name: "French Ethics",
-  tags: ["alt", "underground"],
-  links: { instagram: "https://www.instagram.com/frenchethics/" },
-  blurb: "Alt project operating within underground live show spaces.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
+      id: "alaska",
+      name: "ALASKA",
+      tags: ["alt", "electronic", "underground"],
+      links: { instagram: "https://www.instagram.com/cosmicgirlalaska/" },
+      blurb: "Alt-electronic artist appearing on underground lineups.",
+      origin: "",
+      background: "",
+      image: "assets/artists/artist-ALASKA.jpg",
+      relatedPosts: []
+    },
     {
-  id: "crrdr",
-  name: "CRRDR",
-  tags: ["club", "underground"],
-  links: { instagram: "https://www.instagram.com/c0rred0r/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "assets/artists/artist-CRRDR.jpg",
-  relatedPosts: []
-},
-{
-  id: "sissy",
-  name: "Sissy",
-  tags: ["club", "underground"],
-  links: { instagram: "https://www.instagram.com/uluvsissy/" },
-  blurb: "Underground club act tied to DIY nightlife lineups.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "joanna-kuchta",
-  name: "Joanna Kuchta",
-  tags: ["underground", "live"],
-  links: { instagram: "https://www.instagram.com/joannakuchta/" },
-  blurb: "Artist appearing across underground show circuits.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "muerte-lenta",
-  name: "Muerte Lenta",
-  tags: ["underground", "club"],
-  links: { instagram: "" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "andres-garcil",
-  name: "Andrés Garcil",
-  tags: ["underground", "live"],
-  links: { instagram: "https://www.instagram.com/andresgarcil/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "assets/artists/artist-Andrés-Garcil.jpg",
-  relatedPosts: []
-},
-{
-  id: "junkfile",
-  name: "Junkfile",
-  tags: ["underground", "club"],
-  links: { instagram: "https://www.instagram.com/junkfile___/" },
-  blurb: "Underground club project tied to DIY nightlife bills.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "nico-nasti",
-  name: "nico nasti",
-  tags: ["club", "underground"],
-  links: { instagram: "https://www.instagram.com/nico.nastii/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "dj-thank-you",
-  name: "DJ Thank You",
-  tags: ["dj", "underground", "club"],
-  links: { instagram: "https://www.instagram.com/djthankyou/" },
-  blurb: "Underground DJ appearing on multi-artist bills.",
-  origin: "",
-  background: "",
-  image: "assets/artists/artist-DJ-Thank-You.jpg",
-  relatedPosts: []
-},
-{
-  id: "dreaminslow",
-  name: "DREAMINSLOW",
-  tags: ["underground", "club"],
-  links: { instagram: "https://www.instagram.com/dreaminslow/" },
-  blurb: "Underground project appearing across nightlife lineups.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
+      id: "loveghost",
+      name: "LOVEGHOST",
+      tags: ["alt", "emo", "rock"],
+      links: { instagram: "https://www.instagram.com/loveghostj/" },
+      blurb: "Alt-rock project with crossover into underground and youth scenes.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
     {
-  id: "pinponpanpon",
-  name: "pinponpanpon",
-  tags: ["dj", "underground", "bay-area"],
-  links: { instagram: "https://www.instagram.com/pinponpanpon9/" },
-  blurb: "Bay Area underground DJ project tied to club-forward and internet-adjacent scenes.",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "eviemoon",
-  name: "Eviemoon",
-  tags: ["dj", "underground"],
-  links: { instagram: "https://www.instagram.com/eviemoonn/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "birdybirdybirdy",
-  name: "BirdyBirdyBirdy",
-  tags: ["dj", "underground", "experimental"],
-  links: { instagram: "https://www.instagram.com/birdybirdybirdybirdybirdymp3/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "1999seiji",
-  name: "1999Seiji",
-  tags: ["dj", "underground"],
-  links: { instagram: "https://www.instagram.com/1999seiji/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "assets/artists/artist-1999Seiji.jpg",
-  relatedPosts: []
-},
-{
-  id: "denpa",
-  name: "Denpa",
-  tags: ["dj", "underground"],
-  links: { instagram: "https://www.instagram.com/denpagrafx/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "fakethias",
-  name: "FAKETHIAS",
-  tags: ["underground", "live", "dj"],
-  links: { instagram: "https://www.instagram.com/fakethias/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "touriszt",
-  name: "TOURISZT",
-  tags: ["underground", "live", "dj"],
-  links: { instagram: "https://www.instagram.com/touriszt/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "corridosketamina",
-  name: "CORRIDOSKETAMINA",
-  tags: ["underground", "live", "dj"],
-  links: { instagram: "https://www.instagram.com/corridosketamina/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "axxcer",
-  name: "AXXCER",
-  tags: ["underground", "live", "dj"],
-  links: { instagram: "https://www.instagram.com/axxcer/" },
-  blurb: "",
-  origin: "",
- background: "",
-  image: "",
-  relatedPosts: []
-},
+      id: "kroaisha",
+      name: "KROAISHA",
+      tags: ["underground", "experimental"],
+      links: { instagram: "https://www.instagram.com/1kroaisha/" },
+      blurb: "Experimental underground artist appearing on DIY lineups.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
     {
-  id: "eera",
-  name: "EERA",
-  tags: ["dj", "underground", "club"],
-  links: { instagram: "https://www.instagram.com/eera_1/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "jaeychino",
-  name: "JAEYCHINO",
-  tags: ["dj", "underground"],
-  links: { instagram: "https://www.instagram.com/jaeychino/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "sjr",
-  name: "SJR",
-  tags: ["dj", "underground"],
-  links: { instagram: "https://www.instagram.com/sjr2800/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "certified-trapper",
-  name: "Certified Trapper",
-  tags: ["dj", "underground", "club"],
-  links: { instagram: "https://www.instagram.com/imcertifiedtrapper/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "ss3bby",
-  name: "SS3BBY",
-  tags: ["dj", "underground", "club"],
-  links: { instagram: "https://www.instagram.com/ss3bby/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "pyro",
-  name: "PYRO",
-  tags: ["dj", "underground"],
-  links: { instagram: "https://www.instagram.com/itspyromusic/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "bitchesplaymusic",
-  name: "BITCHESPLAYMUSIC",
-  tags: [""],
-  links: { instagram: "https://www.instagram.com/bitchesplaymusic/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
+      id: "femb0tz",
+      name: "FEMB0TZ",
+      tags: ["electronic", "underground", "club"],
+      links: { instagram: "https://www.instagram.com/femb0tz/" },
+      blurb: "Electronic underground project tied to modern club-adjacent scenes.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
     {
-  id: "junejoy",
-  name: "junejoy",
-  tags: [""],
-  links: { instagram: "https://www.instagram.com/jun3j0y/" },
-  blurb: "",
-  origin: "Los Angeles, California",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "atwbc",
-  name: "atwbc",
-  tags: [""],
-  links: { instagram: "https://www.instagram.com/allthewaybitcrushed/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "cen",
-  name: "cen",
-  tags: [""],
-  links: { instagram: "https://www.instagram.com/shadowsdanceagain/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-},
-{
-  id: "gellofever",
-  name: "gellofever",
-  tags: [""],
-  links: { instagram: "https://www.instagram.com/gellofever/" },
-  blurb: "",
-  origin: "",
-  background: "",
-  image: "",
-  relatedPosts: []
-}
-    
+      id: "tears-of-eros",
+      name: "TEARS OF EROS",
+      tags: ["dark", "alt", "underground"],
+      links: { instagram: "https://www.instagram.com/tears.of.eros/" },
+      blurb: "Dark alt project operating in underground performance spaces.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+
+    {
+      id: "joey-cash",
+      name: "Joey Cash",
+      tags: ["underground", "alt", "live"],
+      links: { instagram: "https://www.instagram.com/joeyyy.cashhh/" },
+      blurb: "Underground live act appearing across Slumber Party–adjacent lineups.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "circuttbabii",
+      name: "Circuttbabii",
+      tags: ["experimental", "underground"],
+      links: { instagram: "https://www.instagram.com/circuttbabiiarchive/" },
+      blurb: "Experimental underground project tied to DIY show circuits.",
+      origin: "",
+      background: "",
+      image: "assets/artists/artist-circuttbabii.jpg", // ✅ FIXED typo
+      relatedPosts: []
+    },
+    {
+      id: "excalibur",
+      name: "Excalibur",
+      tags: ["alt", "duo", "underground"],
+      links: { instagram: "https://www.instagram.com/excalibur.duo/" },
+      blurb: "Alt underground duo appearing on mixed-genre lineups.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "french-ethics",
+      name: "French Ethics",
+      tags: ["alt", "underground"],
+      links: { instagram: "https://www.instagram.com/frenchethics/" },
+      blurb: "Alt project operating within underground live show spaces.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+
+    {
+      id: "crrdr",
+      name: "CRRDR",
+      tags: ["club", "underground"],
+      links: { instagram: "https://www.instagram.com/c0rred0r/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "assets/artists/artist-CRRDR.jpg",
+      relatedPosts: []
+    },
+    {
+      id: "sissy",
+      name: "Sissy",
+      tags: ["club", "underground"],
+      links: { instagram: "https://www.instagram.com/uluvsissy/" },
+      blurb: "Underground club act tied to DIY nightlife lineups.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "joanna-kuchta",
+      name: "Joanna Kuchta",
+      tags: ["underground", "live"],
+      links: { instagram: "https://www.instagram.com/joannakuchta/" },
+      blurb: "Artist appearing across underground show circuits.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "muerte-lenta",
+      name: "Muerte Lenta",
+      tags: ["underground", "club"],
+      links: { instagram: "" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "andres-garcil",
+      name: "Andrés Garcil",
+      tags: ["underground", "live"],
+      links: { instagram: "https://www.instagram.com/andresgarcil/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "assets/artists/artist-Andrés-Garcil.jpg",
+      relatedPosts: []
+    },
+    {
+      id: "junkfile",
+      name: "Junkfile",
+      tags: ["underground", "club"],
+      links: { instagram: "https://www.instagram.com/junkfile___/" },
+      blurb: "Underground club project tied to DIY nightlife bills.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+
+    /* ✅ FIXED: standardize to Nico Nastii everywhere */
+    {
+      id: "nico-nastii",
+      name: "Nico Nastii",
+      tags: ["dj", "club", "underground"],
+      links: { instagram: "https://www.instagram.com/nico.nastii/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+
+    {
+      id: "dj-thank-you",
+      name: "DJ Thank You",
+      tags: ["dj", "underground", "club"],
+      links: { instagram: "https://www.instagram.com/djthankyou/" },
+      blurb: "Underground DJ appearing on multi-artist bills.",
+      origin: "",
+      background: "",
+      image: "assets/artists/artist-DJ-Thank-You.jpg",
+      relatedPosts: []
+    },
+    {
+      id: "dreaminslow",
+      name: "DREAMINSLOW",
+      tags: ["underground", "club"],
+      links: { instagram: "https://www.instagram.com/dreaminslow/" },
+      blurb: "Underground project appearing across nightlife lineups.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+
+    {
+      id: "pinponpanpon",
+      name: "pinponpanpon",
+      tags: ["dj", "underground", "bay-area"],
+      links: { instagram: "https://www.instagram.com/pinponpanpon9/" },
+      blurb: "Bay Area underground DJ project tied to club-forward and internet-adjacent scenes.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "eviemoon",
+      name: "Eviemoon",
+      tags: ["dj", "underground"],
+      links: { instagram: "https://www.instagram.com/eviemoonn/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "birdybirdybirdy",
+      name: "BirdyBirdyBirdy",
+      tags: ["dj", "underground", "experimental"],
+      links: { instagram: "https://www.instagram.com/birdybirdybirdybirdybirdymp3/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "1999seiji",
+      name: "1999Seiji",
+      tags: ["dj", "underground"],
+      links: { instagram: "https://www.instagram.com/1999seiji/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "assets/artists/artist-1999Seiji.jpg",
+      relatedPosts: []
+    },
+    {
+      id: "denpa",
+      name: "Denpa",
+      tags: ["dj", "underground"],
+      links: { instagram: "https://www.instagram.com/denpagrafx/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+
+    {
+      id: "fakethias",
+      name: "FAKETHIAS",
+      tags: ["underground", "dj"],
+      links: { instagram: "https://www.instagram.com/fakethias/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "touriszt",
+      name: "TOURISZT",
+      tags: ["underground", "dj"],
+      links: { instagram: "https://www.instagram.com/touriszt/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "corridosketamina",
+      name: "CORRIDOSKETAMINA",
+      tags: ["underground", "dj"],
+      links: { instagram: "https://www.instagram.com/corridosketamina/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "axxcer",
+      name: "AXXCER",
+      tags: ["underground", "dj"],
+      links: { instagram: "https://www.instagram.com/axxcer/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+
+    {
+      id: "eera",
+      name: "EERA",
+      tags: ["dj", "underground", "club"],
+      links: { instagram: "https://www.instagram.com/eera_1/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "jaeychino",
+      name: "JAEYCHINO",
+      tags: ["dj", "underground"],
+      links: { instagram: "https://www.instagram.com/jaeychino/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "sjr",
+      name: "SJR",
+      tags: ["dj", "underground"],
+      links: { instagram: "https://www.instagram.com/sjr2800/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "certified-trapper",
+      name: "Certified Trapper",
+      tags: ["dj", "underground", "club"],
+      links: { instagram: "https://www.instagram.com/imcertifiedtrapper/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "ss3bby",
+      name: "SS3BBY",
+      tags: ["dj", "underground", "club"],
+      links: { instagram: "https://www.instagram.com/ss3bby/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "pyro",
+      name: "PYRO",
+      tags: ["dj", "underground"],
+      links: { instagram: "https://www.instagram.com/itspyromusic/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "bitchesplaymusic",
+      name: "BITCHESPLAYMUSIC",
+      tags: ["dj", "underground"],
+      links: { instagram: "https://www.instagram.com/bitchesplaymusic/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+
+    /* ✅ FIXED: remove blank tags chips (no more [""]) */
+    {
+      id: "junejoy",
+      name: "junejoy",
+      tags: ["dj", "underground"],
+      links: { instagram: "https://www.instagram.com/jun3j0y/" },
+      blurb: "",
+      origin: "Los Angeles, California",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "atwbc",
+      name: "atwbc",
+      tags: ["dj", "underground"],
+      links: { instagram: "https://www.instagram.com/allthewaybitcrushed/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "cen",
+      name: "cen",
+      tags: ["dj", "underground"],
+      links: { instagram: "https://www.instagram.com/shadowsdanceagain/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "gellofever",
+      name: "gellofever",
+      tags: ["dj", "underground"],
+      links: { instagram: "https://www.instagram.com/gellofever/" },
+      blurb: "",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    }
   ],
 
   /* ---------- NEWS ---------- */
@@ -851,269 +853,243 @@ window.VERRE_DATA = {
       notes: "18+ • Oakland • 9:00 PM–2:00 AM (from flyer)"
     },
     {
-  id: "swampdem-miami-2026-02-07",
-  title: "Techg1rls — Miami",
-  date: "2026-02-07",
-  time: "8:00 PM–3:00 AM",
-  area: "fl",
-  venue: "",
-  address: "Miami, Florida",
-  ticketUrl: "https://posh.vip/e/techg1rls-doecaine-sipper-technopagan?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
-  sourceUrl: "https://posh.vip/e/techg1rls-doecaine-sipper-technopagan?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
-  flyerUrl: "assets/flyers/flyer-swampdem-miami-2026-02-07.jpg",
-  lineup: [
-    "techg1rls",
-    "Doecaine",
-    "Sipper",
-    "Technopagan",
-    "35oteric",
-    "Hoodwitchhh",
-    "Mason Norrisss",
-    "Sugarc0de",
-    "Cellar",
-    "HTTP Rapture"
-  ],
-  verreAttending: false,
-  notes: "DJ • hosted by @swampdem • debuts noted on flyer"
-},
+      id: "swampdem-miami-2026-02-07",
+      title: "Techg1rls — Miami",
+      date: "2026-02-07",
+      time: "8:00 PM–3:00 AM",
+      area: "fl",
+      venue: "",
+      address: "Miami, Florida",
+      ticketUrl: "https://posh.vip/e/techg1rls-doecaine-sipper-technopagan?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+      sourceUrl: "https://posh.vip/e/techg1rls-doecaine-sipper-technopagan?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+      flyerUrl: "assets/flyers/flyer-swampdem-miami-2026-02-07.jpg",
+      lineup: [
+        "techg1rls",
+        "Doecaine",
+        "Sipper",
+        "Technopagan",
+        "35oteric",
+        "Hoodwitchhh",
+        "Mason Norrisss",
+        "Sugarc0de",
+        "Cellar",
+        "HTTP Rapture"
+      ],
+      verreAttending: false,
+      notes: "DJ • hosted by @swampdem • debuts noted on flyer"
+    },
     {
-  id: "eurohead-dallas-2026-01-30",
-  title: "EUROHEAD",
-  date: "2026-01-30",
-  time: "9:00 PM–2:00 AM",
-  area: "tx",
-  venue: "",
-  address: "9205 Skillman St, Dallas, TX",
-  ticketUrl: "https://posh.vip/e/slumber-party-january-30th-featuring-?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnBPzBrtvlmGJGJSQ5C-_gdc3LUg4f5IVstsTwp_sgMKqgMxLLIGgPrSctKR0_aem_Zayj3OwGTjLSSqhRVKPjVA",
-  sourceUrl: "https://posh.vip/e/slumber-party-january-30th-featuring-?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnBPzBrtvlmGJGJSQ5C-_gdc3LUg4f5IVstsTwp_sgMKqgMxLLIGgPrSctKR0_aem_Zayj3OwGTjLSSqhRVKPjVA",
-  flyerUrl: "assets/flyers/flyer-eurohead-dallas-2026-01-30.jpg",
-  lineup: [
-    "EUROHEAD",
-    "ALASKA",
-    "LOVEGHOST",
-    "KROAISHA",
-    "FEMB0TZ",
-    "TEARS OF EROS"
-  ],
-  verreAttending: false,
-  notes: "18+ • Dallas • indie / alt / underground show"
-},
+      id: "eurohead-dallas-2026-01-30",
+      title: "EUROHEAD",
+      date: "2026-01-30",
+      time: "9:00 PM–2:00 AM",
+      area: "tx",
+      venue: "",
+      address: "9205 Skillman St, Dallas, TX",
+      ticketUrl:
+        "https://posh.vip/e/slumber-party-january-30th-featuring-?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnBPzBrtvlmGJGJSQ5C-_gdc3LUg4f5IVstsTwp_sgMKqgMxLLIGgPrSctKR0_aem_Zayj3OwGTjLSSqhRVKPjVA",
+      sourceUrl:
+        "https://posh.vip/e/slumber-party-january-30th-featuring-?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnBPzBrtvlmGJGJSQ5C-_gdc3LUg4f5IVstsTwp_sgMKqgMxLLIGgPrSctKR0_aem_Zayj3OwGTjLSSqhRVKPjVA",
+      flyerUrl: "assets/flyers/flyer-eurohead-dallas-2026-01-30.jpg",
+      lineup: ["EUROHEAD", "ALASKA", "LOVEGHOST", "KROAISHA", "FEMB0TZ", "TEARS OF EROS"],
+      verreAttending: false,
+      notes: "18+ • Dallas • indie / alt / underground show"
+    },
     {
-  id: "ru-kissin-any-joey-cash-2026-02-13",
-  title: "r u kissin any1?",
-  date: "2026-02-13",
-  time: "9:00 PM–2:00 AM",
-  area: "tx",
-  venue: "Puzzles Deep Ellum",
-  address: "Dallas, Texas",
-  ticketUrl: "https://www.eventim.us/wafform.aspx?_act=eventtickets&_pky=679091&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDfuqKE535gg5yoH2gDlamn0cJ_GCzXkz771bAGPEViGIapFCsELZWYBWmdw_aem_oaRcsw6GY1FMtj_LGbokKQ",
-  sourceUrl: "https://www.eventim.us/wafform.aspx?_act=eventtickets&_pky=679091&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDfuqKE535gg5yoH2gDlamn0cJ_GCzXkz771bAGPEViGIapFCsELZWYBWmdw_aem_oaRcsw6GY1FMtj_LGbokKQ",
-  flyerUrl: "assets/flyers/flyer-ru-kissin-any-joey-cash-2026-02-13.jpg",
-  lineup: [
-    "Joey Cash",
-    "Alaska",
-    "Loveghost",
-    "Circuttbabii",
-    "Excalibur",
-    "French Ethics"
-  ],
-  verreAttending: false,
-  notes: "18+ • Slumber Party presents • Dallas"
-},
+      id: "ru-kissin-any-joey-cash-2026-02-13",
+      title: "r u kissin any1?",
+      date: "2026-02-13",
+      time: "9:00 PM–2:00 AM",
+      area: "tx",
+      venue: "Puzzles Deep Ellum",
+      address: "Dallas, Texas",
+      ticketUrl:
+        "https://www.eventim.us/wafform.aspx?_act=eventtickets&_pky=679091&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDfuqKE535gg5yoH2gDlamn0cJ_GCzXkz771bAGPEViGIapFCsELZWYBWmdw_aem_oaRcsw6GY1FMtj_LGbokKQ",
+      sourceUrl:
+        "https://www.eventim.us/wafform.aspx?_act=eventtickets&_pky=679091&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDfuqKE535gg5yoH2gDlamn0cJ_GCzXkz771bAGPEViGIapFCsELZWYBWmdw_aem_oaRcsw6GY1FMtj_LGbokKQ",
+      flyerUrl: "assets/flyers/flyer-ru-kissin-any-joey-cash-2026-02-13.jpg",
+      lineup: ["Joey Cash", "Alaska", "Loveghost", "Circuttbabii", "Excalibur", "French Ethics"],
+      verreAttending: false,
+      notes: "18+ • Slumber Party presents • Dallas"
+    },
     {
-  id: "fuck-cupid-h0l0-nyc-2026-02-15",
-  title: "Fuck Cupid",
-  date: "2026-02-15",
-  time: "10:00 PM–5:00 AM",
-  area: "ny",
-  venue: "h0l0",
-  address: "1090 Wyckoff Ave, Queens, NY 11385, United States",
-  ticketUrl: "",
-  sourceUrl: "",
-  flyerUrl: "assets/flyers/flyer-fuck-cupid-h0l0-nyc-2026-02-15.jpg",
-  lineup: [
-    "CRRDR",
-    "Sissy",
-    "Joanna Kuchta",
-    "Muerte Lenta",
-    "Andrés Garcil",
-    "Junkfile",
-    "nico nasti",
-    "DJ Thank You",
-    "DREAMINSLOW"
-  ],
-  verreAttending: false,
-  notes: "21+ • FEB 15 • @h0l0.nyc"
-},
+      id: "fuck-cupid-h0l0-nyc-2026-02-15",
+      title: "Fuck Cupid",
+      date: "2026-02-15",
+      time: "10:00 PM–5:00 AM",
+      area: "ny",
+      venue: "h0l0",
+      address: "1090 Wyckoff Ave, Queens, NY 11385, United States",
+      ticketUrl: "",
+      sourceUrl: "",
+      flyerUrl: "assets/flyers/flyer-fuck-cupid-h0l0-nyc-2026-02-15.jpg",
+      lineup: [
+        "CRRDR",
+        "Sissy",
+        "Joanna Kuchta",
+        "Muerte Lenta",
+        "Andrés Garcil",
+        "Junkfile",
+        "Nico Nastii", // ✅ FIXED spelling
+        "DJ Thank You",
+        "DREAMINSLOW"
+      ],
+      verreAttending: false,
+      notes: "21+ • FEB 15 • @h0l0.nyc"
+    },
     {
-  id: "pinponpanpon-sf-2026-02-06",
-  title: "pinponpanpon • Eviemoon • BirdyBirdyBirdy",
-  date: "2026-02-06",
-  time: "8:00 PM–1:00 AM",
-  area: "bay",
-  venue: "",
-  address: "406 Clement St, San Francisco, CA 94118",
-  ticketUrl: "https://www.ticketweb.com/event/pinponpanpon-eviemoon-birdybirdybirdy1999seiji-denpa-neck-of-the-woods-tickets/14059014?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnTY1AN084UyZi7ZlHoYyKUQtRMWvsFaqiV8ch2PrINJDiBMRCj5e5dguHbLI_aem_-gkcvLSXout5-7IvBybJ1A",
-  sourceUrl: "",
-  flyerUrl: "assets/flyers/flyer-pinponpanpon-sf-2026-02-06.jpg",
-  lineup: [
-    "pinponpanpon",
-    "Eviemoon",
-    "BirdyBirdyBirdy",
-    "1999Seiji",
-    "Denpa"
-  ],
-  verreAttending: false,
-  notes: "21+ • San Francisco • DJ event"
-},
+      id: "pinponpanpon-sf-2026-02-06",
+      title: "pinponpanpon • Eviemoon • BirdyBirdyBirdy",
+      date: "2026-02-06",
+      time: "8:00 PM–1:00 AM",
+      area: "bay",
+      venue: "",
+      address: "406 Clement St, San Francisco, CA 94118",
+      ticketUrl:
+        "https://www.ticketweb.com/event/pinponpanpon-eviemoon-birdybirdybirdy1999seiji-denpa-neck-of-the-woods-tickets/14059014?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnTY1AN084UyZi7ZlHoYyKUQtRMWvsFaqiV8ch2PrINJDiBMRCj5e5dguHbLI_aem_-gkcvLSXout5-7IvBybJ1A",
+      sourceUrl: "",
+      flyerUrl: "assets/flyers/flyer-pinponpanpon-sf-2026-02-06.jpg",
+      lineup: ["pinponpanpon", "Eviemoon", "BirdyBirdyBirdy", "1999Seiji", "Denpa"],
+      verreAttending: false,
+      notes: "21+ • San Francisco • DJ event"
+    },
     {
-  id: "loveghost-indie-sleaze-vol-5-dallas-2026-01-31",
-  title: "Loveghost Indie Sleaze Night Vol. 5 — Birthday Edition",
-  date: "2026-01-31",
-  time: "10:00 PM–2:00 AM",
-  area: "tx",
-  venue: "LadyLove Dallas",
-  address: "310 W Seventh St, Dallas, Texas",
-  ticketUrl: "",  // free entry (no ticket link provided in the screenshot)
-  sourceUrl: "",  // add the IG post link if you have it
-  flyerUrl: "assets/flyers/flyer-loveghost-indie-sleaze-vol-5-dallas-2026-01-31.jpg",
-  lineup: ["Loveghost", "Stephysmodernlife", "Alaska"],
-  verreAttending: false,
-  notes: "DJ night • 21+ • Free entry • Birthday edition (Loveghost + Alaska) • indie sleaze / electroclash / Tumblr-era hits"
-},
+      id: "loveghost-indie-sleaze-vol-5-dallas-2026-01-31",
+      title: "Loveghost Indie Sleaze Night Vol. 5 — Birthday Edition",
+      date: "2026-01-31",
+      time: "10:00 PM–2:00 AM",
+      area: "tx",
+      venue: "LadyLove Dallas",
+      address: "310 W Seventh St, Dallas, Texas",
+      ticketUrl: "",
+      sourceUrl: "",
+      flyerUrl: "assets/flyers/flyer-loveghost-indie-sleaze-vol-5-dallas-2026-01-31.jpg",
+      lineup: ["Loveghost", "Stephysmodernlife", "Alaska"],
+      verreAttending: false,
+      notes:
+        "DJ night • 21+ • Free entry • Birthday edition (Loveghost + Alaska) • indie sleaze / electroclash / Tumblr-era hits"
+    },
     {
-  id: "the-hellp-voluptuous-horror-2026-01-30",
-  title: "The Hellp — The Voluptuous Horror of Karen Black",
-  date: "2026-01-30",
-  time: "7:00 PM–10:00 PM",
-  area: "ny",
-  venue: "Hancock Foundation (unconfirmed)",
-  address: "New York City (exact location TBA)",
-  ticketUrl: "https://www.instagram.com/longarrmjesus/?hl=en",
-  sourceUrl: "",
-  flyerUrl: "assets/flyers/flyer-the-hellp-voluptuous-horror-2026-01-30.jpg",
-  lineup: ["The Hellp"],
-  verreAttending: false,
-  notes: "BYOB • Boiler Room–affiliated • location rumored to be Hancock Foundation • unannounced venue"
-},
+      id: "the-hellp-voluptuous-horror-2026-01-30",
+      title: "The Hellp — The Voluptuous Horror of Karen Black",
+      date: "2026-01-30",
+      time: "7:00 PM–10:00 PM",
+      area: "ny",
+      venue: "Hancock Foundation (unconfirmed)",
+      address: "New York City (exact location TBA)",
+      ticketUrl: "https://www.instagram.com/longarrmjesus/?hl=en",
+      sourceUrl: "",
+      flyerUrl: "assets/flyers/flyer-the-hellp-voluptuous-horror-2026-01-30.jpg",
+      lineup: ["The Hellp"],
+      verreAttending: false,
+      notes:
+        "BYOB • Boiler Room–affiliated • location rumored to be Hancock Foundation • unannounced venue"
+    },
     {
-  id: "snow-strippers-afterparty-craveusa-houston-2026-02-06",
-  title: "Snow Strippers Official Afterparty (craveUSA)",
-  date: "2026-02-06",
-  time: "10:00 PM–3:00 AM (CST)",
-  area: "tx",
-  venue: "",
-  address: "6626 Supply Row, Houston, TX",
-  ticketUrl: "https://posh.vip/e/craveusa?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnKxKnlpUkOAW8RYBTz20G6KBTPfIiDVhHs_bJ3fd9Cum3HNvzqJt_a6AfqA4_aem_mFmGumoOKp0sNHUuHIHqqQ",
-  sourceUrl: "",
-  flyerUrl: "assets/flyers/flyer-snow-strippers-afterparty-craveusa-houston-2026-02-06.jpg",
-  lineup: ["Snow Strippers"],
-  verreAttending: false,
-  notes: "DJ • 18+ • presented by craveUSA • official afterparty"
-},
+      id: "snow-strippers-afterparty-craveusa-houston-2026-02-06",
+      title: "Snow Strippers Official Afterparty (craveUSA)",
+      date: "2026-02-06",
+      time: "10:00 PM–3:00 AM (CST)",
+      area: "tx",
+      venue: "",
+      address: "6626 Supply Row, Houston, TX",
+      ticketUrl:
+        "https://posh.vip/e/craveusa?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnKxKnlpUkOAW8RYBTz20G6KBTPfIiDVhHs_bJ3fd9Cum3HNvzqJt_a6AfqA4_aem_mFmGumoOKp0sNHUuHIHqqQ",
+      sourceUrl: "",
+      flyerUrl: "assets/flyers/flyer-snow-strippers-afterparty-craveusa-houston-2026-02-06.jpg",
+      lineup: ["Snow Strippers"],
+      verreAttending: false,
+      notes: "DJ • 18+ • presented by craveUSA • official afterparty"
+    },
     {
-  id: "snow-strippers-afterparty-dallas-2026-02-09",
-  title: "Snow Strippers — Official Afterparty (Dallas)",
-  date: "2026-02-09",
-  time: "11:00 PM–3:00 AM (CST)",
-  area: "tx",
-  venue: "Labash Event Center",
-  address: "9205 Skillman St Suite 116, Dallas, TX 75243",
-  ticketUrl: "https://posh.vip/e/official-snow-strippers-afterparty-dallas-tx",   // paste the ticket link if you have it
-  sourceUrl: "",   // paste the IG post / event page link if you have it
-  flyerUrl: "assets/flyers/flyer-snow-strippers-afterparty-dallas-2026-02-09.jpg",
-  lineup: [
-    "EERA",
-    "ANNA LUNA",
-    "SS3BBY",
-    "PYRO",
-    "ALASKA",
-    "LOVEGHOST"
-  ],
-  verreAttending: false,
-  notes: "18+ • Slumber Party x Moonbby • No refunds after purchase • Official afterparty"
-},
+      id: "snow-strippers-afterparty-dallas-2026-02-09",
+      title: "Snow Strippers — Official Afterparty (Dallas)",
+      date: "2026-02-09",
+      time: "11:00 PM–3:00 AM (CST)",
+      area: "tx",
+      venue: "Labash Event Center",
+      address: "9205 Skillman St Suite 116, Dallas, TX 75243",
+      ticketUrl: "https://posh.vip/e/official-snow-strippers-afterparty-dallas-tx",
+      sourceUrl: "",
+      flyerUrl: "assets/flyers/flyer-snow-strippers-afterparty-dallas-2026-02-09.jpg",
+      lineup: ["EERA", "ANNA LUNA", "SS3BBY", "PYRO", "ALASKA", "LOVEGHOST"],
+      verreAttending: false,
+      notes:
+        "18+ • Slumber Party x Moonbby • No refunds after purchase • Official afterparty"
+    },
     {
-  id: "snow-strippers-afterparty-austin-2026-02-07",
-  title: "Snow Strippers — Official Afterparty (Austin)",
-  date: "2026-02-07",
-  time: "11:30 PM–4:00 AM (CST)",
-  area: "tx",
-  venue: "Regal Rooms",
-  address: "1204 Regal Row, Austin, TX 78748",
-  ticketUrl: "https://posh.vip/e/official-snow-strippers-afterparty-austin-tx",   // add ticket link if available
-  sourceUrl: "",   // add IG / event page link if available
-  flyerUrl: "assets/flyers/flyer-snow-strippers-afterparty-austin-2026-02-07.jpg",
-  lineup: [
-    "EERA",
-    "JAEYCHINO",
-    "SJR",
-    "CERTIFIED TRAPPER",
-    "SS3BBY",
-    "PYRO",
-    "BITCHESPLAYMUSIC"
-  ],
-  verreAttending: false,
-  notes: "18+ • Moonbby x Slumber Party • Official Snow Strippers afterparty • No refunds after purchase"
-},
+      id: "snow-strippers-afterparty-austin-2026-02-07",
+      title: "Snow Strippers — Official Afterparty (Austin)",
+      date: "2026-02-07",
+      time: "11:30 PM–4:00 AM (CST)",
+      area: "tx",
+      venue: "Regal Rooms",
+      address: "1204 Regal Row, Austin, TX 78748",
+      ticketUrl: "https://posh.vip/e/official-snow-strippers-afterparty-austin-tx",
+      sourceUrl: "",
+      flyerUrl: "assets/flyers/flyer-snow-strippers-afterparty-austin-2026-02-07.jpg",
+      lineup: [
+        "EERA",
+        "JAEYCHINO",
+        "SJR",
+        "CERTIFIED TRAPPER",
+        "SS3BBY",
+        "PYRO",
+        "BITCHESPLAYMUSIC"
+      ],
+      verreAttending: false,
+      notes:
+        "18+ • Moonbby x Slumber Party • Official Snow Strippers afterparty • No refunds after purchase"
+    },
     {
-  id: "snl-incubator-dtla-2026-02-07",
-  title: "SNLAincubator",
-  date: "2026-02-07",
-  time: "10:00 PM–2:00 AM",
-  area: "la",
-  venue: "",
-  address: "Downtown Los Angeles (DTLA)",
-  ticketUrl: "https://partiful.com/e/4BtYG5dvCIfJTwrKmuu4?source=share&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGny5ldyDIYxQE6ZyZfsVhIVQ1JiyAmI-47_Iu4P29do9AH5rXp-KSOIZ5XDi8_aem_ilByMsjXTrrjZCkoEV2jjQ",
-  sourceUrl: "https://www.instagram.com/p/DUMGtRaEpNU/",
-  flyerUrl: "assets/flyers/snl-incubator-dtla-2026-02-07.jpg", // add if/when you save the flyer asset
-  lineup: [
-    "junejoy",
-    "atwbc",
-    "cen",
-    "gellofever"
-  ],
-  verreAttending: false,
-  notes: "Free event • DTLA • presented by @cubistdove • location TBA"
-},
+      id: "snl-incubator-dtla-2026-02-07",
+      title: "SNLAincubator",
+      date: "2026-02-07",
+      time: "10:00 PM–2:00 AM",
+      area: "la",
+      venue: "",
+      address: "Downtown Los Angeles (DTLA)",
+      ticketUrl:
+        "https://partiful.com/e/4BtYG5dvCIfJTwrKmuu4?source=share&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGny5ldyDIYxQE6ZyZfsVhIVQ1JiyAmI-47_Iu4P29do9AH5rXp-KSOIZ5XDi8_aem_ilByMsjXTrrjZCkoEV2jjQ",
+      sourceUrl: "https://www.instagram.com/p/DUMGtRaEpNU/",
+      flyerUrl: "assets/flyers/snl-incubator-dtla-2026-02-07.jpg",
+      lineup: ["junejoy", "atwbc", "cen", "gellofever"],
+      verreAttending: false,
+      notes: "Free event • DTLA • presented by @cubistdove • location TBA"
+    },
     {
-  id: "ive-got-your-number-milwaukee-2026-03-21",
-  title: "I've Got Your Number: An Indie Dance Party",
-  date: "2026-03-21",
-  time: "9:00 PM",
-  area: "wi",
-  venue: "The Rave / Eagles Club",
-  address: "2401 West Wisconsin Avenue, Milwaukee, WI, United States",
-  ticketUrl: "https://www.etix.com/ticket/p/71574875/ive-got-your-numberan-indie-dance-party-milwaukee-the-rave-eagles-club?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
-  sourceUrl: "https://www.etix.com/ticket/p/71574875/ive-got-your-numberan-indie-dance-party-milwaukee-the-rave-eagles-club?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
-  flyerUrl: "assets/flyers/ive-got-your-number-milwaukee-2026-03-21.jpg",
-  lineup: [
-    "Kennyhoopla"
-  ],
-  verreAttending: false,
-  notes: "All ages • General admission • Guest DJ set by Kennyhoopla • indie dance party"
-},
+      id: "ive-got-your-number-milwaukee-2026-03-21",
+      title: "I've Got Your Number: An Indie Dance Party",
+      date: "2026-03-21",
+      time: "9:00 PM",
+      area: "wi",
+      venue: "The Rave / Eagles Club",
+      address: "2401 West Wisconsin Avenue, Milwaukee, WI, United States",
+      ticketUrl:
+        "https://www.etix.com/ticket/p/71574875/ive-got-your-numberan-indie-dance-party-milwaukee-the-rave-eagles-club?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+      sourceUrl:
+        "https://www.etix.com/ticket/p/71574875/ive-got-your-numberan-indie-dance-party-milwaukee-the-rave-eagles-club?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+      flyerUrl: "assets/flyers/ive-got-your-number-milwaukee-2026-03-21.jpg",
+      lineup: ["Kennyhoopla"],
+      verreAttending: false,
+      notes: "All ages • General admission • Guest DJ set by Kennyhoopla • indie dance party"
+    },
     {
-  id: "say-tech-and-smile-miami-2026-02-28",
-  title: "SAY TECH AND SMILE: Cannelle + Ali RQ",
-  date: "2026-02-28",
-  time: "11:00 PM",
-  area: "fl",
-  venue: "The Ground Miami",
-  address: "Miami, Florida",
-  ticketUrl: "https://dice.fm/event/8e6agr-say-tech-and-smile-cannelle-ali-rq-28th-feb-the-ground-miami-miami-tickets",
-  sourceUrl: "https://dice.fm/event/8e6agr-say-tech-and-smile-cannelle-ali-rq-28th-feb-the-ground-miami-miami-tickets",
-  flyerUrl: "assets/flyers/say-tech-and-smile-miami-2026-02-28.jpg",
-  lineup: [
-    "Cannelle",
-    "Ali RQ",
-    "Velvette Blue",
-    "INSTINCT",
-    "Nico Nastii"
-  ],
-  verreAttending: false,
-  notes: "Party • DOORS 11PM • 18+ • Miami"
-}
-    
+      id: "say-tech-and-smile-miami-2026-02-28",
+      title: "SAY TECH AND SMILE: Cannelle + Ali RQ",
+      date: "2026-02-28",
+      time: "11:00 PM",
+      area: "fl",
+      venue: "The Ground Miami",
+      address: "Miami, Florida",
+      ticketUrl:
+        "https://dice.fm/event/8e6agr-say-tech-and-smile-cannelle-ali-rq-28th-feb-the-ground-miami-miami-tickets",
+      sourceUrl:
+        "https://dice.fm/event/8e6agr-say-tech-and-smile-cannelle-ali-rq-28th-feb-the-ground-miami-miami-tickets",
+      flyerUrl: "assets/flyers/say-tech-and-smile-miami-2026-02-28.jpg",
+      lineup: ["Cannelle", "Ali RQ", "Velvette Blue", "INSTINCT", "Nico Nastii"],
+      verreAttending: false,
+      notes: "Party • DOORS 11PM • 18+ • Miami"
+    }
   ]
 };
