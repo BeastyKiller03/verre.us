@@ -14,9 +14,12 @@ window.VERRE_DATA = {
     { id: "ocie", name: "OC / IE" },
     { id: "sd", name: "San Diego" },
     { id: "bay", name: "Bay Area" },
-    { id: "nyc", name: "New York City" },
+    { id: "ny", name: "New York" },
     { id: "tx", name: "Texas" },
-    { id: "fl", name: "Florida" }
+    { id: "fl", name: "Florida" },
+    { id: "wi", name: "Wisconsin" }
+    
+    
     
   ],
 
@@ -510,7 +513,7 @@ window.VERRE_DATA = {
   name: "CRRDR",
   tags: ["club", "underground"],
   links: { instagram: "https://www.instagram.com/c0rred0r/" },
-  blurb: "Underground club project appearing on NYC lineups.",
+  blurb: "",
   origin: "",
   background: "",
   image: "assets/artists/artist-CRRDR.jpg",
@@ -543,7 +546,7 @@ window.VERRE_DATA = {
   name: "Muerte Lenta",
   tags: ["underground", "club"],
   links: { instagram: "" },
-  blurb: "Underground act appearing on multi-genre nightlife bills.",
+  blurb: "",
   origin: "",
   background: "",
   image: "",
@@ -554,7 +557,7 @@ window.VERRE_DATA = {
   name: "Andrés Garcil",
   tags: ["underground", "live"],
   links: { instagram: "https://www.instagram.com/andresgarcil/" },
-  blurb: "Underground artist appearing across NYC-area lineups.",
+  blurb: "",
   origin: "",
   background: "",
   image: "assets/artists/artist-Andrés-Garcil.jpg",
@@ -576,7 +579,7 @@ window.VERRE_DATA = {
   name: "nico nasti",
   tags: ["club", "underground"],
   links: { instagram: "https://www.instagram.com/nico.nastii/" },
-  blurb: "Underground DJ/artist appearing on NYC lineups.",
+  blurb: "",
   origin: "",
   background: "",
   image: "",
@@ -922,7 +925,7 @@ window.VERRE_DATA = {
   title: "Fuck Cupid",
   date: "2026-02-15",
   time: "10:00 PM–5:00 AM",
-  area: "nyc",
+  area: "ny",
   venue: "h0l0",
   address: "1090 Wyckoff Ave, Queens, NY 11385, United States",
   ticketUrl: "",
@@ -983,7 +986,7 @@ window.VERRE_DATA = {
   title: "The Hellp — The Voluptuous Horror of Karen Black",
   date: "2026-01-30",
   time: "7:00 PM–10:00 PM",
-  area: "nyc",
+  area: "ny",
   venue: "Hancock Foundation (unconfirmed)",
   address: "New York City (exact location TBA)",
   ticketUrl: "https://www.instagram.com/longarrmjesus/?hl=en",
@@ -1072,6 +1075,23 @@ window.VERRE_DATA = {
   ],
   verreAttending: false,
   notes: "Free event • DTLA • presented by @cubistdove • location TBA"
+},
+    {
+  id: "ive-got-your-number-milwaukee-2026-03-21",
+  title: "I've Got Your Number: An Indie Dance Party",
+  date: "2026-03-21",
+  time: "9:00 PM",
+  area: "wi",
+  venue: "The Rave / Eagles Club",
+  address: "2401 West Wisconsin Avenue, Milwaukee, WI, United States",
+  ticketUrl: "https://www.etix.com/ticket/p/71574875/ive-got-your-numberan-indie-dance-party-milwaukee-the-rave-eagles-club?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+  sourceUrl: "https://www.etix.com/ticket/p/71574875/ive-got-your-numberan-indie-dance-party-milwaukee-the-rave-eagles-club?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+  flyerUrl: "assets/flyers/ive-got-your-number-milwaukee-2026-03-21.jpg",
+  lineup: [
+    "Kennyhoopla"
+  ],
+  verreAttending: false,
+  notes: "All ages • General admission • Guest DJ set by Kennyhoopla • indie dance party"
 }
     
   ]
