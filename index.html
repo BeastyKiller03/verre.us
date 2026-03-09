@@ -12,20 +12,46 @@
   <div class="flag-corner tl" aria-hidden="true"></div>
   <div class="flag-corner br" aria-hidden="true"></div>
 
+  <!-- TOPBAR -->
   <div class="topbar">
     <div class="nav">
       <a class="brand" href="index.html" aria-label="VERRE home">
         <img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
       </a>
 
-      <div class="menu">
-        <a href="events.html">Events</a>
-        <a href="artists.html">Artists</a>
-        <a href="news.html">News</a>
+      <div class="menu" aria-label="Primary navigation">
+        <!-- Desktop links -->
+        <div class="menu-links">
+          <a href="events.html">Events</a>
+          <a href="artists.html">Artists</a>
+          <a href="archive.html">Archive</a>
+        </div>
+
+        <!-- Mobile toggle -->
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="menuPanel"
+          aria-expanded="false"
+        >
+          <span class="burger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <!-- Mobile dropdown panel -->
+        <div class="menu-panel" id="menuPanel" aria-hidden="true">
+          <a href="events.html">Events</a>
+          <a href="artists.html">Artists</a>
+          <a href="archive.html">Archive</a>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- MAIN CONTENT -->
   <div class="wrap">
     <div class="hero">
       <h1>Event Map + Archive.</h1>
@@ -37,6 +63,7 @@
     </div>
 
     <div class="grid">
+      <!-- Upcoming Events -->
       <div class="card">
         <div class="hd">
           <h2>Upcoming (tracked)</h2>
@@ -50,6 +77,7 @@
         </div>
       </div>
 
+      <!-- Artists -->
       <div class="card">
         <div class="hd">
           <h2>Artist index</h2>
@@ -63,29 +91,16 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="footer">
-      <div>© VERRE • Archive-first</div>
-
-      <p class="sub"  max-width:520px;">
-        Submissions are for artists, events, flyers, and corrections only. No spam.
-      </p> -->
-
-      <!-- <div style="margin-top:12px;"> -->
-      <!-- <div>
-        <a class="btn" href="press.html">Submissions</a>
-      </div>
-    </div> -->
   </div>
 
+  <!-- FOOTER -->
   <div class="footer">
     <div>© VERRE • Archive-first</div>
 
-    <p class="sub"  max-width:520px;">
+    <p class="sub" style="max-width:520px;">
       Submissions are for artists, events, flyers, and corrections only. No spam.
     </p>
 
-    <!-- <div style="margin-top:12px;"> -->
     <div>
       <a class="btn" href="press.html">Submissions</a>
     </div>
@@ -95,5 +110,4 @@
   <script src="app.js"></script>
 </body>
 </html>
-
 
