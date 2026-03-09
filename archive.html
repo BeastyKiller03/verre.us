@@ -8,11 +8,9 @@
 </head>
 
 <body data-page="archive">
-  <!-- Flag corners -->
   <div class="flag-corner tl" aria-hidden="true"></div>
   <div class="flag-corner br" aria-hidden="true"></div>
 
-  <!-- TOPBAR -->
   <div class="topbar">
     <div class="nav">
       <a class="brand" href="index.html" aria-label="VERRE home">
@@ -48,7 +46,6 @@
     </div>
   </div>
 
-  <!-- MAIN CONTENT -->
   <div class="wrap">
     <div class="hero">
       <h1>Archive</h1>
@@ -65,61 +62,47 @@
       </div>
 
       <div class="bd">
-        <div class="list" id="archiveList">
+        <article class="item" style="display:block; padding:0; overflow:hidden;">
+          <div style="padding:16px 16px 0;">
+            <p class="sub" style="margin:0 0 10px; font-family:var(--mono); text-transform:uppercase; letter-spacing:.08em;">
+              Mar 6, 2026 • Archive Entry 001
+            </p>
 
-          <!-- ARCHIVE ENTRY -->
-          <article class="item" style="display:block; padding:0; overflow:hidden;">
-            <div style="padding:16px 16px 0;">
-              <p class="sub" style="margin:0 0 10px; font-family:var(--mono); text-transform:uppercase; letter-spacing:.08em;">
-                Mar 6, 2026 • Archive Entry 001
-              </p>
+            <h2 style="margin:0 0 10px; font-size:34px; line-height:1.05;">
+              The Hellp - Lights Down Low 3.6.26
+            </h2>
 
-              <h2 style="margin:0 0 10px; font-size:34px; line-height:1.05;">
-                The Hellp - Lights Down Low 3.6.26
-              </h2>
+            <p class="sub" style="font-size:15px; line-height:1.6; max-width:760px;">
+              VERRE archive entry for The Hellp at Lights Down Low on 3.6.26.
+            </p>
 
-              <p class="sub" style="font-size:15px; line-height:1.6; max-width:760px;">
-                VERRE archive entry for The Hellp at Lights Down Low on 3.6.26.
-                This page can hold flyer scans, show photos, screenshots, recap notes,
-                lineup details, and anything else worth preserving from the night.
-              </p>
-
-              <div class="row" style="margin:12px 0 16px;">
-                <span class="chip">archive</span>
-                <span class="chip">the hellp</span>
-                <span class="chip">lights down low</span>
-                <span class="chip">03.06.26</span>
-              </div>
+            <div class="row" style="margin:12px 0 16px;">
+              <span class="chip">archive</span>
+              <span class="chip">the hellp</span>
+              <span class="chip">lights down low</span>
+              <span class="chip">03.06.26</span>
             </div>
+          </div>
 
-            <!-- replace these with your real images -->
-            <div style="display:grid; gap:10px; padding:0 16px 16px;">
-              <img
-                src="assets/flyers/flyer-the-hellp-lights-down-low-2026-03-06.jpg"
-                alt="The Hellp - Lights Down Low flyer"
-                style="width:100%; border-radius:12px; border:1px solid var(--line);"
-              />
-            </div>
+          <div
+            id="hellpGallery"
+            style="display:grid; gap:10px; padding:0 16px 16px;"
+          ></div>
 
-            <div style="padding:0 16px 18px;">
-              <p class="sub" style="font-size:15px; line-height:1.7; max-width:760px; margin:0;">
-                Add your written recap here. This could be a short memory of the night,
-                who played, what the room felt like, standout visuals, crowd energy,
-                or why the event matters enough to archive.
-              </p>
-            </div>
+          <div style="padding:0 16px 18px;">
+            <p class="sub" style="font-size:15px; line-height:1.7; max-width:760px; margin:0;">
+              Add your written recap here.
+            </p>
+          </div>
 
-            <div class="ft">
-              VERRE archive entry — flyer, recap, and scene memory.
-            </div>
-          </article>
-
-        </div>
+          <div class="ft">
+            VERRE archive entry — flyer, recap, and scene memory.
+          </div>
+        </article>
       </div>
     </div>
   </div>
 
-  <!-- FOOTER -->
   <div class="footer">
     <div>© VERRE • Archive-first</div>
 
@@ -134,5 +117,24 @@
 
   <script src="data.js"></script>
   <script src="app.js"></script>
+
+  <script>
+    const gallery = document.getElementById("hellpGallery");
+    const folder = "assets/archive/hellp-lights-down-low-2026-03-06/";
+    const base = "hellp-lights-down-low-";
+    const ext = ".jpeg";
+
+    for (let i = 1; i <= 61; i++) {
+      const num = String(i).padStart(2, "0");
+      const img = document.createElement("img");
+      img.src = `${folder}${base}${num}${ext}`;
+      img.alt = `The Hellp - Lights Down Low ${num}`;
+      img.loading = "lazy";
+      img.style.width = "100%";
+      img.style.borderRadius = "12px";
+      img.style.border = "1px solid var(--line)";
+      gallery.appendChild(img);
+    }
+  </script>
 </body>
 </html>
