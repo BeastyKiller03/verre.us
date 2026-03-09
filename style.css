@@ -28,10 +28,9 @@
 
 *{box-sizing:border-box}
 html,body{
-  /* position: relative; */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
   margin:0;
   padding:0;
   background:var(--bg);
@@ -39,14 +38,14 @@ html,body{
   font-family:var(--sans);
 }
 a{color:inherit; text-decoration:none}
-a:hover{opacity: 0.65}
+a:hover{opacity:0.65}
 img{max-width:100%; display:block}
 
 .wrap{
   max-width:var(--max);
   margin:0 auto;
   padding:15px var(--pad) 60px;
-  flex: 1;
+  flex:1;
 }
 
 /* =========================
@@ -84,12 +83,23 @@ img{max-width:100%; display:block}
   display:block;
 }
 
+/* menu wrapper (holds desktop links + mobile button/panel) */
 .menu{
   display:flex;
   gap:10px;
   align-items:center;
   flex-wrap:wrap;
+  position:relative; /* needed so dropdown anchors correctly */
 }
+
+/* Desktop links */
+.menu-links{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
 .menu a{
   padding:8px 10px;
   border:1px solid transparent;
@@ -102,6 +112,100 @@ img{max-width:100%; display:block}
   border-color:var(--line);
   color:var(--fg);
   background:rgba(10,49,97,0.04);
+}
+
+/* Mobile hamburger button (hidden on desktop) */
+/* IMPORTANT: class must match your HTML: class="menuBtn" */
+.menuBtn{
+  display:none;
+  appearance:none;
+  border:1px solid var(--line);
+  background:rgba(10,49,97,0.03);
+  color:var(--fg);
+  height:40px;
+  width:44px;
+  border-radius:999px;
+  padding:0;
+  cursor:pointer;
+  align-items:center;
+  justify-content:center;
+}
+
+/* 3-line icon (centered) */
+.menuBtn .burger{
+  width:18px;
+  height:12px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+}
+.menuBtn .burger span{
+  display:block;
+  width:18px;
+  height:2px;
+  background:var(--fg);
+  border-radius:2px;
+  opacity:0.9;
+}
+
+/* Dropdown panel:
+   - sits tight under the button
+   - grows right -> left (anchored to right edge)
+   - smaller so it doesn't cover top area
+*/
+.menu-panel{
+  display:none;            /* JS toggles .open */
+  position:absolute;
+  top:calc(100% + 8px);
+  right:0;
+
+  min-width:0;       /* removes forced width */
+  max-width:none;    /* lets it hug the text */
+  max-width:72vw;
+
+  border:1px solid var(--line);
+  border-radius:10px;      /* straighter */
+  background:rgba(255,255,255,0.98);
+  backdrop-filter: blur(10px);
+  padding:8px;
+  box-shadow:0 12px 30px rgba(10,22,51,0.12);
+  z-index:999;
+
+  transform-origin: top right;
+  transform: translateY(-6px) scale(0.98);
+  opacity:0;
+  pointer-events:none;
+  transition: transform .16s ease, opacity .16s ease;
+}
+
+.menu-panel a{
+  display:block;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid transparent;
+  color:var(--fg);
+  font-size:14px;
+  white-space:nowrap;
+}
+.menu-panel a:hover{
+  background:rgba(10,49,97,0.05);
+  border-color:var(--line);
+  opacity:1;
+}
+
+/* open state */
+.menu-panel.open{
+  display:block;
+  transform: translateY(0) scale(1);
+  opacity:1;
+  pointer-events:auto;
+}
+
+/* Mobile behavior */
+@media (max-width: 680px){
+  .menu-links{display:none;}
+  .menuBtn{display:inline-flex;}
 }
 
 /* =========================
@@ -152,13 +256,13 @@ img{max-width:100%; display:block}
 @media (max-width: 920px){
   .grid{grid-template-columns:1fr;}
 }
-/* card class (border) */
+
 .card{
   border:1px solid var(--line);
   background:rgba(10,49,97,0.02);
   border-radius:var(--radius);
   overflow:hidden;
-  margin-top: 14px;
+  margin-top:14px;
 }
 
 .card .hd{
@@ -220,9 +324,7 @@ input[type="search"]{min-width:240px}
 .list{display:flex; flex-direction:column}
 
 /* Artist List */
-.artistList{
-  display: flex; flex-direction: column;
-}
+.artistList{display:flex; flex-direction:column;}
 
 .item{
   border:1px solid var(--line);
@@ -230,16 +332,13 @@ input[type="search"]{min-width:240px}
   border-radius:12px;
   padding:12px;
   display:flex;
-  gap: 25px;
-  /* align-items:flex-start; */
-  align-items: center;
-  margin-bottom: 12px;
+  gap:25px;
+  align-items:center;
+  margin-bottom:12px;
 }
 
 @media (max-width: 430px) {
-  body[data-page="artists"] .item {
-    gap: 20px;
-  }
+  body[data-page="artists"] .item { gap:20px; }
 }
 
 .item .thumb{
@@ -292,7 +391,7 @@ input[type="search"]{min-width:240px}
   .kv{grid-template-columns:1fr;}
 }
 
- /* Footer */
+/* Footer */
 .footer {
   border-top: 1px solid rgba(75, 88, 120, 0.1);
   color: var(--muted);
@@ -304,29 +403,20 @@ input[type="search"]{min-width:240px}
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  /* position: absolute; */
-  /* bottom: 0; */
   width: 100%;
   text-align: center;
-  /* height: 2.5rem; */
 }
+.footer > div { display:inline; }
 
-.footer > div {
-  display: inline;
-}
-
-/* Footer for mobile */
 @media (max-width: 430px) {
   .footer {
     flex-direction: column;
-    gap: 10px; /* Tighter gap on mobile */
-    padding: 1.5rem 1rem; /* More vertical padding */
+    gap: 10px;
+    padding: 1.5rem 1rem;
   }
-
-  .footer > div {
-    display: block;
-  }
+  .footer > div { display:block; }
 }
+
 .smalllink{
   text-decoration:underline;
   text-decoration-color:rgba(10,22,51,0.35);
@@ -353,38 +443,29 @@ input[type="search"]{min-width:240px}
   .menu a{padding:6px 8px; font-size:13px;}
 }
 
-/* Mobile: Genre chips */
 @media (max-width: 430px){
-  .chip {
-    font-size: 11px;
-
-  }
+  .chip { font-size: 11px; }
 }
 
-/* Mobile (Artists page): Pill that shows directions */
 @media (max-width: 430px){
-  body[data-page="artists"] .pill{
-    font-size: 12px;
-  }
+  body[data-page="artists"] .pill{ font-size: 12px; }
 }
 
 /* =========================
-   FLAG CORNERS (OFF FOR NOW)
+   FLAG CORNERS
 ========================= */
-/* Flag corners */
 .flag-corner{
   position:fixed;
   width:140px;
   height:140px;
   pointer-events:none;
-  /* opacity:0.9; */
   background-size:contain;
   background-repeat:no-repeat;
   display:block;
 }
 
 /* Desktop: overlap the topbar */
-.flag-corner{ z-index: 999; }              /* above topbar */
+.flag-corner{ z-index: 999; }
 .topbar{ z-index: 50; }
 
 .flag-corner.tl{
@@ -406,14 +487,9 @@ input[type="search"]{min-width:240px}
     width:90px;
     height:90px;
     opacity:0.85;
-    z-index: 1;            /* behind topbar + logo */
+    z-index: 1;
   }
-
-  .topbar{
-    z-index: 50;           /* stays above */
-  }
-
-  /* Optional: nudge the top-left corner slightly OUT so it never touches logo */
+  .topbar{ z-index: 50; }
   .flag-corner.tl{
     top:-6px;
     left:-6px;
@@ -422,11 +498,7 @@ input[type="search"]{min-width:240px}
 
 /* ==========================================================
    EVENT PAGE — DICE-STYLE HERO LOOK (body[data-page="event"])
-   This styles your existing event detail output to match
-   the screenshot vibe (big title, yellow date line, dark hero).
 ========================================================== */
-
-/* Make the main event card feel like a hero banner */
 body[data-page="event"] #detail .card{
   background:
     radial-gradient(1200px 520px at 10% 0%, rgba(193,18,31,0.35), transparent 60%),
@@ -436,7 +508,6 @@ body[data-page="event"] #detail .card{
   border-color: rgba(255,255,255,0.18);
 }
 
-/* So the top header doesn't look like a table bar */
 body[data-page="event"] #detail .card .hd{
   border-bottom-color: rgba(255,255,255,0.14);
   background: rgba(255,255,255,0.03);
@@ -445,14 +516,12 @@ body[data-page="event"] #detail .card .hd h2{
   color: rgba(255,255,255,0.75);
 }
 
-/* “tracking” chip in the header */
 body[data-page="event"] #detail .card .hd .chip{
   background: rgba(255,255,255,0.08);
   border-color: rgba(255,255,255,0.22);
   color:#fff;
 }
 
-/* BIG TITLE like the screenshot */
 body[data-page="event"] #detail h1{
   font-size: clamp(40px, 5.2vw, 76px) !important;
   line-height: 1.02 !important;
@@ -461,7 +530,6 @@ body[data-page="event"] #detail h1{
   color:#fff;
 }
 
-/* The first subline under title = yellow date/time line */
 body[data-page="event"] #detail h1 + p.sub{
   color: var(--hero-yellow) !important;
   font-size: clamp(18px, 2.2vw, 34px) !important;
@@ -469,12 +537,10 @@ body[data-page="event"] #detail h1 + p.sub{
   letter-spacing: 0.01em;
 }
 
-/* Secondary subtext (if you have more p.sub lines) */
 body[data-page="event"] #detail p.sub{
   color: rgba(255,255,255,0.85);
 }
 
-/* Buttons on event page should look like pill buttons on dark bg */
 body[data-page="event"] #detail .btn{
   background: rgba(255,255,255,0.08);
   border-color: rgba(255,255,255,0.22);
@@ -488,12 +554,10 @@ body[data-page="event"] #detail .btn.primary{
   border-color: rgba(255,255,255,0.35);
 }
 
-/* Make separators subtle on dark bg */
 body[data-page="event"] #detail hr.sep{
   border-top-color: rgba(255,255,255,0.16);
 }
 
-/* KV labels + values on dark bg */
 body[data-page="event"] #detail .kv dt{
   color: rgba(255,255,255,0.70);
 }
@@ -501,13 +565,11 @@ body[data-page="event"] #detail .kv dd{
   color: rgba(255,255,255,0.95);
 }
 
-/* Links in KV */
 body[data-page="event"] #detail .smalllink{
   color: rgba(255,255,255,0.92);
   text-decoration-color: rgba(255,255,255,0.35);
 }
 
-/* Lineup chips on dark bg */
 body[data-page="event"] #detail .chip{
   background: rgba(255,255,255,0.08);
   border-color: rgba(255,255,255,0.22);
@@ -517,14 +579,82 @@ body[data-page="event"] #detail a.chip:hover{
   opacity: 0.95;
 }
 
-/* Footer inside the card on dark bg */
 body[data-page="event"] #detail .card .ft{
   border-top-color: rgba(255,255,255,0.14);
   color: rgba(255,255,255,0.70);
   background: rgba(255,255,255,0.03);
 }
 
-/* Event page outer footer should stay normal (site footer) */
 body[data-page="event"] .wrap > .footer{
   color: var(--muted);
+}
+/* ===== MOBILE MENU FIX (Safari-safe) ===== */
+
+/* Make sure the button actually renders on mobile */
+@media (max-width: 720px){
+  .menu-btn{
+    display:inline-flex !important;
+  }
+}
+
+/* Force burger icon to be visible */
+.menu-btn .burger{
+  width:18px;
+  height:12px;
+  display:flex !important;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.menu-btn .burger span{
+  display:block !important;
+  width:18px !important;
+  height:2px !important;
+  background-color: var(--fg) !important;
+  border-radius:2px;
+  opacity:1 !important;
+}
+
+/* Right-align the dropdown text */
+.menu-panel{
+  right:0;
+}
+
+.menu-panel a{
+  text-align:right;
+}
+/* ===== BURGER BUTTON FIX ===== */
+
+/* tighten bubble around icon */
+.menu-btn{
+  width:36px;
+  height:36px;
+  padding:0;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* center burger perfectly */
+.menu-btn .burger{
+  width:16px;
+  height:10px;
+}
+
+.menu-btn .burger span{
+  width:16px;
+}
+
+
+/* ===== DROPDOWN ALIGNMENT FIX ===== */
+
+.menu-panel{
+  padding:6px;           /* smaller container padding */
+  min-width:130px;       /* tighter panel width */
+}
+
+.menu-panel a{
+  padding:8px 10px;      /* removes extra left space */
+  text-align:right;
 }
