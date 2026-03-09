@@ -5,6 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>VERRE — Archive</title>
 <link rel="stylesheet" href="style.css" />
+
+<style>
+
+html, body {
+  overflow-x: hidden;
+}
+
+#hellpGallery{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  padding:0 16px 16px;
+}
+
+#hellpGallery img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#f3f3f3;
+}
+
+</style>
+
 </head>
 
 <body data-page="archive">
@@ -72,19 +97,19 @@ aria-expanded="false"
 
 <div class="bd">
 
-<article class="item" style="display:block; padding:0; overflow:hidden;">
+<article class="item" style="display:block;padding:0;overflow:hidden;">
 
 <div style="padding:16px 16px 0;">
 
-<p class="sub" style="margin:0 0 10px; font-family:var(--mono); text-transform:uppercase; letter-spacing:.08em;">
+<p class="sub" style="margin:0 0 10px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.08em;">
 Mar 6, 2026 • Los Angeles
 </p>
 
-<h2 style="margin:0 0 10px; font-size:34px; line-height:1.05;">
+<h2 style="margin:0 0 10px;font-size:34px;line-height:1.05;">
 The Hellp — Lights Down Low 3.6.26
 </h2>
 
-<p class="sub" style="font-size:15px; line-height:1.6; max-width:760px;">
+<p class="sub" style="font-size:15px;line-height:1.6;max-width:760px;">
 VERRE archive entry documenting The Hellp performing at Lights Down Low.
 </p>
 
@@ -98,26 +123,15 @@ VERRE archive entry documenting The Hellp performing at Lights Down Low.
 </div>
 
 
-<div
-id="hellpGallery"
-style="
-display:grid;
-gap:10px;
-padding:0 16px 16px;
-grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
-">
-</div>
+<div id="hellpGallery"></div>
 
 
 <div style="padding:0 16px 20px;">
-<p class="sub" style="font-size:15px; line-height:1.7; max-width:760px; margin:0;">
-Add your recap text here describing the night, the energy of the room,
-standout moments, or why the show mattered.
+<p class="sub" style="font-size:15px;line-height:1.7;max-width:760px;margin:0;">
 </p>
 </div>
 
 <div class="ft">
-VERRE archive entry — show photography and documentation.
 </div>
 
 </article>
@@ -133,7 +147,6 @@ VERRE archive entry — show photography and documentation.
 <div>© VERRE • Archive-first</div>
 
 <p class="sub" style="max-width:520px;">
-Archive posts preserve events, flyers, and scene documentation.
 </p>
 
 <div>
@@ -154,24 +167,16 @@ const gallery = document.getElementById("hellpGallery");
 const folder = "assets/archive/hellp-lights-down-low-2026-03-06/";
 const base = "hellp-lights-down-low-";
 const ext = ".jpeg";
+const totalImages = 63;
 
-const totalImages = 61;
+for(let i=1;i<=totalImages;i++){
 
-for (let i = 1; i <= totalImages; i++) {
+const img=document.createElement("img");
 
-const num = String(i).padStart(5,"0");
-
-const img = document.createElement("img");
-
-img.src = `${folder}${base}${num}${ext}`;
-img.alt = `The Hellp Lights Down Low ${num}`;
-img.loading = "lazy";
-img.decoding = "async";
-
-img.style.width = "100%";
-img.style.borderRadius = "12px";
-img.style.border = "1px solid var(--line)";
-img.style.background = "#f3f3f3";
+img.src=`${folder}${base}${i}${ext}`;
+img.alt=`The Hellp Lights Down Low ${i}`;
+img.loading="lazy";
+img.decoding="async";
 
 gallery.appendChild(img);
 
