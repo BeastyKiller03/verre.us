@@ -160,7 +160,7 @@ img{max-width:100%; display:block}
   top:calc(100% + 8px);
   right:0;
 
-  min-width:0;       /* removes forced width */
+  min-width:0px;       /* removes forced width */
   max-width:none;    /* lets it hug the text */
   max-width:72vw;
 
