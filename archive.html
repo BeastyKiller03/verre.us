@@ -9,50 +9,48 @@
 
 <body data-page="archive">
 
-<!-- Flag corners -->
 <div class="flag-corner tl" aria-hidden="true"></div>
 <div class="flag-corner br" aria-hidden="true"></div>
 
-<!-- TOPBAR -->
 <div class="topbar">
-  <div class="nav">
-    <a class="brand" href="index.html" aria-label="VERRE home">
-      <img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
-    </a>
+<div class="nav">
 
-    <div class="menu" aria-label="Primary navigation">
+<a class="brand" href="index.html" aria-label="VERRE home">
+<img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
+</a>
 
-      <div class="menu-links">
-        <a href="events.html">Events</a>
-        <a href="artists.html">Artists</a>
-        <a href="archive.html">Archive</a>
-      </div>
+<div class="menu" aria-label="Primary navigation">
 
-      <button
-        class="menu-btn"
-        id="menuBtn"
-        type="button"
-        aria-label="Open menu"
-        aria-controls="menuPanel"
-        aria-expanded="false"
-      >
-        <span class="burger" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </span>
-      </button>
+<div class="menu-links">
+<a href="events.html">Events</a>
+<a href="artists.html">Artists</a>
+<a href="archive.html">Archive</a>
+</div>
 
-      <div class="menu-panel" id="menuPanel" aria-hidden="true">
-        <a href="events.html">Events</a>
-        <a href="artists.html">Artists</a>
-        <a href="archive.html">Archive</a>
-      </div>
+<button
+class="menu-btn"
+id="menuBtn"
+type="button"
+aria-label="Open menu"
+aria-controls="menuPanel"
+aria-expanded="false"
+>
+<span class="burger" aria-hidden="true">
+<span></span><span></span><span></span>
+</span>
+</button>
 
-    </div>
-  </div>
+<div class="menu-panel" id="menuPanel" aria-hidden="true">
+<a href="events.html">Events</a>
+<a href="artists.html">Artists</a>
+<a href="archive.html">Archive</a>
+</div>
+
+</div>
+</div>
 </div>
 
 
-<!-- MAIN -->
 <div class="wrap">
 
 <div class="hero">
@@ -100,8 +98,8 @@ VERRE archive entry documenting The Hellp performing at Lights Down Low.
 </div>
 
 
-<!-- GALLERY -->
-<div id="hellpGallery"
+<div
+id="hellpGallery"
 style="
 display:grid;
 gap:10px;
@@ -113,7 +111,8 @@ grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
 
 <div style="padding:0 16px 20px;">
 <p class="sub" style="font-size:15px; line-height:1.7; max-width:760px; margin:0;">
-Add your recap text here if you want to describe the night, the crowd, standout moments, etc.
+Add your recap text here describing the night, the energy of the room,
+standout moments, or why the show mattered.
 </p>
 </div>
 
@@ -129,7 +128,6 @@ VERRE archive entry — show photography and documentation.
 </div>
 
 
-<!-- FOOTER -->
 <div class="footer">
 
 <div>© VERRE • Archive-first</div>
@@ -149,28 +147,31 @@ Archive posts preserve events, flyers, and scene documentation.
 <script src="app.js"></script>
 
 
-<!-- AUTO IMAGE LOADER -->
 <script>
 
 const gallery = document.getElementById("hellpGallery");
 
-const folder = "assets/archive/hellp-lights-down-low-2026-03-06/";
+const folder = "assets/assets/archive/hellp-lights-down-low-2026-03-06/";
 const base = "hellp-lights-down-low-";
 const ext = ".jpeg";
 
-for (let i = 1; i <= 61; i++) {
+const totalImages = 61;
 
-const num = String(i).padStart(5, "0");
+for (let i = 1; i <= totalImages; i++) {
+
+const num = String(i).padStart(5,"0");
 
 const img = document.createElement("img");
 
 img.src = `${folder}${base}${num}${ext}`;
 img.alt = `The Hellp Lights Down Low ${num}`;
 img.loading = "lazy";
+img.decoding = "async";
 
 img.style.width = "100%";
 img.style.borderRadius = "12px";
 img.style.border = "1px solid var(--line)";
+img.style.background = "#f3f3f3";
 
 gallery.appendChild(img);
 
