@@ -630,7 +630,6 @@ body[data-page="event"] .wrap > .footer{
   width:36px;
   height:36px;
   padding:0;
-  display:inline-flex;
   align-items:center;
   justify-content:center;
   display: none;
