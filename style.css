@@ -633,6 +633,7 @@ body[data-page="event"] .wrap > .footer{
   display:inline-flex;
   align-items:center;
   justify-content:center;
+  display: none;
 }
 
 /* center burger perfectly */
