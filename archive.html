@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VERRE — Archive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="archive">
+  <!-- Flag corners -->
+  <div class="flag-corner tl" aria-hidden="true"></div>
+  <div class="flag-corner br" aria-hidden="true"></div>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="VERRE home">
+        <img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
+      </a>
+
+      <div class="menu" aria-label="Primary navigation">
+        <div class="menu-links">
+          <a href="events.html">Events</a>
+          <a href="artists.html">Artists</a>
+          <a href="archive.html">Archive</a>
+        </div>
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="menuPanel"
+          aria-expanded="false"
+        >
+          <span class="burger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <div class="menu-panel" id="menuPanel" aria-hidden="true">
+          <a href="events.html">Events</a>
+          <a href="artists.html">Artists</a>
+          <a href="archive.html">Archive</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="wrap">
+    <div class="hero">
+      <h1>Archive</h1>
+      <p>Flyers, photos, scene memories, and recap-style posts.</p>
+      <div class="meta">
+        <span class="pill">Editorial archive</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="hd">
+        <h2>Archive Posts</h2>
+        <span class="pill">VERRE</span>
+      </div>
+
+      <div class="bd">
+        <div class="list" id="archiveList">
+
+          <!-- ARCHIVE ENTRY -->
+          <article class="item" style="display:block; padding:0; overflow:hidden;">
+            <div style="padding:16px 16px 0;">
+              <p class="sub" style="margin:0 0 10px; font-family:var(--mono); text-transform:uppercase; letter-spacing:.08em;">
+                Mar 6, 2026 • Archive Entry 001
+              </p>
+
+              <h2 style="margin:0 0 10px; font-size:34px; line-height:1.05;">
+                The Hellp - Lights Down Low 3.6.26
+              </h2>
+
+              <p class="sub" style="font-size:15px; line-height:1.6; max-width:760px;">
+                VERRE archive entry for The Hellp at Lights Down Low on 3.6.26.
+                This page can hold flyer scans, show photos, screenshots, recap notes,
+                lineup details, and anything else worth preserving from the night.
+              </p>
+
+              <div class="row" style="margin:12px 0 16px;">
+                <span class="chip">archive</span>
+                <span class="chip">the hellp</span>
+                <span class="chip">lights down low</span>
+                <span class="chip">03.06.26</span>
+              </div>
+            </div>
+
+            <!-- replace these with your real images -->
+            <div style="display:grid; gap:10px; padding:0 16px 16px;">
+              <img
+                src="assets/flyers/flyer-the-hellp-lights-down-low-2026-03-06.jpg"
+                alt="The Hellp - Lights Down Low flyer"
+                style="width:100%; border-radius:12px; border:1px solid var(--line);"
+              />
+            </div>
+
+            <div style="padding:0 16px 18px;">
+              <p class="sub" style="font-size:15px; line-height:1.7; max-width:760px; margin:0;">
+                Add your written recap here. This could be a short memory of the night,
+                who played, what the room felt like, standout visuals, crowd energy,
+                or why the event matters enough to archive.
+              </p>
+            </div>
+
+            <div class="ft">
+              VERRE archive entry — flyer, recap, and scene memory.
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div>© VERRE • Archive-first</div>
+
+    <p class="sub" style="max-width:520px;">
+      Archive posts can hold flyers, recaps, screenshots, visuals, and older scene references.
+    </p>
+
+    <div>
+      <a class="btn" href="press.html">Submissions</a>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
