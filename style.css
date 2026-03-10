@@ -162,7 +162,6 @@ img{max-width:100%; display:block}
 
   min-width:0px;       /* removes forced width */
   max-width:none;    /* lets it hug the text */
-  max-width:72vw;
 
   border:1px solid var(--line);
   border-radius:10px;      /* straighter */
@@ -631,9 +630,9 @@ body[data-page="event"] .wrap > .footer{
   width:36px;
   height:36px;
   padding:0;
-  display:inline-flex;
   align-items:center;
   justify-content:center;
+  display: none;
 }
 
 /* center burger perfectly */
@@ -649,10 +648,7 @@ body[data-page="event"] .wrap > .footer{
 
 /* ===== DROPDOWN ALIGNMENT FIX ===== */
 
-.menu-panel{
-  padding:6px;           /* smaller container padding */
-  min-width:130px;       /* tighter panel width */
-}
+
 
 .menu-panel a{
   padding:8px 10px;      /* removes extra left space */

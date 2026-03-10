@@ -16,9 +16,35 @@
       <a class="brand" href="index.html" aria-label="VERRE home">
         <img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
       </a>
-      <div class="menu">
-        <a href="events.html">Events</a>
-        <a href="artists.html">Artists</a>
+
+      <div class="menu" aria-label="Primary navigation">
+        <!-- Desktop links -->
+        <div class="menu-links">
+          <a href="events.html">Events</a>
+          <a href="artists.html">Artists</a>
+          <a href="archive.html">Archive</a>
+        </div>
+
+        <!-- Mobile burger -->
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="menuPanel"
+          aria-expanded="false"
+        >
+          <span class="burger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <!-- Mobile dropdown -->
+        <div class="menu-panel" id="menuPanel" aria-hidden="true">
+          <a href="events.html">Events</a>
+          <a href="artists.html">Artists</a>
+          <a href="archive.html">Archive</a>
+        </div>
       </div>
     </div>
   </div>
@@ -26,9 +52,8 @@
   <div class="wrap">
     <div class="hero">
       <h1>Artist</h1>
-      <p>
-        Tracked artists with links and logged appearances. </strong>
-      </p>
+      <p>Tracked artists with links and logged appearances.</p>
+
       <div class="meta tools">
         <div class="search">
           <input id="artistsSearch" type="search" placeholder="Search: name, tag, sound…" />
@@ -37,23 +62,20 @@
       </div>
     </div>
 
-    <!-- ✅ MATCHES INDEX GAP -->
-    <!-- <div class="grid"> -->
-      <div class="card">
-        <div class="hd">
-          <h2>Artists</h2>
-          <span class="pill" id="instructionsPill">Click an artist for links + tracked events</span>
-        </div>
-        <div class="bd">
-          <div class="list" id="artistsList"></div>
-        </div>
+    <div class="card">
+      <div class="hd">
+        <h2>Artists</h2>
+        <span class="pill" id="instructionsPill">Click an artist for links + tracked events</span>
       </div>
-    <!-- </div> -->
+      <div class="bd">
+        <div class="list" id="artistsList"></div>
+      </div>
+    </div>
   </div>
 
   <div class="footer">
-        <div>Want to add an artist? Send name + link + next show/flyer/source</div>
-        <a href="index.html" class="smalllink">Home</a>
+    <div>Want to add an artist? Send name + link + next show/flyer/source</div>
+    <a href="index.html" class="smalllink">Home</a>
   </div>
 
   <script src="data.js"></script>
