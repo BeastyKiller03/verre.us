@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VERRE — A Night to Remember at Pour Vous 3.12.26</title>
+<link rel="stylesheet" href="style.css" />
+
+<style>
+html,body{
+overflow-x:hidden;
+}
+
+#pourVousGallery{
+display:flex;
+flex-direction:column;
+gap:12px;
+padding:0 16px 16px;
+width:100%;
+}
+
+#pourVousGallery img{
+width:100%;
+height:auto;
+display:block;
+border-radius:12px;
+border:1px solid var(--line);
+background:#f3f3f3;
+}
+</style>
+</head>
+
+<body data-page="archive">
+
+<div class="flag-corner tl" aria-hidden="true"></div>
+<div class="flag-corner br" aria-hidden="true"></div>
+
+<div class="topbar">
+<div class="nav">
+
+<a class="brand" href="index.html" aria-label="VERRE home">
+<img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
+</a>
+
+<div class="menu" aria-label="Primary navigation">
+
+<div class="menu-links">
+<a href="events.html">Events</a>
+<a href="artists.html">Artists</a>
+<a href="archive.html">Archive</a>
+</div>
+
+<button
+class="menu-btn"
+id="menuBtn"
+type="button"
+aria-label="Open menu"
+aria-controls="menuPanel"
+aria-expanded="false"
+>
+<span class="burger" aria-hidden="true">
+<span></span><span></span><span></span>
+</span>
+</button>
+
+<div class="menu-panel" id="menuPanel" aria-hidden="true">
+<a href="events.html">Events</a>
+<a href="artists.html">Artists</a>
+<a href="archive.html">Archive</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="wrap">
+
+<div class="hero">
+<h1>Archive</h1>
+<p>Flyers, photos, and scene documentation.</p>
+
+<div class="meta">
+<span class="pill">VERRE Archive</span>
+<a class="btn" href="archive.html">Back to Archive</a>
+</div>
+</div>
+
+<div class="card">
+
+<div class="hd">
+<h2>Archive Entry</h2>
+<span class="pill">003</span>
+</div>
+
+<div class="bd">
+
+<article class="item" style="display:block; padding:0; overflow:hidden;">
+
+<div style="padding:16px 16px 0;">
+
+<p class="sub" style="margin:0 0 10px; font-family:var(--mono); text-transform:uppercase; letter-spacing:.08em;">
+Mar 12, 2026 • Los Angeles
+</p>
+
+<h2 style="margin:0 0 10px; font-size:34px; line-height:1.05;">
+A Night to Remember at Pour Vous — 3.12.26
+</h2>
+
+<div class="row" style="margin:12px 0 16px;">
+<span class="chip">archive</span>
+<span class="chip">pour vous</span>
+<span class="chip">03.12.26</span>
+</div>
+
+</div>
+
+<div id="pourVousGallery"></div>
+
+<div class="ft">
+VERRE archive entry — show photography and documentation.
+</div>
+
+</article>
+
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+
+<div>© VERRE • Archive-first</div>
+
+<p class="sub" style="max-width:520px;">
+Archive posts preserve events, flyers, and scene documentation.
+</p>
+
+<div>
+<a class="btn" href="press.html">Submissions</a>
+</div>
+
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+<script>
+
+const gallery = document.getElementById("pourVousGallery");
+
+const folder = "assets/archive/a-night-to-remember-pour-vous-2026-03-12/";
+const base = "a-night-to-remember-pour-vous-";
+const ext = ".jpg";
+const totalImages = 99;
+
+for (let i = 1; i <= totalImages; i++) {
+  const img = document.createElement("img");
+
+  img.src = `${folder}${base}${i}${ext}`;
+  img.alt = `A Night to Remember at Pour Vous ${i}`;
+  img.loading = "lazy";
+  img.decoding = "async";
+
+  gallery.appendChild(img);
+}
+
+</script>
+
+</body>
+</html>
