@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>VERRE — Slumber Party 3.7.26</title>
+<title>VERRE — Pour Vous Friday the 13th 3.13.26</title>
 <link rel="stylesheet" href="style.css" />
 
 <style>
@@ -11,7 +11,7 @@ html,body{
 overflow-x:hidden;
 }
 
-#slumberGallery{
+#pourVousFridayGallery{
 display:flex;
 flex-direction:column;
 gap:12px;
@@ -19,7 +19,7 @@ padding:0 16px 16px;
 width:100%;
 }
 
-#slumberGallery img{
+#pourVousFridayGallery img{
 width:100%;
 height:auto;
 display:block;
@@ -89,7 +89,7 @@ aria-expanded="false"
 
 <div class="hd">
 <h2>Archive Entry</h2>
-<span class="pill">002</span>
+<span class="pill">004</span>
 </div>
 
 <div class="bd">
@@ -99,31 +99,23 @@ aria-expanded="false"
 <div style="padding:16px 16px 0;">
 
 <p class="sub" style="margin:0 0 10px; font-family:var(--mono); text-transform:uppercase; letter-spacing:.08em;">
-Mar 7, 2026 • Los Angeles
+Mar 13, 2026 • Los Angeles
 </p>
 
 <h2 style="margin:0 0 10px; font-size:34px; line-height:1.05;">
-Slumber Party — 3.7.26
+Pour Vous Friday the 13th — 3.13.26
 </h2>
-
-<p class="sub" style="font-size:15px; line-height:1.6; max-width:760px;">
-VERRE archive entry documenting the Slumber Party event.
-</p>
 
 <div class="row" style="margin:12px 0 16px;">
 <span class="chip">archive</span>
-<span class="chip">slumber party</span>
-<span class="chip">03.07.26</span>
+<span class="chip">pour vous</span>
+<span class="chip">friday the 13th</span>
+<span class="chip">03.13.26</span>
 </div>
 
 </div>
 
-<div id="slumberGallery"></div>
-
-<div style="padding:0 16px 20px;">
-<p class="sub" style="font-size:15px; line-height:1.7; max-width:760px; margin:0;">
-</p>
-</div>
+<div id="pourVousFridayGallery"></div>
 
 <div class="ft">
 VERRE archive entry — show photography and documentation.
@@ -155,30 +147,25 @@ Archive posts preserve events, flyers, and scene documentation.
 
 <script>
 
-const gallery = document.getElementById("slumberGallery");
+const gallery = document.getElementById("pourVousFridayGallery");
 
-const folder = "assets/archive/slumber-party-2026-03-07/";
-const base = "slumber-party-";
+const folder = "assets/archive/pour-vous-friday-the-13th-2026-03-13/";
+const base = "pour-vous-friday-the-13th-";
 const ext = ".jpeg";
-
-const totalImages = 51;
+const totalImages = 139; // change if needed
 
 for (let i = 1; i <= totalImages; i++) {
+  const img = document.createElement("img");
 
-const img = document.createElement("img");
+  img.src = `${folder}${base}${i}${ext}`;
+  img.alt = `Pour Vous Friday the 13th ${i}`;
+  img.loading = "lazy";
+  img.decoding = "async";
 
-img.src = `${folder}${base}${i}${ext}`;
-img.alt = `Slumber Party ${i}`;
-img.loading = "lazy";
-img.decoding = "async";
-
-gallery.appendChild(img);
-
+  gallery.appendChild(img);
 }
 
 </script>
 
 </body>
 </html>
-
-
