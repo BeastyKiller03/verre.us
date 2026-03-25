@@ -54,7 +54,47 @@
       font-size:1.05rem;
       color:var(--muted);
       max-width:700px;
+      margin:0 0 24px;
+    }
+
+    .support-box{
+      border:1px solid var(--line);
+      padding:18px;
       margin:0 0 30px;
+      background:#fafafa;
+    }
+
+    .support-title{
+      font-size:12px;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:var(--muted);
+      margin:0 0 10px;
+    }
+
+    .support-box p{
+      margin:0 0 10px;
+    }
+
+    .support-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:10px;
+    }
+
+    .support-link{
+      display:inline-block;
+      border:1px solid var(--line);
+      padding:10px 14px;
+      text-decoration:none;
+      color:var(--text);
+      font-size:0.95rem;
+      background:#fff;
+    }
+
+    .support-link:hover{
+      opacity:0.75;
     }
 
     .hero-image,
@@ -150,6 +190,10 @@
       .closing{
         font-size:0.98rem;
       }
+
+      .support-links{
+        flex-direction:column;
+      }
     }
   </style>
 </head>
@@ -165,6 +209,21 @@
         <em>Ice Melts</em> into the real world—creating a space built around connection,
         conversation, and support for families affected by ICE.
       </p>
+
+      <section class="support-box">
+        <p class="support-title">Support</p>
+        <p>
+          If you want to support the work and organizations connected to the night, you can donate below.
+        </p>
+        <div class="support-links">
+          <a class="support-link" href="https://www.esperanza-la.org/donate" target="_blank" rel="noopener">
+            Donate to Esperanza
+          </a>
+          <a class="support-link" href="https://venmo.com/aetnastreetsolidarity" target="_blank" rel="noopener">
+            Venmo: @aetnastreetsolidarity
+          </a>
+        </div>
+      </section>
 
       <figure class="hero-image">
         <img src="assets/archive/ice-melts-2026-03-18/ice-melts-1.jpeg" alt="Allergi posed during the night" />
@@ -196,7 +255,7 @@
         <p class="answer">
           We met in St. Louis. I was in school getting my PhD (Dropped Out) and working on a fashion
           show, and I asked Alex to make music for it. That was kind of the first project
-          we did together, in that noise scene that was all based in Miami. 
+          we did together, in that noise scene that was all based in Miami.
         </p>
 
         <div class="answer-label">Alex</div>
