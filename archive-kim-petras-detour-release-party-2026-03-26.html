@@ -11,12 +11,14 @@ html,body{
 overflow-x:hidden;
 }
 
+/* 🔥 NEW GRID LAYOUT */
 #kimPetrasGallery{
-display:flex;
-flex-direction:column;
+display:grid;
+grid-template-columns: repeat(2, 1fr);
 gap:12px;
 padding:0 16px 16px;
-width:100%;
+max-width:1100px;
+margin:0 auto;
 }
 
 #kimPetrasGallery img{
@@ -26,6 +28,20 @@ display:block;
 border-radius:12px;
 border:1px solid var(--line);
 background:#f3f3f3;
+}
+
+/* 📱 MOBILE */
+@media (max-width:700px){
+#kimPetrasGallery{
+grid-template-columns: 1fr;
+}
+}
+
+/* 💻 BIG SCREENS */
+@media (min-width:1100px){
+#kimPetrasGallery{
+grid-template-columns: repeat(3, 1fr);
+}
 }
 </style>
 </head>
@@ -151,8 +167,8 @@ const gallery = document.getElementById("kimPetrasGallery");
 
 const folder = "assets/archive/kim-petras-detour-release-party-2026-03-26/";
 const base = "kim-petras-detour-release-party-";
-const ext = ".jpeg";
-const totalImages = 61; // change this number to your real image total
+const ext = ".jpeg"; // change to .jpeg if needed
+const totalImages = 61; // 🔥 change this to your actual number
 
 for (let i = 1; i <= totalImages; i++) {
 
