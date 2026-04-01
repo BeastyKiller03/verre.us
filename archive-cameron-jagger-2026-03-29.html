@@ -58,38 +58,38 @@ h1{
   margin:0 0 24px;
 }
 
+/* cleaner image sizing */
 .hero-image,
 .inline-image,
 .duo-image{
   width:100%;
-  margin:28px 0;
+  margin:28px auto;
+  max-width:720px;
 }
 
 .hero-image{
-  margin:0 0 28px;
+  margin:0 auto 28px;
+  max-width:680px;
 }
 
 .hero-image img,
-.inline-image img{
-  width:100%;
-  height:auto;
-  display:block;
-  border:1px solid var(--line);
-  background:#f3f3f3;
-}
-
-.duo-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:16px;
-}
-
+.inline-image img,
 .duo-grid img{
   width:100%;
   height:auto;
   display:block;
   border:1px solid var(--line);
   background:#f3f3f3;
+  max-width:100%;
+  margin:0 auto;
+}
+
+.duo-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  max-width:720px;
+  margin:0 auto;
 }
 
 figcaption{
@@ -134,7 +134,6 @@ figcaption{
   color:var(--muted);
 }
 
-/* default article links */
 a{
   color:inherit;
   text-decoration:underline;
@@ -145,7 +144,7 @@ a:hover{
   opacity:0.8;
 }
 
-/* top menu should not be underlined */
+/* top nav links should not be underlined */
 .topbar a,
 .topbar .brand,
 .topbar .menu a,
@@ -154,7 +153,6 @@ a:hover{
   text-decoration:none;
 }
 
-/* smooth hide / show for nav */
 .topbar{
   transition:transform 0.28s ease, opacity 0.28s ease;
 }
@@ -163,7 +161,6 @@ a:hover{
   transform:translateY(-100%);
 }
 
-/* optional: keep the logo crisp and not faded */
 .topbar .brand:hover{
   opacity:1;
 }
@@ -180,6 +177,13 @@ a:hover{
   .intro,
   .closing{
     font-size:0.98rem;
+  }
+
+  .hero-image,
+  .inline-image,
+  .duo-image,
+  .duo-grid{
+    max-width:100%;
   }
 
   .duo-grid{
