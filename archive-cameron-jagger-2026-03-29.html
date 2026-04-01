@@ -4,6 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CAMERON JAGGER — Built by Hand — VERRE</title>
+<link rel="stylesheet" href="style.css" />
 
 <style>
 :root{
@@ -24,8 +25,15 @@ body{
   line-height:1.65;
 }
 
-.page{ width:100%; padding:40px 20px 80px; }
-.article{ max-width:var(--max); margin:0 auto; }
+.page{
+  width:100%;
+  padding:80px 20px 80px;
+}
+
+.article{
+  max-width:var(--max);
+  margin:0 auto;
+}
 
 .eyebrow{
   font-size:12px;
@@ -50,14 +58,15 @@ h1{
   margin:0 0 24px;
 }
 
-/* 🔥 IMAGE HANDLING */
 .hero-image,
 .inline-image{
   width:100%;
   margin:28px 0;
 }
 
-.hero-image{ margin:0 0 28px; }
+.hero-image{
+  margin:0 0 28px;
+}
 
 .hero-image img,
 .inline-image img{
@@ -67,9 +76,6 @@ h1{
   border:1px solid var(--line);
   background:#f3f3f3;
 }
-
-/* ❌ REMOVED forced aspect-ratio */
-/* allows vertical images to display naturally */
 
 figcaption{
   font-size:0.8rem;
@@ -119,111 +125,168 @@ a{
   text-decoration-color:#cfcfcf;
 }
 
-a:hover{ opacity:0.8; }
+a:hover{
+  opacity:0.8;
+}
 
 @media (max-width:640px){
-  .page{ padding:24px 16px 56px; }
-  .question{ font-size:1rem; }
-  .intro,.closing{ font-size:0.98rem; }
+  .page{
+    padding:72px 16px 56px;
+  }
+
+  .question{
+    font-size:1rem;
+  }
+
+  .intro,
+  .closing{
+    font-size:0.98rem;
+  }
 }
 </style>
 </head>
 
-<body>
+<body data-page="archive">
+
+<div class="flag-corner tl" aria-hidden="true"></div>
+<div class="flag-corner br" aria-hidden="true"></div>
+
+<div class="topbar">
+  <div class="nav">
+
+    <a class="brand" href="index.html" aria-label="VERRE home">
+      <img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
+    </a>
+
+    <div class="menu" aria-label="Primary navigation">
+
+      <div class="menu-links">
+        <a href="events.html">Events</a>
+        <a href="artists.html">Artists</a>
+        <a href="archive.html">Archive</a>
+      </div>
+
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="menuPanel"
+        aria-expanded="false"
+      >
+        <span class="burger" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+
+      <div class="menu-panel" id="menuPanel" aria-hidden="true">
+        <a href="events.html">Events</a>
+        <a href="artists.html">Artists</a>
+        <a href="archive.html">Archive</a>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <main class="page">
-<article class="article">
+  <article class="article">
 
-<div class="eyebrow">VERRE Interview</div>
+    <div class="eyebrow">VERRE Interview</div>
 
-<h1>Cameron Jagger</h1>
+    <h1>Cameron Jagger</h1>
 
-<p class="dek">
-CAMERON JAGGER consists of Travis Jagger and Cameron Mangus — a creative project started in Summer 2025 at ages 15 and 17.
-All garments are made entirely by hand, in-house. We spoke with them about commitment, process, manufacturing, moving early,
-and what they want people to feel when they wear the work.
-</p>
+    <p class="dek">
+      CAMERON JAGGER consists of Travis Jagger and Cameron Mangus, a creative project started in Summer 2025 at ages 15 and 17.
+      All garments are made entirely by hand, in-house. We spoke with them about commitment, process, manufacturing, moving early,
+      and what they want people to feel when they wear the work.
+    </p>
 
-<!-- 🔥 HERO (VERTICAL FRIENDLY) -->
-<figure class="hero-image">
-<img src="assets/archive/cameron-jagger-2026-03-29/cj-hero.jpeg" alt="Cameron Jagger at the collection release event" />
-<figcaption>Cameron Jagger at their collection release / multi-media exhibition in Los Angeles.</figcaption>
-</figure>
+    <figure class="hero-image">
+      <img src="assets/archive/cameron-jagger-2026-03-29/cj-hero.jpeg" alt="Cameron Jagger at the collection release event" />
+      <figcaption>Cameron Jagger at their collection release / multi-media exhibition in Los Angeles.</figcaption>
+    </figure>
 
-<section class="intro">
-<p>
-CAMERON JAGGER is built around control: control of craft, control of manufacturing, and control of the idea.
-The project has remained self-contained by design—patterning, sewing, and production carried out by the founders alone.
-</p>
-<p>
-Their answers read like a manifesto—equal parts urgency, discipline, and refusal. Below is the interview, presented with minimal edits.
-</p>
-</section>
+    <section class="intro">
+      <p>
+        CAMERON JAGGER is built around control: control of craft, control of manufacturing, and control of the idea.
+        The project has remained self-contained by design-patterning, sewing, and production carried out by the founders alone.
+      </p>
+      <p>
+        Their answers read like a manifesto-equal parts urgency, discipline, and refusal. Below is the interview, presented with minimal edits.
+      </p>
+    </section>
 
-<section class="qa">
-<h2 class="question">
-At 15 and 17, most people aren’t thinking about building something like this — what made you commit to it early?
-</h2>
-<p class="answer">It felt most natural to commit when we did. It’s sort of cliché to say but it really was as if a veil was lifted. We both felt a very unsettling lack of fulfilment in our lives at a relatively young age, which sort of acted as the catalyst for our early commitment. It felt like a literal existential threat, an imperative need to wake up every day and do what we loved. We feel incredibly thankful to have made that a reality.</p>
-</section>
+    <section class="qa">
+      <h2 class="question">
+        At 15 and 17, most people aren’t thinking about building something like this, what made you commit to it early?
+      </h2>
+      <p class="answer">It felt most natural to commit when we did. It’s sort of cliché to say but it really was as if a veil was lifted. We both felt a very unsettling lack of fulfilment in our lives at a relatively young age, which sort of acted as the catalyst for our early commitment. It felt like a literal existential threat, an imperative need to wake up every day and do what we loved. We feel incredibly thankful to have made that a reality.</p>
+    </section>
 
-<figure class="inline-image">
-<img src="assets/archive/cameron-jagger-2026-03-29/cj-1.jpeg" alt="Garments on rack" />
-<figcaption>Garments on rack during the event.</figcaption>
-</figure>
+    <figure class="inline-image">
+      <img src="assets/archive/cameron-jagger-2026-03-29/cj-1.jpeg" alt="Garments on rack" />
+      <figcaption>Garments on rack during the event.</figcaption>
+    </figure>
 
-<section class="qa">
-<h2 class="question">
-When you’re making a piece by hand, what part of the process do you care about the most?
-</h2>
-<p class="answer">Ultimately, it’s the idea. It’s impossible to assign one step in the process with the title of being most important. We care about them all very greatly. The steps of the process, from patterning to sewing, all serve the idea. It is about preserving and perfecting that idea as much as we can, and from that, hopefully making something beautiful.</p>
-</section>
+    <section class="qa">
+      <h2 class="question">
+        When you’re making a piece by hand, what part of the process do you care about the most?
+      </h2>
+      <p class="answer">Ultimately, it’s the idea. It’s impossible to assign one step in the process with the title of being most important. We care about them all very greatly. The steps of the process, from patterning to sewing, all serve the idea. It is about preserving and perfecting that idea as much as we can, and from that, hopefully making something beautiful.</p>
+    </section>
 
-<figure class="inline-image">
-<img src="assets/archive/cameron-jagger-2026-03-29/cj-2.jpeg" alt="Supporters holding pieces" />
-<figcaption>Supporters showing love with pieces in-hand.</figcaption>
-</figure>
+    <figure class="inline-image">
+      <img src="assets/archive/cameron-jagger-2026-03-29/cj-2.jpeg" alt="Supporters holding pieces" />
+      <figcaption>Supporters showing love with pieces in-hand.</figcaption>
+    </figure>
 
-<section class="qa">
-<h2 class="question">
-You speak a lot about quality — what’s something you refuse to compromise on, even if it makes things harder?
-</h2>
-<p class="answer">Manufacturing. We decided very early on that as we grow, we will refuse to let go of our own manufacturing. The clothes will forever be made on our terms, by our people. We will not sell out. We refuse to give in to this corporatized, commercialized bullshit that comes from the industry in current times. We care about our clothes deeply. As of now, as we told you, every single piece is made by hand by our hands alone. We intend to keep manufacturing in our control indefinitely.</p>
-</section>
+    <section class="qa">
+      <h2 class="question">
+        You speak a lot about quality, what’s something you refuse to compromise on, even if it makes things harder?
+      </h2>
+      <p class="answer">Manufacturing. We decided very early on that as we grow, we will refuse to let go of our own manufacturing. The clothes will forever be made on our terms, by our people. We will not sell out. We refuse to give in to this corporatized, commercialized bullshit that comes from the industry in current times. We care about our clothes deeply. As of now, as we told you, every single piece is made by hand by our hands alone. We intend to keep manufacturing in our control indefinitely.</p>
+    </section>
 
-<figure class="inline-image">
-<img src="assets/archive/cameron-jagger-2026-03-29/cj-3.jpeg" alt="Scene overlap at event" />
-<figcaption>Community moment from the night.</figcaption>
-</figure>
+    <figure class="inline-image">
+      <img src="assets/archive/cameron-jagger-2026-03-29/cj-3.jpeg" alt="Scene overlap at event" />
+      <figcaption>Community moment from the night.</figcaption>
+    </figure>
 
-<section class="qa">
-<h2 class="question">
-You’ve already put yourselves in rooms most people your age aren’t in — how did you even get there, and what did you take from it?
-</h2>
-<p class="answer">We will do just about anything to get into rooms we should by zero means be in. In those situations, we operate purely off of willpower. Trying random shit until something works (which it usually does). One lesson we’ve learned from being in those situations, which has been invaluable, is that your young age does not, in any circumstance, limit you from what you are capable of. We have been looked down upon, dismissed and taken far less seriously for our age, but fuck it we ball.</p>
-</section>
+    <section class="qa">
+      <h2 class="question">
+        You’ve already put yourselves in rooms most people your age aren’t in, how did you even get there, and what did you take from it?
+      </h2>
+      <p class="answer">We will do just about anything to get into rooms we should by zero means be in. In those situations, we operate purely off of willpower. Trying random shit until something works (which it usually does). One lesson we’ve learned from being in those situations, which has been invaluable, is that your young age does not, in any circumstance, limit you from what you are capable of. We have been looked down upon, dismissed and taken far less seriously for our age, but fuck it we ball.</p>
+    </section>
 
-<section class="qa">
-<h2 class="question">
-When people see CAMERON JAGGER a year from now, what do you want them to understand immediately?
-</h2>
-<p class="answer">I sincerely hope that when someone looks at Cameron Jagger, they understand the thought, love, time, and intentionality that goes into each and every piece of clothing. Cameron Jagger isn’t some shitty, meaningless money grab. We don’t have a trust fund. We go into ridiculous amounts of debt to make this shit happen because it needs to happen.
+    <section class="qa">
+      <h2 class="question">
+        When people see CAMERON JAGGER a year from now, what do you want them to understand immediately?
+      </h2>
+      <p class="answer">I sincerely hope that when someone looks at Cameron Jagger, they understand the thought, love, time, and intentionality that goes into each and every piece of clothing. Cameron Jagger isn’t some shitty, meaningless money grab. We don’t have a trust fund. We go into ridiculous amounts of debt to make this shit happen because it needs to happen.
 
 In a less immediate sense I truly just hope people take as much from the clothing as we do. When we wear these pieces, it is a very intimate, personal experience. It’s beautiful. I hope others feel the same.</p>
-</section>
+    </section>
 
-<section class="closing">
-<p>
-<strong>Note from CAMERON JAGGER:</strong> “Ended up getting em written tonight. Fantastic questions, had a lot of fun writing them. Thank you once again for all the support, means the world &lt;3”
-</p>
+    <section class="closing">
+      <p>
+        <strong>Note from CAMERON JAGGER:</strong> “Fantastic questions, had a lot of fun writing them. Thank you once again for all the support, means the world &lt;3”
+      </p>
 
-<p class="footer-note">
-VERRE — More features at <a href="https://verre.us" target="_blank">verre.us</a>
-</p>
-</section>
+      <p class="footer-note">
+        VERRE — More features at <a href="https://verre.us" target="_blank" rel="noopener">verre.us</a>
+      </p>
+    </section>
 
-</article>
+  </article>
 </main>
 
+<div class="footer">
+  <div>© VERRE • Archive-first</div>
+  <div><a class="smalllink" href="archive.html">Back to Archive</a></div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
