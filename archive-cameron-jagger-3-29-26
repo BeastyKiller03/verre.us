@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAMERON JAGGER — A Project Built by Hand — VERRE</title>
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111111;
+      --muted:#666666;
+      --line:#dddddd;
+      --max:820px;
+      --quote:#0f0f0f;
+      --soft:#fafafa;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:1.65;
+    }
+
+    .page{
+      width:100%;
+      padding:40px 20px 80px;
+    }
+
+    .article{
+      max-width:var(--max);
+      margin:0 auto;
+    }
+
+    .eyebrow{
+      font-size:12px;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:var(--muted);
+      margin-bottom:14px;
+    }
+
+    h1{
+      font-size:clamp(2rem, 5vw, 3.4rem);
+      line-height:1.05;
+      margin:0 0 12px;
+      font-weight:700;
+      text-transform:uppercase;
+    }
+
+    .dek{
+      font-size:1.05rem;
+      color:var(--muted);
+      max-width:720px;
+      margin:0 0 24px;
+    }
+
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:0 0 26px;
+      color:var(--muted);
+      font-size:0.9rem;
+    }
+
+    .chip{
+      border:1px solid var(--line);
+      padding:8px 10px;
+      background:#fff;
+    }
+
+    .hero-image,
+    .inline-image{
+      width:100%;
+      margin:28px 0;
+    }
+
+    .hero-image{ margin:0 0 28px; }
+
+    .hero-image img,
+    .inline-image img{
+      width:100%;
+      display:block;
+      border:1px solid var(--line);
+      background:#f3f3f3;
+      object-fit:cover;
+    }
+
+    .hero-image img{ aspect-ratio:16 / 10; }
+    .inline-image img{ aspect-ratio:16 / 10; }
+
+    figcaption{
+      font-size:0.8rem;
+      color:var(--muted);
+      margin-top:8px;
+      line-height:1.4;
+    }
+
+    .intro{
+      font-size:1.04rem;
+      margin-bottom:34px;
+    }
+
+    .section{
+      border-top:1px solid var(--line);
+      padding-top:26px;
+      margin-top:26px;
+    }
+
+    .section h2{
+      margin:0 0 10px;
+      font-size:0.85rem;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      color:var(--muted);
+      font-weight:700;
+    }
+
+    .pull{
+      margin:14px 0 14px;
+      padding:18px 18px;
+      border:1px solid var(--line);
+      background:var(--soft);
+    }
+
+    .pull .quote{
+      margin:0;
+      font-size:1.2rem;
+      line-height:1.35;
+      font-weight:700;
+      color:var(--quote);
+    }
+
+    .pull .attrib{
+      margin:10px 0 0;
+      font-size:0.78rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+
+    .body{
+      margin:0 0 12px;
+    }
+
+    .closing{
+      border-top:1px solid var(--line);
+      margin-top:42px;
+      padding-top:28px;
+      font-size:1.02rem;
+    }
+
+    .footer-note{
+      margin-top:22px;
+      font-size:0.85rem;
+      color:var(--muted);
+    }
+
+    a{
+      color:inherit;
+      text-decoration:underline;
+      text-decoration-color:#cfcfcf;
+    }
+    a:hover{ opacity:0.8; }
+
+    @media (max-width:640px){
+      .page{ padding:24px 16px 56px; }
+      .intro, .closing{ font-size:0.98rem; }
+      .pull .quote{ font-size:1.08rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <article class="article">
+
+      <div class="eyebrow">VERRE Feature</div>
+      <h1>Cameron Jagger</h1>
+
+      <p class="dek">
+        A project built by hand by Travis Jagger and Cameron Mangus — started in Summer 2025 at ages
+        15 and 17. Every piece is made in-house, with a focus on control, intention, and refusing
+        the shortcuts of a corporatized fashion pipeline.
+      </p>
+
+      <div class="meta">
+        <span class="chip">Palm Desert → Los Angeles</span>
+        <span class="chip">Est. 2025</span>
+        <span class="chip">Made in-house</span>
+      </div>
+
+      <!-- Replace image paths with your real files -->
+      <figure class="hero-image">
+        <img
+          src="assets/archive/cameron-jagger-2026-03-__/cj-1.jpg"
+          alt="Cameron Jagger at the collection release event"
+        />
+        <figcaption>CAMERON JAGGER at their collection release / multi-media exhibition in Los Angeles.</figcaption>
+      </figure>
+
+      <section class="intro">
+        <p class="body">
+          CAMERON JAGGER is a creative project that treats each collection as a technical and artistic
+          improvement—without outsourcing the soul of the work. From patterning to sewing, the process
+          is carried out by the founders themselves, using high-quality fabrics with an emphasis on
+          ethically produced and sourced materials.
+        </p>
+        <p class="body">
+          What stood out most wasn’t just the garments—it was the clarity of their mindset: a willingness
+          to learn fast, take risks early, and protect the integrity of how the clothes are made.
+        </p>
+      </section>
+
+      <!-- SECTION 1 -->
+      <section class="section">
+        <h2>Origin</h2>
+
+        <div class="pull">
+          <p class="quote">“We both felt a very unsettling lack of fulfilment… it felt like a literal existential threat.”</p>
+          <p class="attrib">Cameron Jagger</p>
+        </div>
+
+        <p class="body">
+          Starting young didn’t feel optional to them—it felt urgent. That urgency became the catalyst
+          for committing early and building something real, day by day.
+        </p>
+      </section>
+
+      <figure class="inline-image">
+        <img
+          src="assets/archive/cameron-jagger-2026-03-__/cj-2.jpg"
+          alt="Garments on rack at Cameron Jagger event"
+        />
+        <figcaption>Garments presented at the event (replace with your rack photo).</figcaption>
+      </figure>
+
+      <!-- SECTION 2 -->
+      <section class="section">
+        <h2>Process</h2>
+
+        <div class="pull">
+          <p class="quote">“Ultimately, it’s the idea… the steps of the process, from patterning to sewing, all serve the idea.”</p>
+          <p class="attrib">Cameron Jagger</p>
+        </div>
+
+        <p class="body">
+          Their process isn’t about picking a single “most important” step—it’s about preserving the
+          original concept through every stage, refining it until the finished piece matches the idea
+          as closely as possible.
+        </p>
+      </section>
+
+      <!-- SECTION 3 -->
+      <section class="section">
+        <h2>Non-negotiables</h2>
+
+        <div class="pull">
+          <p class="quote">“As we grow, we will refuse to let go of our own manufacturing… The clothes will forever be made on our terms.”</p>
+          <p class="attrib">Cameron Jagger</p>
+        </div>
+
+        <p class="body">
+          The line is clear: no outsourcing the core. Their manufacturing stays in their control—because
+          control is the point. Not scale for scale’s sake.
+        </p>
+      </section>
+
+      <figure class="inline-image">
+        <img
+          src="assets/archive/cameron-jagger-2026-03-__/cj-3.jpg"
+          alt="Attendees holding Cameron Jagger pieces"
+        />
+        <figcaption>Supporters showing love with pieces in-hand (replace with your best “people holding clothes” shot).</figcaption>
+      </figure>
+
+      <!-- SECTION 4 -->
+      <section class="section">
+        <h2>Moving early</h2>
+
+        <div class="pull">
+          <p class="quote">“We will do just about anything to get into rooms we should by zero means be in.”</p>
+          <p class="attrib">Cameron Jagger</p>
+        </div>
+
+        <p class="body">
+          They describe operating off willpower—trying “random shit until something works.” The biggest
+          lesson: age doesn’t limit capability, even if people try to make it.
+        </p>
+      </section>
+
+      <figure class="inline-image">
+        <img
+          src="assets/archive/cameron-jagger-2026-03-__/cj-4.jpg"
+          alt="Crushh with Cameron Jagger founders"
+        />
+        <figcaption>Crushh with the founders (replace with your photo). Use this as your “scene overlap” proof.</figcaption>
+      </figure>
+
+      <!-- SECTION 5 -->
+      <section class="section">
+        <h2>What they want you to feel</h2>
+
+        <div class="pull">
+          <p class="quote">“I hope people understand the thought, love, time, and intentionality… This isn’t some shitty, meaningless money grab.”</p>
+          <p class="attrib">Cameron Jagger</p>
+        </div>
+
+        <p class="body">
+          The clothing is described as intimate—something that carries personal weight when worn. The
+          stakes are real too: building without a trust fund, taking on debt, and choosing the harder
+          path because it “needs to happen.”
+        </p>
+
+        <div class="pull">
+          <p class="quote">“We go into ridiculous amounts of debt to make this shit happen because it needs to happen.”</p>
+          <p class="attrib">Cameron Jagger</p>
+        </div>
+      </section>
+
+      <section class="closing">
+        <p class="body">
+          CAMERON JAGGER’s story isn’t just “young designers making clothes.” It’s a commitment to
+          authorship—controlling the process, protecting the idea, and building a world around the work.
+        </p>
+
+        <p class="footer-note">
+          VERRE — more features at <a href="https://verre.us" target="_blank" rel="noopener">verre.us</a>
+        </p>
+      </section>
+
+    </article>
+  </main>
+</body>
+</html>
