@@ -59,7 +59,8 @@ h1{
 }
 
 .hero-image,
-.inline-image{
+.inline-image,
+.duo-image{
   width:100%;
   margin:28px 0;
 }
@@ -70,6 +71,20 @@ h1{
 
 .hero-image img,
 .inline-image img{
+  width:100%;
+  height:auto;
+  display:block;
+  border:1px solid var(--line);
+  background:#f3f3f3;
+}
+
+.duo-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+.duo-grid img{
   width:100%;
   height:auto;
   display:block;
@@ -119,6 +134,7 @@ figcaption{
   color:var(--muted);
 }
 
+/* default article links */
 a{
   color:inherit;
   text-decoration:underline;
@@ -127,6 +143,29 @@ a{
 
 a:hover{
   opacity:0.8;
+}
+
+/* top menu should not be underlined */
+.topbar a,
+.topbar .brand,
+.topbar .menu a,
+.topbar .menu-panel a,
+.footer .smalllink{
+  text-decoration:none;
+}
+
+/* smooth hide / show for nav */
+.topbar{
+  transition:transform 0.28s ease, opacity 0.28s ease;
+}
+
+.topbar.is-hidden{
+  transform:translateY(-100%);
+}
+
+/* optional: keep the logo crisp and not faded */
+.topbar .brand:hover{
+  opacity:1;
 }
 
 @media (max-width:640px){
@@ -142,6 +181,10 @@ a:hover{
   .closing{
     font-size:0.98rem;
   }
+
+  .duo-grid{
+    grid-template-columns:1fr;
+  }
 }
 </style>
 </head>
@@ -151,7 +194,7 @@ a:hover{
 <div class="flag-corner tl" aria-hidden="true"></div>
 <div class="flag-corner br" aria-hidden="true"></div>
 
-<div class="topbar">
+<div class="topbar" id="siteTopbar">
   <div class="nav">
 
     <a class="brand" href="index.html" aria-label="VERRE home">
@@ -236,8 +279,11 @@ a:hover{
       <p class="answer">Ultimately, it’s the idea. It’s impossible to assign one step in the process with the title of being most important. We care about them all very greatly. The steps of the process, from patterning to sewing, all serve the idea. It is about preserving and perfecting that idea as much as we can, and from that, hopefully making something beautiful.</p>
     </section>
 
-    <figure class="inline-image">
-      <img src="assets/archive/cameron-jagger-2026-03-29/cj-2.jpeg" alt="Supporters holding pieces" />
+    <figure class="duo-image">
+      <div class="duo-grid">
+        <img src="assets/archive/cameron-jagger-2026-03-29/cj-2.jpeg" alt="Supporters holding pieces" />
+        <img src="assets/archive/cameron-jagger-2026-03-29/cj-2b.jpeg" alt="Second community photo from the event" />
+      </div>
       <figcaption>Supporters showing love with pieces in-hand.</figcaption>
     </figure>
 
@@ -288,5 +334,27 @@ In a less immediate sense I truly just hope people take as much from the clothin
 </div>
 
 <script src="app.js"></script>
+<script>
+let lastScrollY = window.scrollY;
+const topbar = document.getElementById("siteTopbar");
+
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY <= 10) {
+    topbar.classList.remove("is-hidden");
+    lastScrollY = currentScrollY;
+    return;
+  }
+
+  if (currentScrollY > lastScrollY) {
+    topbar.classList.add("is-hidden");
+  } else {
+    topbar.classList.remove("is-hidden");
+  }
+
+  lastScrollY = currentScrollY;
+}, { passive: true });
+</script>
 </body>
 </html>
