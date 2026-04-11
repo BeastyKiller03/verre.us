@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VERRE — Cameron Jagger x VERRE Thursday Night (Coachella W1)</title>
+<link rel="stylesheet" href="style.css" />
+
+<style>
+html,body{
+  overflow-x:hidden;
+}
+
+/* 🔥 CLEAN GRID (no stretching) */
+#cjVerreGallery{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:12px;
+  padding:0 16px 16px;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+#cjVerreGallery img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#f3f3f3;
+}
+
+/* mobile */
+@media (max-width:700px){
+  #cjVerreGallery{
+    grid-template-columns:1fr;
+  }
+}
+
+/* large screens */
+@media (min-width:1100px){
+  #cjVerreGallery{
+    grid-template-columns:repeat(3, 1fr);
+  }
+}
+</style>
+</head>
+
+<body data-page="archive">
+
+<div class="flag-corner tl" aria-hidden="true"></div>
+<div class="flag-corner br" aria-hidden="true"></div>
+
+<div class="topbar">
+  <div class="nav">
+
+    <a class="brand" href="index.html">
+      <img class="logo" src="assets/brand/verre.png" />
+    </a>
+
+    <div class="menu">
+      <div class="menu-links">
+        <a href="events.html">Events</a>
+        <a href="artists.html">Artists</a>
+        <a href="archive.html">Archive</a>
+      </div>
+
+      <button class="menu-btn" id="menuBtn">
+        <span class="burger">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+
+      <div class="menu-panel" id="menuPanel">
+        <a href="events.html">Events</a>
+        <a href="artists.html">Artists</a>
+        <a href="archive.html">Archive</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="hero">
+    <h1>Archive</h1>
+    <p>Flyers, photos, and scene documentation.</p>
+
+    <div class="meta">
+      <span class="pill">VERRE Archive</span>
+      <a class="btn" href="archive.html">Back to Archive</a>
+    </div>
+  </div>
+
+  <div class="card">
+
+    <div class="hd">
+      <h2>Archive Entry</h2>
+      <span class="pill">008</span>
+    </div>
+
+    <div class="bd">
+
+      <article class="item" style="display:block; padding:0; overflow:hidden;">
+
+        <div style="padding:16px 16px 0;">
+
+          <p class="sub" style="margin:0 0 10px; font-family:var(--mono); text-transform:uppercase; letter-spacing:.08em;">
+            Apr 9, 2026 • Coachella Valley
+          </p>
+
+          <h2 style="margin:0 0 10px; font-size:34px; line-height:1.05;">
+            Cameron Jagger x VERRE — Thursday Night (Coachella W1)
+          </h2>
+
+          <div class="row" style="margin:12px 0 16px;">
+            <span class="chip">archive</span>
+            <span class="chip">coachella</span>
+            <span class="chip">cameron jagger</span>
+            <span class="chip">verre</span>
+            <span class="chip">04.09.26</span>
+          </div>
+
+        </div>
+
+        <!-- 🔥 GALLERY -->
+        <div id="cjVerreGallery"></div>
+
+        <div class="ft">
+          VERRE archive entry — Coachella week documentation.
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div>© VERRE • Archive-first</div>
+  <div><a class="smalllink" href="index.html">Home</a></div>
+</div>
+
+<script src="app.js"></script>
+
+<script>
+const gallery = document.getElementById("cjVerreGallery");
+
+const folder = "assets/archive/cameron-jagger-x-verre-thursday-night-2026-04-09/";
+const base = "cameron-jagger-x-verre-thursday-night-";
+const ext = ".jpeg";
+const totalImages = 1; // 🔥 CHANGE THIS
+
+for (let i = 1; i <= totalImages; i++) {
+
+  const img = document.createElement("img");
+
+  img.src = `${folder}${base}${i}${ext}`;
+  img.alt = `Cameron Jagger x VERRE ${i}`;
+  img.loading = "lazy";
+  img.decoding = "async";
+
+  gallery.appendChild(img);
+
+}
+</script>
+
+</body>
+</html>
