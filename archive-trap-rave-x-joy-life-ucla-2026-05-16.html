@@ -4,57 +4,28 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>VERRE — Trap Rave x Joy Life UCLA 5.16.26</title>
-
 <link rel="stylesheet" href="style.css" />
 
 <style>
 html,body{
-  overflow-x:hidden;
+overflow-x:hidden;
 }
 
-/* CLEANER DESKTOP IMAGE GRID */
 #trapRaveGallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
-  gap:16px;
-  padding:0 16px 24px;
-  max-width:1200px;
-  margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:12px;
+padding:0 16px 16px;
+width:100%;
 }
 
-/* IMAGE STYLE */
 #trapRaveGallery img{
-  width:100%;
-  height:auto;
-  display:block;
-  border-radius:12px;
-  border:1px solid var(--line);
-  background:#f3f3f3;
-  object-fit:cover;
-}
-
-/* ERROR FALLBACK */
-.missing-image{
-  min-height:180px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border:1px dashed #555;
-  border-radius:12px;
-  font-size:12px;
-  opacity:.6;
-  padding:12px;
-  text-align:center;
-}
-
-/* MOBILE */
-@media (max-width:640px){
-
-  #trapRaveGallery{
-    grid-template-columns:1fr;
-    padding:0 12px 24px;
-  }
-
+width:100%;
+height:auto;
+display:block;
+border-radius:12px;
+border:1px solid var(--line);
+background:#f3f3f3;
 }
 </style>
 </head>
@@ -65,130 +36,110 @@ html,body{
 <div class="flag-corner br" aria-hidden="true"></div>
 
 <div class="topbar">
-  <div class="nav">
+<div class="nav">
 
-    <a class="brand" href="index.html" aria-label="VERRE home">
-      <img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
-    </a>
+<a class="brand" href="index.html" aria-label="VERRE home">
+<img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
+</a>
 
-    <div class="menu" aria-label="Primary navigation">
+<div class="menu" aria-label="Primary navigation">
 
-      <div class="menu-links">
-        <a href="events.html">Events</a>
-        <a href="artists.html">Artists</a>
-        <a href="archive.html">Archive</a>
-      </div>
+<div class="menu-links">
+<a href="events.html">Events</a>
+<a href="artists.html">Artists</a>
+<a href="archive.html">Archive</a>
+</div>
 
-      <button
-        class="menu-btn"
-        id="menuBtn"
-        type="button"
-        aria-label="Open menu"
-        aria-controls="menuPanel"
-        aria-expanded="false"
-      >
-        <span class="burger" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </span>
-      </button>
+<button
+class="menu-btn"
+id="menuBtn"
+type="button"
+aria-label="Open menu"
+aria-controls="menuPanel"
+aria-expanded="false"
+>
+<span class="burger" aria-hidden="true">
+<span></span><span></span><span></span>
+</span>
+</button>
 
-      <div class="menu-panel" id="menuPanel" aria-hidden="true">
-        <a href="events.html">Events</a>
-        <a href="artists.html">Artists</a>
-        <a href="archive.html">Archive</a>
-      </div>
+<div class="menu-panel" id="menuPanel" aria-hidden="true">
+<a href="events.html">Events</a>
+<a href="artists.html">Artists</a>
+<a href="archive.html">Archive</a>
+</div>
 
-    </div>
-  </div>
+</div>
+</div>
 </div>
 
 <div class="wrap">
 
-  <div class="hero">
-    <h1>Archive</h1>
+<div class="hero">
+<h1>Archive</h1>
+<p>Flyers, photos, and scene documentation.</p>
 
-    <p>
-      Flyers, photos, and scene documentation.
-    </p>
+<div class="meta">
+<span class="pill">VERRE Archive</span>
+<a class="btn" href="archive.html">Back to Archive</a>
+</div>
+</div>
 
-    <div class="meta">
-      <span class="pill">VERRE Archive</span>
-      <a class="btn" href="archive.html">Back to Archive</a>
-    </div>
-  </div>
+<div class="card">
 
-  <div class="card">
+<div class="hd">
+<h2>Archive Entry</h2>
+<span class="pill">007</span>
+</div>
 
-    <div class="hd">
-      <h2>Archive Entry</h2>
-      <span class="pill">007</span>
-    </div>
+<div class="bd">
 
-    <div class="bd">
+<article class="item" style="display:block; padding:0; overflow:hidden;">
 
-      <article
-        class="item"
-        style="display:block; padding:0; overflow:hidden;"
-      >
+<div style="padding:16px 16px 0;">
 
-        <div style="padding:16px 16px 0;">
+<p class="sub" style="margin:0 0 10px; font-family:var(--mono); text-transform:uppercase; letter-spacing:.08em;">
+May 16, 2026 • Los Angeles
+</p>
 
-          <p
-            class="sub"
-            style="
-              margin:0 0 10px;
-              font-family:var(--mono);
-              text-transform:uppercase;
-              letter-spacing:.08em;
-            "
-          >
-            May 16, 2026 • Los Angeles
-          </p>
+<h2 style="margin:0 0 10px; font-size:34px; line-height:1.05;">
+Trap Rave x Joy Life UCLA — 5.16.26
+</h2>
 
-          <h2
-            style="
-              margin:0 0 10px;
-              font-size:34px;
-              line-height:1.05;
-            "
-          >
-            Trap Rave x Joy Life UCLA — 5.16.26
-          </h2>
+<div class="row" style="margin:12px 0 16px;">
+<span class="chip">archive</span>
+<span class="chip">trap rave</span>
+<span class="chip">joy life</span>
+<span class="chip">ucla</span>
+<span class="chip">05.16.26</span>
+</div>
 
-          <div class="row" style="margin:12px 0 16px;">
-            <span class="chip">archive</span>
-            <span class="chip">trap rave</span>
-            <span class="chip">joy life</span>
-            <span class="chip">ucla</span>
-          </div>
+</div>
 
-        </div>
+<div id="trapRaveGallery"></div>
 
-        <!-- GALLERY -->
-        <div id="trapRaveGallery"></div>
+<div class="ft">
+VERRE archive entry — show photography and documentation.
+</div>
 
-        <div class="ft">
-          VERRE archive entry — show photography and documentation.
-        </div>
+</article>
 
-      </article>
-
-    </div>
-  </div>
+</div>
+</div>
 
 </div>
 
 <div class="footer">
 
-  <div>© VERRE • Archive-first</div>
+<div>© VERRE • Archive-first</div>
 
-  <p class="sub" style="max-width:520px;">
-    Archive posts preserve events, flyers, and scene documentation.
-  </p>
+<p class="sub" style="max-width:520px;">
+Archive posts preserve events, flyers, and scene documentation.
+</p>
 
-  <div>
-    <a class="btn" href="press.html">Submissions</a>
-  </div>
+<div>
+<a class="btn" href="press.html">Submissions</a>
+</div>
 
 </div>
 
@@ -199,50 +150,22 @@ html,body{
 
 const gallery = document.getElementById("trapRaveGallery");
 
-/*
-IMPORTANT:
-Your files must be named EXACTLY like this:
-
-trap-rave-x-joy-life-ucla-1.jpeg
-trap-rave-x-joy-life-ucla-2.jpeg
-trap-rave-x-joy-life-ucla-3.jpeg
-etc...
-*/
-
-const folder =
-"assets/archive/trap-rave-x-joy-life-ucla-2026-05-16/";
-
+const folder = "assets/archive/trap-rave-x-joy-life-ucla-2026-05-16/";
+const base = "trap-rave-x-joy-life-ucla-";
+const ext = ".jpeg";
 const totalImages = 89;
 
-for(let i = 1; i <= totalImages; i++){
+for (let i = 1; i <= totalImages; i++) {
 
-  const img = document.createElement("img");
+const img = document.createElement("img");
 
-  img.src =
-  `${folder}trap-rave-x-joy-life-ucla-${i}.jpeg`;
+img.src = `${folder}${base}${i}${ext}`;
+img.alt = `Trap Rave x Joy Life UCLA ${i}`;
+img.loading = "lazy";
+img.decoding = "async";
 
-  img.alt =
-  `Trap Rave x Joy Life UCLA ${i}`;
+gallery.appendChild(img);
 
-  img.loading = "lazy";
-  img.decoding = "async";
-
-  img.onerror = function(){
-
-    console.log("Missing:", img.src);
-
-    const missing = document.createElement("div");
-
-    missing.className = "missing-image";
-
-    missing.innerHTML =
-    `Missing Image:<br>
-    trap-rave-x-joy-life-ucla-${i}.jpeg`;
-
-    img.replaceWith(missing);
-  };
-
-  gallery.appendChild(img);
 }
 
 </script>
