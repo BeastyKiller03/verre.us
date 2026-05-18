@@ -1,15 +1,11 @@
 // data.js
 // VERRE = tracking / archival platform.
 // No attendance claims unless explicitly marked.
-// Events require real sources or ticket links.
 
 window.VERRE_DATA = {
-  lastUpdated: "2026-02-05",
+  lastUpdated: "2026-03-25",
 
   /* ---------- AREAS ---------- */
-  // STRICT RULE:
-  // Every event.area MUST match one of these ids exactly:
-  // la, ocie, sd, bay, ny, tx, fl, wi
   areas: [
     { id: "la", name: "Los Angeles" },
     { id: "ocie", name: "OC / IE" },
@@ -30,8 +26,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/boysinblush/" },
       blurb: "LA underground DJ presence—dark, fast, and built for after-hours rooms.",
       origin: "Los Angeles, California",
-      background:
-        "Underground club/after-hours selector with a strong visual identity and fashion-adjacent nightlife overlap.",
+      background: "Underground club/after-hours selector with a strong visual identity and fashion-adjacent nightlife overlap.",
       image: "assets/artists/artist-Suzy-Sheer.jpg",
       relatedPosts: []
     },
@@ -42,8 +37,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/mgnacrrrta/" },
       blurb: "Distortion-forward sets with a chaos-pop edge—warehouse pressure and hard transitions.",
       origin: "Berlin, Germany",
-      background:
-        "Berlin-rooted underground club energy; often adjacent to DIY rave ecosystems and art-forward lineups.",
+      background: "Berlin-rooted underground club energy; often adjacent to DIY rave ecosystems and art-forward lineups.",
       image: "assets/artists/artist-MGNA-Crrrta.jpg",
       relatedPosts: []
     },
@@ -54,8 +48,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/10cust/" },
       blurb: "Harsh, metallic club pressure built for warehouse rooms—fast and physical.",
       origin: "",
-      background:
-        "Underground rave/warehouse lean; more word-of-mouth than mainstream, with high-intensity DJ sets.",
+      background: "Underground rave/warehouse lean; more word-of-mouth than mainstream, with high-intensity DJ sets.",
       image: "assets/artists/artist-10cust.jpg",
       relatedPosts: []
     },
@@ -66,8 +59,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/damonrsh/" },
       blurb: "Emotional tension meets club pressure—distorted dance rhythms with melodic bite.",
       origin: "Los Angeles, California",
-      background:
-        "Hybrid DJ/producer energy; shows up on underground lineups bridging club momentum and pop-adjacent sound design.",
+      background: "Hybrid DJ/producer energy; shows up on underground lineups bridging club momentum and pop-adjacent sound design.",
       image: "assets/artists/artist-Damon-R.jpg",
       relatedPosts: []
     },
@@ -78,8 +70,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/thehellp/" },
       blurb: "Indie-sleaze revival pressure with club energy and sharp visuals.",
       origin: "Los Angeles, California",
-      background:
-        "Cult-following sleaze-era aesthetics; their orbit overlaps with alternative nightlife and after-parties as much as formal shows.",
+      background: "Cult-following sleaze-era aesthetics; their orbit overlaps with alternative nightlife and after-parties as much as formal shows.",
       image: "assets/artists/artist-the-hellp.jpg",
       relatedPosts: []
     },
@@ -112,8 +103,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/underscores/" },
       blurb: "Sincere songwriting fused with club-ready production—DIY room gravity with loud emotion.",
       origin: "San Francisco Bay Area",
-      background:
-        "Internet-native rise; blurs live-set energy and DJ intensity with community-first DIY appeal.",
+      background: "Internet-native rise; blurs live-set energy and DJ intensity with community-first DIY appeal.",
       image: "assets/artists/artist-underscores.jpg",
       relatedPosts: []
     },
@@ -124,8 +114,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/thefrostchildren/" },
       blurb: "Sibling duo channeling rave chaos, glitch-pop, and internet energy.",
       origin: "St. Louis, Missouri → New York City",
-      background:
-        "Maximalist club-pop chaos; sets feel like pop DJ parties turned inside out—fast, loud, unpredictable.",
+      background: "Maximalist club-pop chaos; sets feel like pop DJ parties turned inside out—fast, loud, unpredictable.",
       image: "assets/artists/artist-Frost-Children.jpg",
       relatedPosts: []
     },
@@ -169,8 +158,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/petalsupplyco/" },
       blurb: "Internet-era producer blending pop melody and club pressure—scene-native and DIY-coded.",
       origin: "United States (internet-native)",
-      background:
-        "Hyperpop-forward producer world with playful textures and hard emotional punch; built from internet communities and DIY releases.",
+      background: "Hyperpop-forward producer world with playful textures and hard emotional punch; built from internet communities and DIY releases.",
       image: "assets/artists/artist-Petal-Supply.jpg",
       relatedPosts: []
     },
@@ -181,8 +169,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/ninajirachi/" },
       blurb: "Emotional electronic built for late-night momentum—melodic edges with club structure.",
       origin: "Central Coast, Australia",
-      background:
-        "Moves between intimate rooms and bigger electronic stages; after-hours friendly energy and clean-but-punchy production.",
+      background: "Moves between intimate rooms and bigger electronic stages; after-hours friendly energy and clean-but-punchy production.",
       image: "assets/artists/artist-Ninajirachi.jpg",
       relatedPosts: []
     },
@@ -270,8 +257,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/sebseb122/" },
       blurb: "High-energy internet rap/hyperpop crossover—elastic flows and bright chaos.",
       origin: "United States",
-      background:
-        "Internet-native rise with heavy youth pull; lives in the same ecosystem as modern underground hyperpop nights.",
+      background: "Internet-native rise with heavy youth pull; lives in the same ecosystem as modern underground hyperpop nights.",
       image: "assets/artists/artist-SEBii.jpg",
       relatedPosts: []
     },
@@ -282,8 +268,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/_alice_glass/" },
       blurb: "Electronic punk icon bridging blog-era chaos and modern club energy.",
       origin: "Toronto, Canada",
-      background:
-        "High-voltage industrial-pop attitude with goth/club edges; legacy energy still maps onto modern underground nights.",
+      background: "High-voltage industrial-pop attitude with goth/club edges; legacy energy still maps onto modern underground nights.",
       image: "assets/artists/artist-Alice-Glass.jpg",
       relatedPosts: []
     },
@@ -316,8 +301,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/charli_xcx/" },
       blurb: "A bridge between mainstream pop and underground club experimentation—scene-shaping influence.",
       origin: "Cambridge, England",
-      background:
-        "Closely tied to the hyperpop lineage through collaborations and taste; amplified club-adjacent sounds into global pop culture.",
+      background: "Closely tied to the hyperpop lineage through collaborations and taste; amplified club-adjacent sounds into global pop culture.",
       image: "assets/artists/artist-Charli-XCX.jpg",
       relatedPosts: []
     },
@@ -328,8 +312,7 @@ window.VERRE_DATA = {
       links: { instagram: "https://www.instagram.com/sophmsmsmsm/" },
       blurb: "Foundational architect of modern avant-club and experimental pop—tactile, sculptural sound design.",
       origin: "Glasgow, Scotland",
-      background:
-        "Defined a blueprint for modern experimental pop/club sound; her influence runs through today’s hyperpop and underground electronic scenes.",
+      background: "Defined a blueprint for modern experimental pop/club sound; her influence runs through today’s hyperpop and underground electronic scenes.",
       image: "assets/artists/artist-SOPHIE.jpg",
       relatedPosts: []
     },
@@ -342,19 +325,6 @@ window.VERRE_DATA = {
       origin: "",
       background: "",
       image: "assets/artists/artist-techg1rls.jpg",
-      relatedPosts: []
-    },
-
-    /* --- Added artists (from your flyers/notes) --- */
-    {
-      id: "cannelle",
-      name: "Cannelle",
-      tags: ["live", "electronic", "underground"],
-      links: { instagram: "https://www.instagram.com/cannelle/" },
-      blurb: "",
-      origin: "",
-      background: "",
-      image: "assets/artists/artist-cannelle.jpg",
       relatedPosts: []
     },
     {
@@ -388,18 +358,6 @@ window.VERRE_DATA = {
       origin: "",
       background: "",
       image: "assets/artists/artist-thecobrasnake.jpg",
-      relatedPosts: []
-    },
-
-    {
-      id: "eurohead",
-      name: "EUROHEAD",
-      tags: ["underground", "alt", "live"],
-      links: { instagram: "https://www.instagram.com/eurohead_____/" },
-      blurb: "Underground project operating within the modern alt / live-show circuit.",
-      origin: "",
-      background: "",
-      image: "",
       relatedPosts: []
     },
     {
@@ -457,7 +415,6 @@ window.VERRE_DATA = {
       image: "",
       relatedPosts: []
     },
-
     {
       id: "joey-cash",
       name: "Joey Cash",
@@ -477,7 +434,7 @@ window.VERRE_DATA = {
       blurb: "Experimental underground project tied to DIY show circuits.",
       origin: "",
       background: "",
-      image: "assets/artists/artist-circuttbabii.jpg", // ✅ FIXED typo
+      image: "assets/artists/artist-circuttbabii.jpg",
       relatedPosts: []
     },
     {
@@ -502,7 +459,6 @@ window.VERRE_DATA = {
       image: "",
       relatedPosts: []
     },
-
     {
       id: "crrdr",
       name: "CRRDR",
@@ -537,41 +493,6 @@ window.VERRE_DATA = {
       relatedPosts: []
     },
     {
-      id: "muerte-lenta",
-      name: "Muerte Lenta",
-      tags: ["underground", "club"],
-      links: { instagram: "" },
-      blurb: "",
-      origin: "",
-      background: "",
-      image: "",
-      relatedPosts: []
-    },
-    {
-      id: "andres-garcil",
-      name: "Andrés Garcil",
-      tags: ["underground", "live"],
-      links: { instagram: "https://www.instagram.com/andresgarcil/" },
-      blurb: "",
-      origin: "",
-      background: "",
-      image: "assets/artists/artist-Andrés-Garcil.jpg",
-      relatedPosts: []
-    },
-    {
-      id: "junkfile",
-      name: "Junkfile",
-      tags: ["underground", "club"],
-      links: { instagram: "https://www.instagram.com/junkfile___/" },
-      blurb: "Underground club project tied to DIY nightlife bills.",
-      origin: "",
-      background: "",
-      image: "",
-      relatedPosts: []
-    },
-
-    /* ✅ FIXED: standardize to Nico Nastii everywhere */
-    {
       id: "nico-nastii",
       name: "Nico Nastii",
       tags: ["dj", "club", "underground"],
@@ -582,7 +503,6 @@ window.VERRE_DATA = {
       image: "",
       relatedPosts: []
     },
-
     {
       id: "dj-thank-you",
       name: "DJ Thank You",
@@ -605,7 +525,6 @@ window.VERRE_DATA = {
       image: "",
       relatedPosts: []
     },
-
     {
       id: "pinponpanpon",
       name: "pinponpanpon",
@@ -661,7 +580,6 @@ window.VERRE_DATA = {
       image: "",
       relatedPosts: []
     },
-
     {
       id: "fakethias",
       name: "FAKETHIAS",
@@ -706,7 +624,6 @@ window.VERRE_DATA = {
       image: "",
       relatedPosts: []
     },
-
     {
       id: "eera",
       name: "EERA",
@@ -784,8 +701,6 @@ window.VERRE_DATA = {
       image: "",
       relatedPosts: []
     },
-
-    /* ✅ FIXED: remove blank tags chips (no more [""]) */
     {
       id: "junejoy",
       name: "junejoy",
@@ -829,6 +744,50 @@ window.VERRE_DATA = {
       background: "",
       image: "",
       relatedPosts: []
+    },
+    {
+      id: "mp3girl",
+      name: "mp3girl",
+      tags: ["dj", "underground", "scene"],
+      links: { instagram: "https://www.instagram.com/eviesomewhere/" },
+      blurb: "Underground DJ / scene presence tied to current nightlife and internet-adjacent spaces.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "american-recycling",
+      name: "American Recycling",
+      tags: ["dj", "collective", "underground"],
+      links: { instagram: "https://www.instagram.com/americanrecycling/" },
+      blurb: "Underground DJ / collective presence connected to current LA nightlife and community events.",
+      origin: "Los Angeles, California",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "crushh",
+      name: "Crushh",
+      tags: ["underground", "live", "scene"],
+      links: { instagram: "https://www.instagram.com/crushhxo/" },
+      blurb: "Underground artist tied to the current LA scene and adjacent live/event spaces.",
+      origin: "",
+      background: "",
+      image: "",
+      relatedPosts: []
+    },
+    {
+      id: "marco-alexis-maria",
+      name: "Marco Alexis Maria",
+      tags: ["artist", "dj", "verre"],
+      links: { instagram: "https://www.instagram.com/marcoalexismaria/" },
+      blurb: "Artist, DJ, and VERRE-connected creative operating across music, visuals, and scene documentation.",
+      origin: "Southern California",
+      background: "",
+      image: "",
+      relatedPosts: []
     }
   ],
 
@@ -836,280 +795,5 @@ window.VERRE_DATA = {
   news: [],
 
   /* ---------- EVENTS ---------- */
-  events: [
-    {
-      id: "party-like-2016-2026-01-30",
-      title: "Party Like It's 2016",
-      date: "2026-01-30",
-      time: "9:00 PM",
-      area: "bay",
-      venue: "Continental Club",
-      address: "Oakland, CA",
-      ticketUrl: "https://oaklandcontinentalclub.com/cc_events/party-like-2016-2026-01-30/?ref=ig_social_none_none",
-      sourceUrl: "https://oaklandcontinentalclub.com/cc_events/party-like-2016-2026-01-30/?ref=ig_social_none_none",
-      flyerUrl: "assets/flyers/flyer-party-like-2016-2026-01-30.jpg",
-      lineup: ["Cannelle", "Suzy Sheer", "Contact Sports", "10cust", "Queenie"],
-      verreAttending: false,
-      notes: "18+ • Oakland • 9:00 PM–2:00 AM (from flyer)"
-    },
-    {
-      id: "swampdem-miami-2026-02-07",
-      title: "Techg1rls — Miami",
-      date: "2026-02-07",
-      time: "8:00 PM–3:00 AM",
-      area: "fl",
-      venue: "",
-      address: "Miami, Florida",
-      ticketUrl: "https://posh.vip/e/techg1rls-doecaine-sipper-technopagan?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
-      sourceUrl: "https://posh.vip/e/techg1rls-doecaine-sipper-technopagan?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
-      flyerUrl: "assets/flyers/flyer-swampdem-miami-2026-02-07.jpg",
-      lineup: [
-        "techg1rls",
-        "Doecaine",
-        "Sipper",
-        "Technopagan",
-        "35oteric",
-        "Hoodwitchhh",
-        "Mason Norrisss",
-        "Sugarc0de",
-        "Cellar",
-        "HTTP Rapture"
-      ],
-      verreAttending: false,
-      notes: "DJ • hosted by @swampdem • debuts noted on flyer"
-    },
-    {
-      id: "eurohead-dallas-2026-01-30",
-      title: "EUROHEAD",
-      date: "2026-01-30",
-      time: "9:00 PM–2:00 AM",
-      area: "tx",
-      venue: "",
-      address: "9205 Skillman St, Dallas, TX",
-      ticketUrl:
-        "https://posh.vip/e/slumber-party-january-30th-featuring-?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnBPzBrtvlmGJGJSQ5C-_gdc3LUg4f5IVstsTwp_sgMKqgMxLLIGgPrSctKR0_aem_Zayj3OwGTjLSSqhRVKPjVA",
-      sourceUrl:
-        "https://posh.vip/e/slumber-party-january-30th-featuring-?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnBPzBrtvlmGJGJSQ5C-_gdc3LUg4f5IVstsTwp_sgMKqgMxLLIGgPrSctKR0_aem_Zayj3OwGTjLSSqhRVKPjVA",
-      flyerUrl: "assets/flyers/flyer-eurohead-dallas-2026-01-30.jpg",
-      lineup: ["EUROHEAD", "ALASKA", "LOVEGHOST", "KROAISHA", "FEMB0TZ", "TEARS OF EROS"],
-      verreAttending: false,
-      notes: "18+ • Dallas • indie / alt / underground show"
-    },
-    {
-      id: "ru-kissin-any-joey-cash-2026-02-13",
-      title: "r u kissin any1?",
-      date: "2026-02-13",
-      time: "9:00 PM–2:00 AM",
-      area: "tx",
-      venue: "Puzzles Deep Ellum",
-      address: "Dallas, Texas",
-      ticketUrl:
-        "https://www.eventim.us/wafform.aspx?_act=eventtickets&_pky=679091&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDfuqKE535gg5yoH2gDlamn0cJ_GCzXkz771bAGPEViGIapFCsELZWYBWmdw_aem_oaRcsw6GY1FMtj_LGbokKQ",
-      sourceUrl:
-        "https://www.eventim.us/wafform.aspx?_act=eventtickets&_pky=679091&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnDfuqKE535gg5yoH2gDlamn0cJ_GCzXkz771bAGPEViGIapFCsELZWYBWmdw_aem_oaRcsw6GY1FMtj_LGbokKQ",
-      flyerUrl: "assets/flyers/flyer-ru-kissin-any-joey-cash-2026-02-13.jpg",
-      lineup: ["Joey Cash", "Alaska", "Loveghost", "Circuttbabii", "Excalibur", "French Ethics"],
-      verreAttending: false,
-      notes: "18+ • Slumber Party presents • Dallas"
-    },
-    {
-      id: "fuck-cupid-h0l0-nyc-2026-02-15",
-      title: "Fuck Cupid",
-      date: "2026-02-15",
-      time: "10:00 PM–5:00 AM",
-      area: "ny",
-      venue: "h0l0",
-      address: "1090 Wyckoff Ave, Queens, NY 11385, United States",
-      ticketUrl: "",
-      sourceUrl: "",
-      flyerUrl: "assets/flyers/flyer-fuck-cupid-h0l0-nyc-2026-02-15.jpg",
-      lineup: [
-        "CRRDR",
-        "Sissy",
-        "Joanna Kuchta",
-        "Muerte Lenta",
-        "Andrés Garcil",
-        "Junkfile",
-        "Nico Nastii", // ✅ FIXED spelling
-        "DJ Thank You",
-        "DREAMINSLOW"
-      ],
-      verreAttending: false,
-      notes: "21+ • FEB 15 • @h0l0.nyc"
-    },
-    {
-      id: "pinponpanpon-sf-2026-02-06",
-      title: "pinponpanpon • Eviemoon • BirdyBirdyBirdy",
-      date: "2026-02-06",
-      time: "8:00 PM–1:00 AM",
-      area: "bay",
-      venue: "",
-      address: "406 Clement St, San Francisco, CA 94118",
-      ticketUrl:
-        "https://www.ticketweb.com/event/pinponpanpon-eviemoon-birdybirdybirdy1999seiji-denpa-neck-of-the-woods-tickets/14059014?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnTY1AN084UyZi7ZlHoYyKUQtRMWvsFaqiV8ch2PrINJDiBMRCj5e5dguHbLI_aem_-gkcvLSXout5-7IvBybJ1A",
-      sourceUrl: "",
-      flyerUrl: "assets/flyers/flyer-pinponpanpon-sf-2026-02-06.jpg",
-      lineup: ["pinponpanpon", "Eviemoon", "BirdyBirdyBirdy", "1999Seiji", "Denpa"],
-      verreAttending: false,
-      notes: "21+ • San Francisco • DJ event"
-    },
-    {
-      id: "loveghost-indie-sleaze-vol-5-dallas-2026-01-31",
-      title: "Loveghost Indie Sleaze Night Vol. 5 — Birthday Edition",
-      date: "2026-01-31",
-      time: "10:00 PM–2:00 AM",
-      area: "tx",
-      venue: "LadyLove Dallas",
-      address: "310 W Seventh St, Dallas, Texas",
-      ticketUrl: "",
-      sourceUrl: "",
-      flyerUrl: "assets/flyers/flyer-loveghost-indie-sleaze-vol-5-dallas-2026-01-31.jpg",
-      lineup: ["Loveghost", "Stephysmodernlife", "Alaska"],
-      verreAttending: false,
-      notes:
-        "DJ night • 21+ • Free entry • Birthday edition (Loveghost + Alaska) • indie sleaze / electroclash / Tumblr-era hits"
-    },
-    {
-      id: "the-hellp-voluptuous-horror-2026-01-30",
-      title: "The Hellp — The Voluptuous Horror of Karen Black",
-      date: "2026-01-30",
-      time: "7:00 PM–10:00 PM",
-      area: "ny",
-      venue: "Hancock Foundation (unconfirmed)",
-      address: "New York City (exact location TBA)",
-      ticketUrl: "https://www.instagram.com/longarrmjesus/?hl=en",
-      sourceUrl: "",
-      flyerUrl: "assets/flyers/flyer-the-hellp-voluptuous-horror-2026-01-30.jpg",
-      lineup: ["The Hellp"],
-      verreAttending: false,
-      notes:
-        "BYOB • Boiler Room–affiliated • location rumored to be Hancock Foundation • unannounced venue"
-    },
-    {
-      id: "snow-strippers-afterparty-craveusa-houston-2026-02-06",
-      title: "Snow Strippers Official Afterparty (craveUSA)",
-      date: "2026-02-06",
-      time: "10:00 PM–3:00 AM (CST)",
-      area: "tx",
-      venue: "",
-      address: "6626 Supply Row, Houston, TX",
-      ticketUrl:
-        "https://posh.vip/e/craveusa?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnKxKnlpUkOAW8RYBTz20G6KBTPfIiDVhHs_bJ3fd9Cum3HNvzqJt_a6AfqA4_aem_mFmGumoOKp0sNHUuHIHqqQ",
-      sourceUrl: "",
-      flyerUrl: "assets/flyers/flyer-snow-strippers-afterparty-craveusa-houston-2026-02-06.jpg",
-      lineup: ["Snow Strippers"],
-      verreAttending: false,
-      notes: "DJ • 18+ • presented by craveUSA • official afterparty"
-    },
-    {
-      id: "snow-strippers-afterparty-dallas-2026-02-09",
-      title: "Snow Strippers — Official Afterparty (Dallas)",
-      date: "2026-02-09",
-      time: "11:00 PM–3:00 AM (CST)",
-      area: "tx",
-      venue: "Labash Event Center",
-      address: "9205 Skillman St Suite 116, Dallas, TX 75243",
-      ticketUrl: "https://posh.vip/e/official-snow-strippers-afterparty-dallas-tx",
-      sourceUrl: "",
-      flyerUrl: "assets/flyers/flyer-snow-strippers-afterparty-dallas-2026-02-09.jpg",
-      lineup: ["EERA", "ANNA LUNA", "SS3BBY", "PYRO", "ALASKA", "LOVEGHOST"],
-      verreAttending: false,
-      notes:
-        "18+ • Slumber Party x Moonbby • No refunds after purchase • Official afterparty"
-    },
-    {
-      id: "snow-strippers-afterparty-austin-2026-02-07",
-      title: "Snow Strippers — Official Afterparty (Austin)",
-      date: "2026-02-07",
-      time: "11:30 PM–4:00 AM (CST)",
-      area: "tx",
-      venue: "Regal Rooms",
-      address: "1204 Regal Row, Austin, TX 78748",
-      ticketUrl: "https://posh.vip/e/official-snow-strippers-afterparty-austin-tx",
-      sourceUrl: "",
-      flyerUrl: "assets/flyers/flyer-snow-strippers-afterparty-austin-2026-02-07.jpg",
-      lineup: [
-        "EERA",
-        "JAEYCHINO",
-        "SJR",
-        "CERTIFIED TRAPPER",
-        "SS3BBY",
-        "PYRO",
-        "BITCHESPLAYMUSIC"
-      ],
-      verreAttending: false,
-      notes:
-        "18+ • Moonbby x Slumber Party • Official Snow Strippers afterparty • No refunds after purchase"
-    },
-    {
-      id: "snl-incubator-dtla-2026-02-07",
-      title: "SNLAincubator",
-      date: "2026-02-07",
-      time: "10:00 PM–2:00 AM",
-      area: "la",
-      venue: "",
-      address: "Downtown Los Angeles (DTLA)",
-      ticketUrl:
-        "https://partiful.com/e/4BtYG5dvCIfJTwrKmuu4?source=share&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGny5ldyDIYxQE6ZyZfsVhIVQ1JiyAmI-47_Iu4P29do9AH5rXp-KSOIZ5XDi8_aem_ilByMsjXTrrjZCkoEV2jjQ",
-      sourceUrl: "https://www.instagram.com/p/DUMGtRaEpNU/",
-      flyerUrl: "assets/flyers/snl-incubator-dtla-2026-02-07.jpg",
-      lineup: ["junejoy", "atwbc", "cen", "gellofever"],
-      verreAttending: false,
-      notes: "Free event • DTLA • presented by @cubistdove • location TBA"
-    },
-    {
-      id: "ive-got-your-number-milwaukee-2026-03-21",
-      title: "I've Got Your Number: An Indie Dance Party",
-      date: "2026-03-21",
-      time: "9:00 PM",
-      area: "wi",
-      venue: "The Rave / Eagles Club",
-      address: "2401 West Wisconsin Avenue, Milwaukee, WI, United States",
-      ticketUrl:
-        "https://www.etix.com/ticket/p/71574875/ive-got-your-numberan-indie-dance-party-milwaukee-the-rave-eagles-club?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
-      sourceUrl:
-        "https://www.etix.com/ticket/p/71574875/ive-got-your-numberan-indie-dance-party-milwaukee-the-rave-eagles-club?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
-      flyerUrl: "assets/flyers/ive-got-your-number-milwaukee-2026-03-21.jpg",
-      lineup: ["Kennyhoopla"],
-      verreAttending: false,
-      notes: "All ages • General admission • Guest DJ set by Kennyhoopla • indie dance party"
-    },
-    {
-      id: "say-tech-and-smile-miami-2026-02-28",
-      title: "SAY TECH AND SMILE: Cannelle + Ali RQ",
-      date: "2026-02-28",
-      time: "11:00 PM",
-      area: "fl",
-      venue: "The Ground Miami",
-      address: "Miami, Florida",
-      ticketUrl:
-        "https://dice.fm/event/8e6agr-say-tech-and-smile-cannelle-ali-rq-28th-feb-the-ground-miami-miami-tickets",
-      sourceUrl:
-        "https://dice.fm/event/8e6agr-say-tech-and-smile-cannelle-ali-rq-28th-feb-the-ground-miami-miami-tickets",
-      flyerUrl: "assets/flyers/say-tech-and-smile-miami-2026-02-28.jpg",
-      lineup: ["Cannelle", "Ali RQ", "Velvette Blue", "INSTINCT", "Nico Nastii"],
-      verreAttending: false,
-      notes: "Party • DOORS 11PM • 18+ • Miami"
-    },
-    {
-  id: "official-snow-strippers-after-party-sf-2026-02-21",
-  title: "Official Snow Strippers After Party (San Francisco)",
-  date: "2026-02-21",
-  time: "10:00 PM (PST)",
-  area: "bay",
-  venue: "",
-  address: "60 6th St, San Francisco, CA 94103, USA",
-  ticketUrl: "https://posh.vip/e/official-snow-strippers-after-party-21?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnh6fM5mY5bk_8KbNI-YcMUd6BKqExQBfetLmGN2qMtwmJsWsFioNl4GoXpzI_aem_Vj_bW-4UuRMc-RWVAW4zQA",
-  sourceUrl: "https://posh.vip/e/official-snow-strippers-after-party-21?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnh6fM5mY5bk_8KbNI-YcMUd6BKqExQBfetLmGN2qMtwmJsWsFioNl4GoXpzI_aem_Vj_bW-4UuRMc-RWVAW4zQA",
-  flyerUrl: "assets/flyers/flyer-official-snow-strippers-after-party-sf-2026-02-21.jpg",
-  lineup: [
-    "EERA",
-    "EVILGIANE",
-    "OK",
-    "Ali RQ"
-  ],
-  verreAttending: false,
-  notes: "21+ • must have physical ID • Official Snow Strippers after party"
-}
-  ]
+  events: []
 };
