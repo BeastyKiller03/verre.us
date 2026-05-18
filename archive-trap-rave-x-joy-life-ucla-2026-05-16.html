@@ -4,6 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>VERRE — Trap Rave x Joy Life UCLA 5.16.26</title>
+
 <link rel="stylesheet" href="style.css" />
 
 <style>
@@ -11,15 +12,17 @@ html,body{
   overflow-x:hidden;
 }
 
+/* CLEANER DESKTOP IMAGE GRID */
 #trapRaveGallery{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
   gap:16px;
   padding:0 16px 24px;
   max-width:1200px;
   margin:0 auto;
 }
 
+/* IMAGE STYLE */
 #trapRaveGallery img{
   width:100%;
   height:auto;
@@ -27,12 +30,31 @@ html,body{
   border-radius:12px;
   border:1px solid var(--line);
   background:#f3f3f3;
+  object-fit:cover;
 }
 
+/* ERROR FALLBACK */
+.missing-image{
+  min-height:180px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px dashed #555;
+  border-radius:12px;
+  font-size:12px;
+  opacity:.6;
+  padding:12px;
+  text-align:center;
+}
+
+/* MOBILE */
 @media (max-width:640px){
+
   #trapRaveGallery{
     grid-template-columns:1fr;
+    padding:0 12px 24px;
   }
+
 }
 </style>
 </head>
@@ -84,7 +106,10 @@ html,body{
 
   <div class="hero">
     <h1>Archive</h1>
-    <p>Flyers, photos, and scene documentation.</p>
+
+    <p>
+      Flyers, photos, and scene documentation.
+    </p>
 
     <div class="meta">
       <span class="pill">VERRE Archive</span>
@@ -101,15 +126,32 @@ html,body{
 
     <div class="bd">
 
-      <article class="item" style="display:block; padding:0; overflow:hidden;">
+      <article
+        class="item"
+        style="display:block; padding:0; overflow:hidden;"
+      >
 
         <div style="padding:16px 16px 0;">
 
-          <p class="sub" style="margin:0 0 10px; font-family:var(--mono); text-transform:uppercase; letter-spacing:.08em;">
+          <p
+            class="sub"
+            style="
+              margin:0 0 10px;
+              font-family:var(--mono);
+              text-transform:uppercase;
+              letter-spacing:.08em;
+            "
+          >
             May 16, 2026 • Los Angeles
           </p>
 
-          <h2 style="margin:0 0 10px; font-size:34px; line-height:1.05;">
+          <h2
+            style="
+              margin:0 0 10px;
+              font-size:34px;
+              line-height:1.05;
+            "
+          >
             Trap Rave x Joy Life UCLA — 5.16.26
           </h2>
 
@@ -122,6 +164,7 @@ html,body{
 
         </div>
 
+        <!-- GALLERY -->
         <div id="trapRaveGallery"></div>
 
         <div class="ft">
@@ -136,6 +179,7 @@ html,body{
 </div>
 
 <div class="footer">
+
   <div>© VERRE • Archive-first</div>
 
   <p class="sub" style="max-width:520px;">
@@ -145,6 +189,7 @@ html,body{
   <div>
     <a class="btn" href="press.html">Submissions</a>
   </div>
+
 </div>
 
 <script src="data.js"></script>
@@ -154,19 +199,48 @@ html,body{
 
 const gallery = document.getElementById("trapRaveGallery");
 
-const folder = "assets/archive/trap-rave-x-joy-life-ucla-2026-05-16/";
-const base = "trap-rave-x-joy-life-ucla-";
-const ext = ".jpeg";
+/*
+IMPORTANT:
+Your files must be named EXACTLY like this:
+
+trap-rave-x-joy-life-ucla-1.jpeg
+trap-rave-x-joy-life-ucla-2.jpeg
+trap-rave-x-joy-life-ucla-3.jpeg
+etc...
+*/
+
+const folder =
+"assets/archive/trap-rave-x-joy-life-ucla-2026-05-16/";
+
 const totalImages = 89;
 
-for (let i = 1; i <= totalImages; i++) {
+for(let i = 1; i <= totalImages; i++){
 
   const img = document.createElement("img");
 
-  img.src = `${folder}${base}${i}${ext}`;
-  img.alt = `Trap Rave x Joy Life UCLA ${i}`;
+  img.src =
+  `${folder}trap-rave-x-joy-life-ucla-${i}.jpeg`;
+
+  img.alt =
+  `Trap Rave x Joy Life UCLA ${i}`;
+
   img.loading = "lazy";
   img.decoding = "async";
+
+  img.onerror = function(){
+
+    console.log("Missing:", img.src);
+
+    const missing = document.createElement("div");
+
+    missing.className = "missing-image";
+
+    missing.innerHTML =
+    `Missing Image:<br>
+    trap-rave-x-joy-life-ucla-${i}.jpeg`;
+
+    img.replaceWith(missing);
+  };
 
   gallery.appendChild(img);
 }
