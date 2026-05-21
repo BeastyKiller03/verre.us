@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VERRE — Submissions</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VERRE — Submissions</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 
 <body data-page="press">
@@ -16,10 +16,32 @@
       <a class="brand" href="index.html" aria-label="VERRE home">
         <img class="logo" src="assets/brand/verre.png" alt="VERRE logo" />
       </a>
-      <div class="menu">
-        <a href="events.html">Events</a>
-        <a href="artists.html">Artists</a>
-        <a href="archive.html">Archive</a>
+
+      <div class="menu" aria-label="Primary navigation">
+        <div class="menu-links">
+          <a href="events.html">Events</a>
+          <a href="artists.html">Artists</a>
+          <a href="archive.html">Archive</a>
+        </div>
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="menuPanel"
+          aria-expanded="false"
+        >
+          <span class="burger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <div class="menu-panel" id="menuPanel" aria-hidden="true">
+          <a href="events.html">Events</a>
+          <a href="artists.html">Artists</a>
+          <a href="archive.html">Archive</a>
+        </div>
       </div>
     </div>
   </div>
@@ -28,64 +50,166 @@
     <div class="hero">
       <h1>Submissions</h1>
       <p>
-        VERRE is building an underground event + artist index from LA to NY.
-        Last updated: <strong id="lastUpdated"></strong>
+        Submit events, request coverage, or connect with VERRE for photo, video,
+        DJ, flyer, and archive support.
       </p>
+
       <div class="meta">
-        <span class="pill">Archive-first • respectful • accuracy-focused</span>
+        <span class="pill">Coverage • Listings • Archive • Referrals</span>
       </div>
     </div>
 
-    <!-- ✅ MATCHES INDEX GAP -->
-    <!-- <div class="grid"> -->
-      <div class="card">
-        <div class="hd">
-          <h2>What we do (right now)</h2>
-          <span class="pill">tracking + archiving</span>
-        </div>
+    <div class="card">
+      <div class="hd">
+        <h2>What VERRE can help with</h2>
+        <span class="pill">services + submissions</span>
+      </div>
 
-        <div class="bd">
-          <ul style="margin:0; padding-left:18px; color:var(--muted); line-height:1.6">
-            <li>Event listings (with source links)</li>
-            <li>Flyer archival (when permitted)</li>
-            <li>Artist index pages with links + tracked appearances</li>
-            <li>Optional media coverage by request (subject to approval + availability)</li>
-          </ul>
+      <div class="bd">
+        <ul style="margin:0; padding-left:18px; color:var(--muted); line-height:1.7">
+          <li>Photo and video coverage for events, parties, shows, and pop-ups</li>
+          <li>Short recap videos for Instagram, TikTok, and event pages</li>
+          <li>Archive pages on verre.us after approved coverage</li>
+          <li>Event listings with flyer, date, venue, lineup, and source link</li>
+          <li>DJ referrals for parties, shows, and underground events</li>
+          <li>Flyer / visual design referrals for promoters and artists</li>
+        </ul>
+      </div>
 
-          <hr class="sep">
+      <div class="ft">
+        Paid coverage depends on availability, event details, and deliverables.
+      </div>
+    </div>
 
-          <h3 style="margin:0 0 10px; font-size:14px; color:var(--muted); letter-spacing:.08em; text-transform:uppercase;">
-            Submit an event
-          </h3>
+    <div class="card">
+      <div class="hd">
+        <h2>Request photo / video coverage</h2>
+        <span class="pill">paid inquiries</span>
+      </div>
 
-          <dl class="kv">
-            <dt>Include</dt>
-            <dd>Flyer + date + area (LA / NY / etc) + venue or promoter + lineup</dd>
+      <div class="bd">
+        <p class="sub" style="font-size:15px; line-height:1.7; max-width:760px;">
+          If you want VERRE to cover your event, send the details below. We can quote
+          based on the length of the event, location, number of shooters needed, and
+          whether you need photos, video, recap edits, or clean exports for your page.
+        </p>
 
-            <dt>Source</dt>
-            <dd>A link where info is posted (IG post, story, ticket page, promoter page)</dd>
+        <hr class="sep">
 
-            <dt>Instagram</dt>
-            <dd>
-              <a
-                class="smalllink"
-                href="https://www.instagram.com/verre.usa/"
-                target="_blank"
-                rel="noopener"
-              >
-                @verre.usa
-              </a>
-            </dd>
-          </dl>
-        </div>
+        <dl class="kv">
+          <dt>Send</dt>
+          <dd>Event name, date, time, location, flyer, lineup, and ticket / RSVP link</dd>
 
-        <div class="ft">
-          If you want coverage, tell us house rules (photo/video allowed, restrictions, etc.).
-        </div>
-      <!-- </div> -->
+          <dt>Coverage</dt>
+          <dd>Tell us if you need photos, video, recap clips, full gallery, or same-week turnaround</dd>
+
+          <dt>Rules</dt>
+          <dd>Let us know house rules, media restrictions, artist restrictions, or venue requirements</dd>
+
+          <dt>Budget</dt>
+          <dd>Send your budget or ask for a quote</dd>
+        </dl>
+      </div>
+
+      <div class="ft">
+        Best for promoters, artists, DJs, pop-ups, release parties, and underground events.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="hd">
+        <h2>Submit an event listing</h2>
+        <span class="pill">flyer + source</span>
+      </div>
+
+      <div class="bd">
+        <p class="sub" style="font-size:15px; line-height:1.7; max-width:760px;">
+          Want your event considered for the VERRE site? Send a flyer and a real source
+          link. Approved listings may be added to the site with a link to the actual event,
+          RSVP, ticket page, or promoter page.
+        </p>
+
+        <hr class="sep">
+
+        <dl class="kv">
+          <dt>Include</dt>
+          <dd>Flyer, event title, date, city / area, venue, lineup, and age requirement if applicable</dd>
+
+          <dt>Source</dt>
+          <dd>Instagram post, Partiful, Dice, Posh, ticket page, venue page, or promoter link</dd>
+
+          <dt>Archive</dt>
+          <dd>If VERRE covers the event, it may become a photo recap or archive page after approval</dd>
+        </dl>
+      </div>
+
+      <div class="ft">
+        We do not claim attendance unless VERRE is actually attending or covering.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="hd">
+        <h2>Need a DJ or flyer?</h2>
+        <span class="pill">referrals</span>
+      </div>
+
+      <div class="bd">
+        <p class="sub" style="font-size:15px; line-height:1.7; max-width:760px;">
+          If you are throwing an event and need help finding reliable DJs or someone
+          to make a flyer, VERRE can help point you toward people in our network.
+        </p>
+
+        <hr class="sep">
+
+        <dl class="kv">
+          <dt>DJ help</dt>
+          <dd>Send the event vibe, date, city, set length, budget, and any reference artists</dd>
+
+          <dt>Flyer help</dt>
+          <dd>Send event details, visual references, deadline, and budget</dd>
+
+          <dt>Note</dt>
+          <dd>Referrals depend on availability and fit</dd>
+        </dl>
+      </div>
+
+      <div class="ft">
+        VERRE can help connect the right people, but final booking is between you and the artist / designer.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="hd">
+        <h2>Contact</h2>
+        <span class="pill">DM us</span>
+      </div>
+
+      <div class="bd">
+        <dl class="kv">
+          <dt>Instagram</dt>
+          <dd>
+            <a
+              class="smalllink"
+              href="https://www.instagram.com/verre.usa/"
+              target="_blank"
+              rel="noopener"
+            >
+              @verre.usa
+            </a>
+          </dd>
+
+          <dt>Message format</dt>
+          <dd>“Coverage request” / “Event submission” / “DJ referral” / “Flyer referral”</dd>
+        </dl>
+      </div>
+
+      <div class="ft">
+        Clear details help us respond faster.
+      </div>
     </div>
   </div>
-  
+
   <div class="footer">
     <div>VERRE is building the map. If it’s real, it gets logged.</div>
     <div><a class="smalllink" href="index.html">Home</a></div>
